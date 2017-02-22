@@ -1,0 +1,29 @@
+Eastern Atlantic Experiment 97
+==============================
+
+The Eastern Atlantic Experiment 97 (EAE-97) produced data from Mace Head, 
+Challenger and the Jetstream. The EAE-97 campaign was coincident with EASE-97,
+which required Mace Head data. Therefore the data files for Mace Head are 
+common to both campaigns. As a result, the macehead subdirectory here is 
+a symbolic link to the ease-97/macehead subdirectory.
+
+The symbolic link doesn't function exactly like the original directory, but it
+will deal with the addition of new files. The link behaviour is slightly odd:
+ls macehead won't list the directory contents, just info about the macehead
+link. However ls macehead/* will produce a listing of the files.
+
+Andy Smith, BADC, 10th Oct 1997
+
+
+Subdirectories:
+--------------
+
+* challenger
+* jetstream
+* macehead (symbolic link to /ease-97/macehead/)
+
+P.S. When visualizing the contents of subdirectory /macehead/ on the Web,
+     please allow some time for the files list to appear, are this one is
+     rather long.
+
+Anne De Rudder, BADC, 12th Jan 2000.

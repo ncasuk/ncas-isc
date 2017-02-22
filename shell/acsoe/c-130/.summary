@@ -1,0 +1,16 @@
+files:176
+smallest:79
+biggest:4185092
+youngest:991392326
+oldest:868373530
+size:224238247
+subdirs:2
+largest_dir:148
+smallest_file:/disks/blizzard1/archive/acsoe/data/c-130/96/00README
+biggest_file:/disks/blizzard1/archive/acsoe/data/c-130/97/he970916.taf
+youngest_file:/disks/blizzard1/archive/acsoe/data/c-130/Errata.bc3.txt
+oldest_file:/disks/blizzard1/archive/acsoe/data/c-130/96/he960917.tmp
+corrupt:0
+users:[25059]
+groups:[26057]
+storetime:1288508422.45

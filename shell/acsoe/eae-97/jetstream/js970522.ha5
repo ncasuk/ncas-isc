@@ -1,0 +1,43 @@
+33 1001
+Lucy Carpenter & Bill Sturges
+School of Environmental Sciences, University of East Anglia, UK
+GC-MS, Shore Lab 2
+EASE97, Jetstream flight
+1 1
+1997 05 22 1997 12 15
+0
+Start Fill Time in Fractional Julian Day
+13
+1 1 1 1 1 1 1 1 1 1 1 1 1
+9999 9999 9999 9999 9999 9999 9999 9999 9999 9999 9999 9999 9999
+End Fill Time in Fractional Julian Day
+Altitude (feet)
+CH3Br (ppt)
+CH3I (ppt)
+C2H5Br (ppt)
+C2H5I (ppt)
+CH2ClI (ppt)
+DMDS (ppt)
+CHBr2Cl (ppt)
+CH2BrI (ppt)
+C2Cl4 (ppt)
+CHBr3 (ppt)
+CH2I2 (ppt)
+0
+6
+THIS-FILE-NAME=js970522.ha5
+THIS-FILE-VERSION=1
+THIS-FILE-ENDS=1997 05 22
+E-MAIL-CONTACT=l.carpenter@uea.ac.uk
+8888 =below detection limit
+start-fill   finish-fill   altitude     CH3Br    CH3I     C2H5Br   C2H5I    CH2ClI   DMDS     CHBr2Cl  CH2BrI   C2Cl4    CHBr3    CH2I2
+     122.4066      122.4082          200    13.18     0.43     0.24     0.04     0.09     0.19     0.38     8888     7.84     4.40     8888
+     122.4375      122.4402         9000    12.35     0.18     0.21     0.01     8888     0.12     0.15     8888     4.99     0.91     8888
+     122.4588      122.4611         1000    13.33     0.50     0.25     0.05     0.04     0.12     0.38     0.02     9.21     3.92     8888
+     122.5494      122.5515          300    12.76     0.48     0.22     0.08     0.09     0.24     0.47     8888    14.15     4.97     8888
+     122.5531      122.5543          240    12.81     0.56     0.16     0.08     0.03     0.23     0.50     8888     7.83     5.03     8888
+     122.5675      122.5691          200    13.54     0.39     0.20     0.04     8888     0.18     0.37     8888     5.74     3.28     8888
+     122.5883      122.5913         7000    15.81     0.10     0.11     8888     8888     0.12     0.11     8888     3.72     0.45     8888
+     122.5987      122.6015         5000    14.18     0.07     0.14     8888     8888     0.24     0.07     8888     4.66     0.59     8888
+     122.6159      122.6174         2500    11.80     0.17     0.17     0.02     8888     0.31     0.17     8888     4.60     1.01     8888
+     122.6341      122.6357         1000    12.75     0.47     0.24     0.10     8888     0.17     0.35     8888    14.25     2.87     8888

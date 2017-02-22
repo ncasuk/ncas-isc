@@ -1,0 +1,16 @@
+files:550
+smallest:1065
+biggest:2325047
+youngest:950027183
+oldest:867933973
+size:49310129
+subdirs:3
+largest_dir:535
+smallest_file:/disks/blizzard1/archive/acsoe/data/eae-97/00README
+biggest_file:/disks/blizzard1/archive/acsoe/data/eae-97/macehead/mh970428.pr1
+youngest_file:/disks/blizzard1/archive/acsoe/data/eae-97/macehead/mh970426.nx2
+oldest_file:/disks/blizzard1/archive/acsoe/data/eae-97/macehead/mh970421.mt4
+corrupt:0
+users:[25059]
+groups:[26057]
+storetime:1288508436.33

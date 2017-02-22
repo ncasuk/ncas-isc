@@ -1,0 +1,197 @@
+108  2160
+G. VAUGHAN                                                                      
+UNIVERSITY OF WALES,ABERYSTWYTH, U.K.                                           
+OZONESONDE   ECC                                                                
+Aberystwyth Study                                                               
+1  1                                                                            
+1997  7 31  1998 11 25                                                          
+0                                                                               
+20                                                                              
+Pressure at observation (hPa)                                                   
+Station name                                                                    
+8                                                                               
+1     1     1    1    1    1    1    1                                          
+99999 99999 999.9 999 999.9 99.99 999 999.9                                     
+Time after launch  (s)                                                          
+Geopotential height (gpm)                                                       
+Temperature (C)                                                                 
+Relative humidity (%)                                                           
+Temperature inside styrofoam box (C)                                            
+Ozone partial pressure (mPa)                                                    
+Horizontal wind direction (degrees)                                             
+Horizontal wind speed (m/s)                                                     
+50                                                                              
+16                                                                              
+1    1      1      1      1     1    1       1       1        1                 
+1      1      1      1      1      1     1     1     1                          
+1      1     1     1     1     1     1    1      1      1       1               
+1    1     1     1                                                              
+9999 99.999 999.99 999.99 999.9 99.9 99999.9 99999.9 99999.9 99999.9            
+9.9999 9.9999 999999 999999 999999 9.999 9.999 9.999 9.9                        
+99.9   99.99 99.99 9.999 9.999 99.9  9.99 9999.9 9.9999 9.9999  9.9999          
+999  999  999    9.999                                                          
+40 20 20 40 20 13 2 7 20 20 40 10 20 20 20 20                                   
+zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz                                        
+zzzzzzzzzzzzzzzzzzzz                                                            
+zzzzzzzzzzzzzzzzzzzz                                                            
+zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz                                        
+zzzzzzzzzzzzzzzzzzzz                                                            
+zzzzzzzzzzzzz                                                                   
+zz                                                                              
+zzzzzzz                                                                         
+zzzzzzzzzzzzzzzzzzzz                                                            
+zzzzzzzzzzzzzzzzzzzz                                                            
+zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz                                        
+zzzzzzzzzz                                                                      
+zzzzzzzzzzzzzzzzzzzz                                                            
+zzzzzzzzzzzzzzzzzzzz                                                            
+zzzzzzzzzzzzzzzzzzzz                                                            
+zzzzzzzzzzzzzzzzzzzz                                                            
+Number of pressure levels                                                       
+Launch time (UT hours from 0 hours on day given by DATE)                        
+East Longitude of station (degrees)                                             
+Latitude of station                                                             
+Wind speed at ground at launch (m/s)                                            
+Temperature at ground at launch (C)                                             
+Free lift for rubber balloon (g)                                                
+Dummy weight for plastic balloon  (g)                                           
+Balloon volume for plastic balloon (m^3)                                        
+Balloon weight for rubber balloon (g)                                           
+interface parameter u1                                                          
+interface parameter u2                                                          
+interface parameter r1                                                          
+interface parameter r2                                                          
+interface parameter r3                                                          
+interface parameter k0                                                          
+interface parameter k1                                                          
+interface parameter k2                                                          
+amount of cathode solution (cm3)                                                
+Concentration of cathode solution (mg/l)                                        
+sensor air flow rate(cal and ecc running together)(s)                           
+sensor air flow rate (ozonesonde pump only operating)(s)                        
+background current before cell is exposed to ozone (uA)                         
+background current just before launch (microamperes)                            
+Time the sonde was run for surfae ozone (min)                                   
+Surface ozone measured with the sonde prior to launch (mPa)                     
+background surface pressure (hPa)                                               
+pressure correction factor                                                      
+temperature correction factor                                                   
+humidity correction factor                                                      
+total ozone from sondeprofile (COL1)                                            
+total ozone measured by Dobson/Brewer (daily mean) (COL2A)                      
+total ozone measured by Dobson/Brewer (best value) (COL2B)                      
+Correction factor (COL1/COL2A or COL1/COL2B)(NOT APPLIED TO DATA)               
+Ground Equipment                                                                
+Pump correction table                                                           
+Background current correction method                                            
+Vertical averaging/smoothing method                                             
+Payload temperature measured during flight                                      
+Raw data file                                                                   
+Lifting gas                                                                     
+Balloon material (RUBBER or PLASTIC)                                            
+Balloon brand (e.g., TOTEX, RAVEN)                                              
+Balloon type  (e.g., TX1200, CL0019, TA1000)                                    
+Reason for discontinuation                                                      
+Weather conditions at launch                                                    
+Balloon pre-treatment                                                           
+Serial number of ECC                                                            
+Serial number of interface card                                                 
+Serial number of RS-80                                                          
+2                                                                               
+Software used to produce this file is kfa2na.f - Author: S. J. Reid             
+WARNINGS: Multiple pressure levels removed and median filtering of temperature  
+5                                                                               
+THIS-FILE-NAME=ab970731.b21
+THIS-FILE-VERSION=1
+THIS-FILE-ENDS=1997 07 31
+E-MAIL-CONTACT=gxv@aber.ac.uk
+P   time  Z    T    U    TI    PO3    DIR    SPD                              
+  81  14.261   -4.10   52.40    3.5   15.2   2400.0  99999.9  99999.9   1200.0  
+ 9.9999  9.9999  999999  999999  999999   9.999 9.999 9.999 3.0                 
+10.0   27.74  27.47  0.000  0.080  8.8  2.32  1001.8  0.9992  1.0009    0.378   
+999  999  999    9.999                                                          
+STOIC 89 OLD                                                                    
+O2 dependent + Ib2                                                              
+H2                                                                              
+TA1200                                                                          
+100% cloud + rain                                                               
+SPC 6A1726R                                                                     
+880314                                                                          
+621501101                                                                       
+ 1002.6  -487    133  15.0  86   28.9   2.33 999 999.9
+ 1002.5  -221    133  14.9  86   29.9   2.38 999 999.9
+  998.8    -1    165  14.4  87   30.9   2.52 999 999.9
+  995.2     5    195  13.9  87   29.9   2.52 999 999.9
+  992.0    12    223  13.7  86   29.9   2.52 999 999.9
+  989.3    19    245  13.3  87   29.9   2.55 999 999.9
+  986.0    26    274  13.1  89   29.9   2.66 999 999.9
+  982.3    34    305  12.8  90   29.9   2.62 999 999.9
+  980.1    41    324  12.6  91   29.9   2.69 999 999.9
+  977.8    44    344  12.4  89   29.9   2.73 999 999.9
+  975.6    51    363  12.3  89   29.9   2.73 999 999.9
+  973.2    59    383  12.1  88   29.9   2.76 999 999.9
+  970.5    66    407  11.9  90   29.9   2.80 999 999.9
+  968.0    73    429  11.7  89   29.9   2.76 999 999.9
+  965.5    80    450  11.5  93   29.9   2.76 999 999.9
+  963.0    88    471  11.3  92   29.9   2.76 999 999.9
+  960.7    91    492  11.3  89   29.9   2.87 999 999.9
+  958.3    98    513  11.2  85   29.9   2.73 999 999.9
+  956.0   106    532  11.1  85   29.9   2.80 999 999.9
+  953.8   113    552  10.9  86   29.9   2.76 999 999.9
+  951.9   120    568  10.7  87   29.9   2.69 999 999.9
+  949.3   127    592  10.6  86   29.9   2.73 999 999.9
+  946.8   134    613  10.6  87   29.9   2.69 999 999.9
+  944.7   138    632  10.4  88   29.9   2.69 999 999.9
+  942.3   145    653  10.3  89   29.9   2.66 999 999.9
+  939.8   152    675  10.1  90   29.9   2.66 999 999.9
+  937.3   160    697  10.0  90   29.9   2.63 999 999.9
+  934.9   167    719   9.8  91   29.9   2.55 999 999.9
+  931.9   174    746   9.6  92   29.9   2.59 999 999.9
+  929.0   181    772   9.5  93   29.9   2.66 999 999.9
+  926.8   185    792   9.4  94   29.9   2.59 999 999.9
+  923.4   192    822   9.3  93   29.9   2.59 999 999.9
+  920.2   199    851   9.1  92   29.9   2.59 999 999.9
+  916.8   206    881   8.9  92   29.9   2.56 999 999.9
+  913.5   213    911   8.7  94   29.9   2.56 999 999.9
+  910.5   221    939   8.7  94   29.9   2.56 999 999.9
+  907.2   228    969   8.6  92   29.9   2.56 999 999.9
+  904.3   232    995   8.5  92   29.9   2.59 999 999.9
+  901.6   239   1020   8.4  94   29.9   2.63 999 999.9
+  899.1   246   1043   8.3  94   29.9   2.59 999 999.9
+  896.6   253   1066   8.1  91   29.9   2.59 999 999.9
+  894.0   260   1090   8.0  87   29.9   2.59 999 999.9
+  891.1   268   1116   7.8  84   29.9   2.66 999 999.9
+  888.8   275   1138   7.6  81   29.9   2.74 999 999.9
+  885.5   278   1169   7.5  78   29.9   3.02 999 999.9
+  882.8   286   1194   7.3  72   29.9   3.19 999 999.9
+  880.1   293   1219   7.2  67   30.9   3.37 999 999.9
+  877.6   300   1243   6.9  79   30.9   3.55 999 999.9
+  874.5   307   1272   6.8  65   30.9   3.58 999 999.9
+  871.2   314   1303   6.6  54   30.9   3.80 999 999.9
+  868.5   322   1328   6.6  52   29.9   3.93 999 999.9
+  865.6   325   1355   6.4  50   29.9   4.14 999 999.9
+  862.9   332   1381   6.1  54   29.9   4.25 999 999.9
+  859.5   339   1413   6.0  57   30.9   4.32 999 999.9
+  856.0   347   1446   5.6  60   30.9   4.25 999 999.9
+  852.5   354   1481   5.3  58   30.9   4.29 999 999.9
+  849.3   361   1511   5.1  55   29.9   4.28 999 999.9
+  846.2   368   1541   4.8  52   29.9   4.28 999 999.9
+  842.5   372   1576   4.4  58   29.9   4.35 999 999.9
+  839.0   379   1610   4.0  56   30.9   4.40 999 999.9
+  836.0   386   1640   3.8  50   29.9   4.43 999 999.9
+  833.6   394   1663   3.7  59   30.9   4.68 999 999.9
+  831.3   401   1685   3.7  66   30.9   4.61 999 999.9
+  828.8   408   1709   3.7  67   30.9   4.64 999 999.9
+  826.4   415   1734   3.7  69   30.9   4.61 999 999.9
+  824.0   419   1757   3.7  75   30.9   4.51 999 999.9
+  821.6   426   1780   4.3  84   30.9   4.44 999 999.9
+  819.7   433   1799   4.5  95   30.9   4.23 999 999.9
+  818.0   440   1817   5.2  99   30.9   3.94 999 999.9
+  816.1   448   1835   5.6 100   31.9   3.70 999 999.9
+  814.1   455   1856   6.0 100   31.9   3.49 999 999.9
+  812.0   462   1876   6.4 100   31.9   3.24 999 999.9
+  810.1   466   1896   6.6 100   31.9   3.07 999 999.9
+  808.4   473   1913   6.6 100   31.9   2.85 999 999.9
+  808.4   473   1913   6.6 100   31.9   2.85 999 999.9
+  806.7   480   1930   6.6 100   31.9   2.82 999 999.9
+  804.9   487   1949   6.8 100   31.9   2.75 999 999.9

@@ -1,0 +1,42 @@
+31 1001
+Spokes, Lucinda and Yeatman, Stuart and Jickells, Tim
+University of East Anglia, Norwich, UK
+Major Ion Rain Concentrations, Mace Head, Ireland
+ACSOE MAGE
+1 1
+1997 05 12 1999 08 03
+0
+Midpoint of Sampling Interval in Decimal Julian Day
+10
+1 1 1 1 1 1 1 1 1 1
+9999 9999 9999 9999 9999 9999 9999 9999 9999 9999
+Start of Sampling Interval in Decimal Julian Day
+End of Sampling Interval in Decimal Julian Day
+rain sample volume (ml)
+chloride (mol L-1)
+nitrate (mol L-1)
+sulphate (mol L-1)
+sodium (mol L-1)
+calcium (mol L-1)
+magnesium (mol L-1)
+ammonium (mol L-1)
+2
+analysis for major anions by ion chromatography, metals by ICP-AES and ammonium by colorimetry
+zero value indicates concentration below analytical detection limit
+5
+THIS-FILE-NAME=mh970512.rc2
+THIS-FILE-VERSION=1
+THIS-FILE-ENDS=1997 05 20
+E-MAIL-CONTACT=l.spokes@uea.ac.uk
+midpointJD   startJD    endJD     volume          chloride          nitrate         sulphate          sodium          calcium         magnesium     ammonium
+132.47       132.33     132.60    51.0            4.87E-04          1.58E-06        2.56E-05          4.48E-04        1.12E-05        5.08E-05      1.40E-06
+132.97       132.60     133.33    113.3           1.80E-03          3.63E-06        9.28E-05          1.61E-03        4.00E-05        1.86E-04      1.40E-06
+137.16       136.83     137.48    16.0            9.38E-05          1.98E-04        6.75E-05          8.91E-05        3.49E-05        1.47E-05      6.39E-05
+137.78       137.71     137.84    137.5           3.10E-05          1.36E-04        8.35E-05          2.86E-05        1.02E-05        4.12E-06      1.63E-04
+138.11       137.85     138.38    67.6            7.89E-06          6.05E-05        3.75E-05          5.93E-06        5.87E-06        1.35E-06      3.82E-05
+138.62       138.59     138.65    247.6           7.63E-06          5.10E-05        4.62E-05          6.21E-06        1.40E-06        6.58E-07      8.47E-05
+138.68       138.65     138.71    244.1           5.99E-06          1.32E-05        1.29E-05          4.97E-06        2.98E-07        7.27E-07      2.13E-05
+138.74       138.71     138.78    141.0           5.84E-06          1.20E-05        1.23E-05          4.93E-06        3.82E-07        2.42E-07      1.85E-05
+139.06       138.78     139.33    165.0           7.16E-06          1.22E-05        1.49E-05          6.21E-06        4.05E-07        1.73E-07      2.31E-05
+140.65       140.99     140.31    81.6            2.11E-05          9.14E-05        5.29E-05          1.81E-05        3.79E-06        2.04E-06      5.53E-05
+140.61       140.60     140.62    95.8            1.08E-05          1.05E-05        7.11E-06          9.66E-06        9.30E-07        0.00E+00      9.30E-06

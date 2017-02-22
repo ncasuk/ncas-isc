@@ -1,0 +1,34 @@
+26 1001
+McIntyre, Henry
+University of East Anglia, Norwich, UK
+Autospec GC analysis of bottle samples filled on C-130
+ACSOE, OXICOA, Flight A577
+1 1
+1997 09 18 1998 07 20
+0
+Fill start time (Fractional Julian Day)
+6
+1 1 1 1 1 1
+99999 999 999 999 999 999
+Altitude (ft)
+Purge start time (Fraction of day)
+Fill end time (Fraction of day)
+Pressure (mb)
+Methylnitrate (ppt)
+Ethylnitrate (ppt)
+1
+One analysis of each sample giving an uncertainty of +/- 20%
+5
+THIS-FILE-NAME=he970918.an1
+THIS-FILE-VERSION=1
+THIS-FILE-ENDS=1997 09 18
+E-MAIL-CONTACT=h.mcintyre@uea.ac.uk
+Fillstart  Altitude   Purgestart  Fillend  Pressure  MeONO2  EtONO2
+261.57344   20000     0.57159     0.57682     469      6.88   3.05
+261.5812615 20000     0.57765     0.58266     469      7.27   4.19
+261.5916666 14000     0.58843     0.59259     598      9.97   8.42
+261.5967592 14000     0.59352     0.59792     598      7.39   4.89
+261.6087963 7000      0.60278     0.60922     785      8.50  11.20
+261.6118055 7000      0.61042     0.61238     784      9.93  11.05
+261.625868  1000      0.62251     0.62627     979     10.10   9.66
+261.6306134 1000      0.62778     0.63096     979      8.23  10.19

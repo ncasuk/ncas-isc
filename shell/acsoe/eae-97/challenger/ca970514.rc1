@@ -1,0 +1,43 @@
+31 1001
+Spokes, Lucinda and Jickells, Tim
+Environmental Sciences, University of East Anglia, Norwich, UK
+Trace Metal Rainwater Concentrations, RRS Challenger, Eastern Atlantic Ocean
+ACSOE MAGE
+1 1
+1997 05 14 1998 02 09
+0
+Midpoint of Sampling Interval in Decimal Julian Day
+9
+1 1 1 1 1 1 1 1 1
+9999 9999 9999 9999 9999 9999 9999 9999 9999
+Start of Sampling Interval in Decimal Julian Day
+End of Sampling Interval in Decimal Julian Day
+volume of rain collected (ml)
+manganese (mol L-1)  instrumental detection limit 0.356 nM
+copper (mol L-1)  instrumental detection limit 0.791 nM
+zinc (mol L-1)  instrumental detection limit 1.377 nM
+cadmium (mol L-1)  instrumental detection limit 0.132 nM
+barium (mol L-1)  instrumental detection limit 0.095 nM
+lead (mol L-1)  instrumental detection limit 0.047 nM
+3
+Zero value within data indicates a value below the instrumental detection limit
+Trace metal analysis by ICP-MS using the NERC Facility at Imperial College, Silwood Park
+Head of Facility Dr. Kym Jarvis
+5
+THIS-FILE-NAME=ca970514.rc1
+THIS-FILE-VERSION=1
+THIS-FILE-ENDS=1997 05 27
+E-MAIL-CONTACT=l.spokes@uea.ac.uk
+midpointJD StartJD     EndJD       volume          manganese       copper          zinc            cadmium        barium         lead
+135.09     134.82      135.36      239.4           5.98E-08        1.43E-07        0.00E+00        9.89E-09       3.25E-09       3.87E-08
+135.51     135.36      135.67      20.1            1.84E-07        2.07E-07        1.93E-06        1.93E-09       1.09E-08       3.99E-08
+136.00     135.67      136.33      16.7            3.82E-07        1.58E-07        7.90E-07        2.01E-09       3.63E-08       7.32E-08
+136.47     136.33      136.61      15              7.66E-08        9.95E-08        1.77E-07        1.11E-09       1.16E-08       1.63E-08
+137.17     136.99      137.34      10.1            1.38E-07        7.15E-08        7.99E-07        5.72E-09       1.50E-08       3.26E-08
+137.84     137.35      138.34      39.2            4.30E-07        2.64E-07        6.43E-07        3.32E-09       3.25E-08       6.07E-08
+138.51     138.35      138.68      134.8           9.30E-08        1.34E-07        3.20E-07        2.30E-09       1.74E-08       3.42E-08
+138.71     138.68      138.73      255.9           2.67E-08        2.54E-08        1.33E-06        9.19E-10       1.97E-09       5.02E-09
+138.76     138.74      138.78      145.5           8.75E-09        3.21E-08        8.63E-07        2.05E-09       2.78E-10       4.88E-09
+138.82     138.79      138.86      24.2            1.33E-08        3.89E-08        1.34E-06        1.58E-09       2.89E-09       8.37E-09
+139.34     138.86      139.81      69.4            4.63E-08        2.95E-08        5.01E-07        1.87E-09       7.63E-09       2.13E-08
+147.10     146.85      147.35      14.3            2.17E-07        1.85E-07        7.78E-07        9.36E-08       1.63E-08       3.09E-08

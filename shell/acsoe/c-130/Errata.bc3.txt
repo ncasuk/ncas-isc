@@ -1,0 +1,31 @@
+From: Barjat, Hannah [hannah.barjat@metoffice.com]
+Sent: Thursday, May 03, 2001 3:13 PM
+Subject: Correction of BC3 files from ACTO, MAXOX, TACIA and ACSOE
+
+Dear All,
+
+Some of you may now be aware that there are some corrections available for
+the PSAP (sooty) data. However, I do not intend to go back over the existing
+data mainly because nephelometer data were not collected for these
+campaigns. If you wish to publish work using the existing psap data then
+please contact me and I can explain where the errors lie (mostly in
+scattering from the sample, which has wrongly been interpreted as
+absorption). If you are just using the data as a tracer of tropospheric
+pollution, then I see no reason why you shouldn't continue to do so. 
+
+If you notice that I've missed anybody off the mailing list then please
+forward this message. 
+
+
+Best wishes, Hannah
+
+
+*****PLEASE NOTE CHANGE OF EMAIL ADDRESS*****
+
+
+Hannah Barjat ARASF liaison/ chemistry
+Met Office  Building Y46  DERA  Farnborough Hampshire  GU14 0LX  United
+Kingdom
+
+Tel: +44 (0)1252 395830  Fax: +44 (0)1252 376588
+E-mail: hannah.barjat@metoffice.com

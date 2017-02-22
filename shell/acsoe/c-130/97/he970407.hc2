@@ -1,0 +1,59 @@
+52 1001
+Rachel Burgess
+University of East Anglia, Norwich, UK
+GC-FID, NMHC, Hercules C-130A534
+ACSOE
+1 1
+1997 04 07    1998 05 06
+0
+purge time + julian day (97)
+29
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999
+Fill Time
+End Time
+Height '
+ethane
+ethene
+propane
+unknown1
+propene
+i-butane
+n-butane
+acetylene
+trans-2-butene
+1-butene
+i-butene
+cis-2-butene
+i-pentane
+n-pentane
+2+3-methyl pentane
+2-methyl pentane
+3-methyl pentane
+n-hexane
+isoprene
+n-heptane
+DMS?
+benzene
+toluene
+ethyl benzene
+m-+p-xylene
+o-xylene
+5
+ALTITUDE IN FEET (taken from log sheet in flight log book)
+ALL CONCENTRATIONS IN PPT(except unknowns, pptC)
+WHERE NO PEAK DETECTED HAVE USED ZERO RATHER THAN MISSING DATA MARKER VARIABLE
+toulene blank has been corrected for (4-8 ppt)
+bottle R6 analysed twice because of high butanes
+4
+THIS-FILE-NAME=HE970407.HC2
+THIS-FILE-VERSION=2
+THIS-FILE-ENDS=1997 04 07
+E-MAIL-CONTACT=r.a.burgess@uea.ac.uk
+97.597222 97.598264  97.598692     100  1290    26   291   109    23    35    55   268     5     5    27     0    10    10     0     0     0     4     2     5     0    68     1     1     6     4
+97.604630 97.606331  97.606690    1000  1254    37   291   104    17    38    70   262     5     3    20     0    10     8     0     0     0     3     3     3     9    53     5     3     4     0
+97.613102 97.614236  97.614745    6000  1144    20   231   101    20    30    49   224     6     3    19     5     8     7     0     0     0     3     2     5     0    44     7     3     5     5
+97.624722 97.626539  97.627431   11000  1289    13   392    96    22    38    97   160     4     3    14     0    18    22     2     0     0     3     6     3     0    29     8     2    10     8
+97.633391 97.633854  97.637245   15000   846    15   296   108    15   146   395   142     4     4    15     0     6    10     0     3     1     5     9     5     0    26    11     1     5     0
+97.633391 97.633854  97.637245   15000   847    16   304    98    20   146   396   145     6     4    15     0     9     8     0     0     0     6    10     4     0    25     9     0     4     0
+97.642824 97.644097  97.645428   18000  1129    14   394   105    19    97   250   173     6     3    20     0    66   200     0     6     4     9    16    11     0    31    31 99999 99999 99999

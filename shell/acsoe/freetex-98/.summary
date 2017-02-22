@@ -1,0 +1,16 @@
+files:42
+smallest:137
+biggest:2138959
+youngest:950011523
+oldest:924004280
+size:16832486
+subdirs:1
+largest_dir:43
+smallest_file:/disks/blizzard1/archive/acsoe/data/freetex-98/00README
+biggest_file:/disks/blizzard1/archive/acsoe/data/freetex-98/jungfrau/jf980318.jo1
+youngest_file:/disks/blizzard1/archive/acsoe/data/freetex-98/00README
+oldest_file:/disks/blizzard1/archive/acsoe/data/freetex-98/jungfrau/jf980314.em3
+corrupt:0
+users:[25059]
+groups:[26057]
+storetime:1288508452.34

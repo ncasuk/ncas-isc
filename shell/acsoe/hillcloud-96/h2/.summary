@@ -1,0 +1,16 @@
+files:5
+smallest:16724
+biggest:473558
+youngest:852286834
+oldest:851341548
+size:682996
+subdirs:0
+largest_dir:5
+smallest_file:/disks/blizzard1/archive/acsoe/data/hillcloud-96/h2/h2960628.fss
+biggest_file:/disks/blizzard1/archive/acsoe/data/hillcloud-96/h2/h2960705.nx8
+youngest_file:/disks/blizzard1/archive/acsoe/data/hillcloud-96/h2/h2960705.nx8
+oldest_file:/disks/blizzard1/archive/acsoe/data/hillcloud-96/h2/h2960628.fss
+corrupt:0
+users:[25059]
+groups:[26057]
+storetime:1288508452.45

@@ -1,0 +1,54 @@
+50 1001
+Rachel Burgess
+University of East Anglia, Norwich, UK
+GC-FID, NMHC, Jetstream
+ACSOE-EASE96 (OXICOA)
+1 1
+1996 07 16    1997 02 05
+0
+Time in fractional day
+28
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999
+ALTITUDE START FILL
+ALTITUDE END FILL
+LATITUDE START FILL
+LONGITUDE START FILL
+LATITUDE END FILL
+LONGITUDE END FILL
+ethane
+ethene
+propane
+unknown1
+propene
+i-butane
+n-butane
+acetylene
+trans-2-butene
+1-butene
+i-butene
+cyclopentane
+i-pentane
+n-pentane
+n-hexane
+isoprene
+n-heptane
+benzene
+toluene
+ethyl benzene
+m-+p-xylene
+o-xylene
+       4
+ALTITUDE IN FEET (FURTHER DETAILS FROM PAUL LIGHTMAN)
+LAT. AND LONG. IN DEGREES (NORTH AND WEST)
+ALL CONCENTRATIONS IN PPT
+WHERE NO PEAK DETECTED HAVE USED ZERO RATHER THAN MISSING DATA MARKER VARIABLE
+       4
+THIS-FILE-NAME=JS960716.HC2
+THIS-FILE-VERSION=2
+THIS-FILE-ENDS=1996 07 01
+E-MAIL-CONTACT=r.a.burgess@uea.ac.uk
+0.53056 9000    9000    53.368611   9.901111    53.368056   9.9666667        709     226      27      55      22       0       0      41       3       3     140       9       0       0       0       0       4      11       8      14      25       7
+0.54167 500     500     53.350278   9.9683333   53.3        9.9680556       1146      99     210     136      25     120     244     298       2       2      71       6     132      64      14       0       7     103     103      12      12       4
+0.54861 2600    2600    53.267778   9.9352778   99999       99999           1216     150     189     131      25     147     293     353       0       0      71       0     152      50      15       3      11     152     115      20       9       0
+0.55486 6000    6000    53.268056   9.9669494   53.301111   9.9172222        750      35      38     139      18       5       8      49       0       0      94       0       2       2       0       0       3       6      59       0       0       0

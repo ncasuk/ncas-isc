@@ -1,0 +1,17 @@
+chmod 700	jf980314.em3
+chmod 070	jf980315.em1
+chmod 007	jf980315.em2
+chmod 770	jf980317.nox
+chmod 666	jf980318.nox
+chmod 555	jf980319.nox
+chmod 444	jf980319.pn2
+chmod 333	jf980320.nox
+chmod 222	jf980321.nox
+chmod 111	jf980322.nox
+chmod 000	jf980323.nox
+chmod 640	jf980324.nox
+chmod 711	jf980325.hc5
+chmod 066	jf980325.nox
+chmod 110	jf980326.nox
+chmod 400	jf980327.nox
+chmod 700	jf980328.nox

@@ -1,0 +1,31 @@
+20 1001
+Rachel Burgess
+University of East Anglia, Norwich, UK
+GC-FID, NMHC, Autosampler,
+ACSOE Mace Head
+1 1
+1997 05 25 1998 03 10
+0
+Sample mid-time plus Julian day
+1
+1
+99999
+Concentration ppt
+1
+WHERE NO PEAK DETECTED HAVE USED ZERO RATHER THAN MISSING DATA MARKER VARIABLE
+4
+THIS-FILE-NAME=mh970525.hc2
+THIS-FILE-VERSION=1
+THIS-FILE-ENDS=1997 05 26
+E-MAIL-CONTACT=r.a.burgess@uea.ac.uk
+ 145.71650       0
+ 145.78431       0
+ 145.85231       2
+ 145.92039       4
+ 145.98912       6
+ 146.05713       6
+ 146.12549      11
+ 146.19384      15
+ 146.26206       6
+ 146.33042       3
+ 146.39856       0

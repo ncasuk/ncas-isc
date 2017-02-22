@@ -1,0 +1,48 @@
+33  2110
+VAUGHAN, Geraint
+University of Wales, ABERYSTWYTH, U.K.
+Tropospheric Ozone DIAL System
+TOASTE-C
+1  1
+1998 03 11  1999 01 07
+0.0  300
+altitude above sea level (km)
+GMT decimal hour midway through the measurement
+2
+1.0   1.0
+999.99  999.99
+ozone mixing ratio (ppbv)
+ozone uncertainty (%)
+9
+1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0
+999 9999 99 99 999.99 999.99 9999.99 9.99 9999999
+number of altitudes reported in profile
+year of measurement
+month of measurement
+day of measurement
+station latitude (north is positive)
+station longitude (east is positive)
+station altitude (m)
+measurement duration (hours)
+number of laser shots
+0
+4
+THIS-FILE-NAME=ab980311.o3l
+THIS-FILE-VERSION=1
+THIS-FILE-ENDS=1998 03 11
+E-MAIL-CONTACT=gxv@aber.ac.uk
+22.56    14   1998   03   11   52.4   -4.1   50.0   0.43    46800
+    6.05     59.4      2.0
+    6.35     60.9      2.2
+    6.65     57.6      2.7
+    6.95     57.9      3.1
+    7.25     64.8      3.2
+    7.55     65.5      3.7
+    7.85     66.8      4.1
+    8.15     82.1      3.9
+    8.45     92.9      4.0
+    8.75     96.2      4.4
+    9.05    112.5      4.4
+    9.35    142.9      4.1
+    9.65    171.5      4.0
+    9.95    199.1      4.1

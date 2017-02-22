@@ -1,0 +1,40 @@
+              31    1001
+Cape, JN
+Institute of Terrestrial Ecology, Bush Estate, Penicuik EH26 0QB, UK
+Passive diffusion tubes at HILLCLOUD sites
+HILLCLOUD ACE-2 pre-campaign
+               1       1
+            1996       6      23    1996                 12      17
+               0
+Site name
+               5
+               1       1       1       1                  1
+             999     999     999     999                999
+Jdayout
+Jdayin
+NH3 (ppb)
+NH3sd (ppb)
+NH3 error code
+               7
+NOTE: these data are of qualitative use ONLY. Values are means and standard deviations of 6 replicate tubes
+Values have all been corrcted for field blanks.
+NH3 data have been 'corrected' for oversampling using factor 0.4
+This may not be correct - do not believe absolute concentration values!
+Samples were exposed for approximately 380 hours, given by OUT and IN times
+Where there is more than one sample set per site, racks of 6 were exposed in different locations
+For details of site locations contact J N Cape
+               5
+THIS-FILE-NAME=hd960623.nha
+THIS-FILE-VERSION=1
+THIS-FILE-ENDS=1996 07 10
+E-MAIL-CONTACT=j.cape@ite.ac.uk
+Site            Jdayout Jdayin  NH3     sd                 error code
+Hidalgo0           177.7   191.5     3.0                2.0       1
+Hidalgo1           177.7   191.5     2.8                0.5       1
+Taganana0          174.7   191.7     2.4                1.1       1
+Taganana1          176.6   191.7     1.4                1.5       1
+Tagananamast       176.6   191.7     1.9                0.9       1
+Tagananatunnel     176.7   191.7     1.8                0.7       1
+ElBailaderowindo   176.6   191.6     999                999       2
+ElBailaderoroof    176.6   191.6     1.2                0.7       1
+Paiba              174.8   191.7     0.6                0.6       1

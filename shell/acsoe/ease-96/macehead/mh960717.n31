@@ -1,0 +1,65 @@
+25 1001
+Beverley Allan and Hugh Coe
+University of East Anglia, Norwich, UK 
+Differential Optical Absorption Spectrometer, Mace Head, Eire 
+ACSOE OXICOA EASE'96
+1 1
+1996 07 17  1997 01 03
+0
+Time in fractional Julian Day
+3
+1.0 1.0 1
+999 999 999
+NITRATE RADICALS (pptv)
+ERROR FROM ANALYSIS (pptv)
+ERROR FLAG
+3
+This is NO3 data obtained in the MBL.   
+Missing data markers represent poor raw data / hardware problems.   
+Note large gap in data during daylight hours due to NO3 NOT being measured during the day.   
+5   
+THIS-FILE-NAME=mh960717.n31   
+THIS-FILE-VERSION=1   
+THIS-FILE-ENDS=1996 07 17   
+E-MAIL-CONTACT=b.allan@uea.ac.uk   
+Jday NO3  Analysis Error Error Flag
+199.0063	12.95	0.48	0
+199.0132	9.39	0.37	0
+199.0201	10.69	0.4	0
+199.0271	12.97	0.39	0
+199.034	14.83	0.44	0
+199.041	13.72	0.47	0
+199.0479	14.43	0.48	0
+199.0549	16.07	0.43	0
+199.0618	12.26	0.53	0
+199.0688	10.92	0.53	0
+199.0757	15.98	0.69	0
+199.0826	17.84	0.87	0
+199.0896	18.97	0.8	0
+199.0965	16.36	0.69	0
+199.1035	12.72	0.5	0
+199.1104	999	999	3
+199.1181	999	999	3
+199.125	999	999	3
+199.1319	999	999	3
+199.1389	14.36	1.22	0
+199.1458	7.42	1.02	0
+199.1528	11.87	0.84	0
+199.1597	8.41	1.17	0
+199.1667	11.63	0.61	0
+199.1736	10.48	0.56	0
+199.1806	27.99	1.99	0
+199.1882	11.03	0.76	0
+199.1951	999	999	3
+199.2021	999	999	3
+199.209	0	0	0
+199.9368	8.59	0.59	0
+199.9438	9.69	0.64	0
+199.9507	10.76	0.64	0
+199.9576	11.44	0.61	0
+199.9646	16.42	0.55	0
+199.9715	30.23	0.59	0
+199.9785	29.22	0.78	0
+199.9854	26.95	0.6	0
+199.9924	24.99	0.54	0
+199.9993	20.23	0.56	0

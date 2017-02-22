@@ -1,0 +1,73 @@
+23 1001
+Robertson, Leonie 
+IENS, Lancaster University, Lancaster, UK 
+GC-FPD for dimethyl sulphide, Atmospheric Research Station, Mace Head, Eire 
+MAGE/ACSOE
+1 1
+1997 05 16 1998 03 10
+0
+Time in fractional Julian Day
+1
+1
+9999
+DIMETHYL SULPHIDE CONCENTRATION (ng(S) m-3)
+3
+The measurements were made by collecting air samples in 3 litre stainless steel canisters, pressurised to 60psi. The 
+dimethyl sulphide was then cryogenically trapped onto tenax using a liquid nitrogen/methanol slush, and oxidant  
+scrubbers KI and Mg(ClO4)2. The samples were analysed by a GC-FPD system. 
+5
+THIS-FILE-NAME=mh970516.dm1 
+THIS-FILE-VERSION=1 
+THIS-FILE-ENDS=1997 05  28 
+E-MAIL-CONTACT=l.robertson@lancaster.ac.uk 
+Julian Day DMS concentration 
+136.3049	52
+136.8194	177
+137.3319	110
+137.5139	92
+138.3576	228
+138.4271	330
+138.4896	94
+138.6299	277
+138.8958	305
+139.3056	112
+139.4167	146
+139.4861	161
+139.5521	137
+140.3333	133
+140.4167	160
+140.5417	201
+140.6181	236
+140.7083	171
+140.8021	338
+140.8854	300
+140.934	275
+141.2986	200
+141.3333	306
+141.4167	275
+141.5	344
+141.625	303
+141.75	218
+141.8333	234
+142.0056	286
+142.1319	156
+142.2361	113
+142.5694	56
+142.6424	54
+142.7083	55
+142.875	52
+143.4826	9999
+143.9375	42
+146.3056	73
+146.4861	104
+146.6319	231
+146.7639	176
+146.8056	169
+146.816	250
+147.3264	258
+147.4931	121
+147.5903	121
+147.5903	130
+147.7639	62
+147.8785	152
+148.3056	103

@@ -1,0 +1,16 @@
+files:12
+smallest:169
+biggest:111314
+youngest:950011992
+oldest:851338253
+size:324079
+subdirs:6
+largest_dir:7
+smallest_file:/disks/blizzard1/archive/acsoe/data/lterm/00README
+biggest_file:/disks/blizzard1/archive/acsoe/data/lterm/macehead/9608/mh960805.nx2
+youngest_file:/disks/blizzard1/archive/acsoe/data/lterm/00README
+oldest_file:/disks/blizzard1/archive/acsoe/data/lterm/macehead/9606/mh960605.fi2
+corrupt:0
+users:[25059]
+groups:[26057]
+storetime:1288508454.87

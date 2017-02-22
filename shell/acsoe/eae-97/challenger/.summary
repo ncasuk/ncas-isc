@@ -1,0 +1,16 @@
+files:6
+smallest:1943
+biggest:23487
+youngest:945942059
+oldest:884601714
+size:45248
+subdirs:0
+largest_dir:6
+smallest_file:/disks/blizzard1/archive/acsoe/data/eae-97/challenger/ca970512.hv2
+biggest_file:/disks/blizzard1/archive/acsoe/data/eae-97/challenger/ca970512.fi1
+youngest_file:/disks/blizzard1/archive/acsoe/data/eae-97/challenger/ca970512.hv2
+oldest_file:/disks/blizzard1/archive/acsoe/data/eae-97/challenger/ca970514.hv1
+corrupt:0
+users:[25059]
+groups:[26057]
+storetime:1288508425.56

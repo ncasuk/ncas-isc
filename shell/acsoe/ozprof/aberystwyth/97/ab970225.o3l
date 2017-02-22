@@ -1,0 +1,83 @@
+33  2110
+VAUGHAN, Geraint
+University of Wales, ABERYSTWYTH, U.K.
+Tropospheric Ozone DIAL System
+TOASTE-C
+1  1
+1997 02 25  1997 02 25
+0.0  300
+altitude above sea level (km)
+GMT decimal hour midway through the measurement
+2
+1.0   1.0
+999.99  999.99
+ozone mixing ratio (ppbv)
+ozone uncertainty (%)
+9
+1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0
+999 9999 99 99 999.99 999.99 9999.99 9.99 9999999
+number of altitudes reported in profile
+year of measurement
+month of measurement
+day of measurement
+station latitude (north is positive)
+station longitude (east is positive)
+station altitude (m)
+measurement duration (hours)
+number of laser shots
+0
+4
+THIS-FILE-NAME=ab970225.o3l
+THIS-FILE-VERSION=1
+THIS-FILE-ENDS=1997 02 25
+E-MAIL-CONTACT=gxv@aber.ac.uk
+11.61    14   1997   02   25   52.4   -4.1   50.0   0.30    32400
+    5.15     62.1      2.2
+    5.45     60.9      2.6
+    5.75     75.0      2.5
+    6.05     80.2      2.7
+    6.35     63.3      4.0
+    6.65     55.7      5.2
+    6.95     53.3      6.2
+    7.25     49.2      7.6
+    7.55     67.2      6.4
+    7.85     92.7      5.3
+    8.15    107.6      5.3
+    8.45    123.3      5.3
+    8.75    142.0      5.3
+    9.05    175.5      5.0
+12.02    16   1997   02   25   52.4   -4.1   50.0   0.30    32400
+    4.55     51.6      2.4
+    4.85     49.9      2.9
+    5.15     51.9      3.2
+    5.45     58.1      3.4
+    5.75     71.5      3.2
+    6.05     73.7      3.6
+    6.35     55.9      5.5
+    6.65     46.6      7.5
+    6.95     47.3      8.5
+    7.25     48.4      9.4
+    7.55     69.4      7.5
+    7.85    104.3      5.7
+    8.15    122.6      5.6
+    8.45    124.0      6.5
+    8.75    142.0      6.5
+    9.05    186.7      5.8
+12.37    17   1997   02   25   52.4   -4.1   50.0   0.20    21600
+    4.25     38.4      3.5
+    4.55     39.3      4.0
+    4.85     40.1      4.6
+    5.15     43.1      5.0
+    5.45     48.5      5.2
+    5.75     52.5      5.6
+    6.05     54.6      6.3
+    6.35     54.8      7.2
+    6.65     49.1      9.1
+    6.95     43.0     11.9
+    7.55     46.8     14.2
+    7.85     89.6      8.5
+    8.15    114.8      7.7
+    8.45    110.8      9.2
+    8.75    146.3      8.0
+    9.05    180.2      7.6
+    9.35    198.7      8.2

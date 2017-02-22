@@ -1,0 +1,40 @@
+33 1001
+Lucy Carpenter & Bill Sturges
+School of Environmental Sciences, University of East Anglia, UK
+GC-MS, Shore Lab 2
+ACSOE, AZORES, Flight A576
+1 1
+1997 09 16 1997 12 15
+0
+Start Fill Time in Fractional Julian Day
+13
+1 1 1 1 1 1 1 1 1 1 1 1 1
+9999 9999 9999 9999 9999 9999 9999 9999 9999 9999 9999 9999 9999
+End Fill Time in Fractional Julian Day
+Altitude (feet)
+CH3Br (ppt)
+CH3I (ppt)
+C2H5Br (ppt)
+C2H5I (ppt)
+CH2ClI (ppt)
+DMDS (ppt)
+CHBr2Cl (ppt)
+CH2BrI (ppt)
+C2Cl4 (ppt)
+CHBr3 (ppt)
+CH2I2 (ppt)
+0
+6
+THIS-FILE-NAME=he970916.ha5
+THIS-FILE-VERSION=1
+THIS-FILE-ENDS=1997 09 16
+E-MAIL-CONTACT=l.carpenter@uea.ac.uk
+8888 =below detection limit
+start-fill   finish-fill   altitude     CH3Br    CH3I     C2H5Br   C2H5I    CH2ClI   DMDS     CHBr2Cl  CH2BrI   C2Cl4    CHBr3    CH2I2
+     259.6665      259.6668         3000    18.74     0.45     0.37     0.09     8888     0.11     0.10     8888     1.49     0.52     0.05
+     259.6694      259.6697         1000    23.87     2.16     1.00     0.24     0.03     0.75     0.10     8888     1.63     0.94     0.08
+     259.6714      259.6717          500    19.53     0.91     0.55     0.06     8888     0.12     0.15     8888     1.69     0.88     0.03
+     259.6771      259.6774          100    19.84     1.10     0.72     0.14     0.08     0.44     0.19     8888     1.96     0.96     0.05
+     259.6808      259.6812         2000    24.97     0.65     0.91     0.06     8888     0.36     0.02     8888     1.53     0.87     0.07
+     259.6844      259.6847         1500    18.93     1.19     0.40     0.03     8888     0.42     0.08     8888     1.31     0.62     0.17
+     259.6880      259.6884         4000    19.27     0.41     0.60     0.05     0.18     0.34     0.11     8888     1.71     0.56     0.03

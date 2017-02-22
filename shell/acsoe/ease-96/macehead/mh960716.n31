@@ -1,0 +1,43 @@
+24 1001
+Beverley Allan and Hugh Coe
+ University of East Anglia, Norwich, UK 
+ Differential Optical Absorption Spectrometer, Mace Head, Eire 
+ACSOE OXICOA EASE'96
+1 1
+1996 07 16  1997 01 03
+0
+Time in fractional Julian Day
+3
+1.0 1.0 1
+999 999 999
+NITRATE RADICALS (pptv)
+ERROR FROM ANALYSIS (pptv)
+ERROR FLAG
+2
+This is NO3 data obtained in the MBL.   
+Missing data markers represent poor raw data / hardware problems.   
+5   
+THIS-FILE-NAME=mh960716.n31   
+THIS-FILE-VERSION=1   
+THIS-FILE-ENDS=1996 07 16   
+E-MAIL-CONTACT=b.allan@uea.ac.uk   
+Jday NO3  Analysis Error Error Flag
+198.8451	0	0	0
+198.8618	6.33	0.31	0
+198.8819	17.41	0.47	0
+198.8951	26.87	0.41	0
+198.9021	27.29	0.44	0
+198.909	30.04	0.68	0
+198.916	29.24	0.65	0
+198.9229	34.64	0.63	0
+198.9299	28.88	0.69	0
+198.9368	32.59	0.68	0
+198.9438	33.1	0.68	0
+198.9507	33.17	0.73	0
+198.9576	37.11	0.71	0
+198.9646	36.39	0.79	0
+198.9715	27.95	0.8	0
+198.9785	12.12	0.6	0
+198.9854	0.68	0.62	0
+198.9924	2.72	0.5	0
+198.9993	8.17	0.55	0

@@ -1,0 +1,42 @@
+31 1001
+Spokes, Lucinda and Jickells, Tim
+University of East Anglia, Norwich, UK
+Trace Metal Rain Concentrations, Mace Head, Ireland
+ACSOE MAGE
+1 1
+1997 05 12 1999 08 03
+0
+Midpoint of Sampling Interval in Decimal Julian Day
+9
+1 1 1 1 1 1 1 1 1
+9999 9999 9999 9999 9999 9999 9999 9999 9999
+Start of Sampling Interval in Decimal Julian Day
+End of Sampling Interval in Decimal Julian Day
+Rain sample volume (ml)
+Manganese (mol L-1) instrumental detection limit 0.356 nM
+Copper (mol L-1) instrumental detection limit 0.791 nM
+Zinc (mol L-1) instrumental detection limit 1.377 nM
+Cadmium (mol L-1) instrumental detection limit 0.132 nM
+Barium (mol L-1) instrumental detection limit 0.095 nM
+Lead (mol L-1) instrumental detection limit 0.047 nM
+3
+Zero value within data indicates a value below the instrumental detection limit
+Trace metal analysis by ICP-MS using the NERC Facility at Imperial College, Silwood Park
+Head of Facility Dr. Kym Jarvis
+5
+THIS-FILE-NAME=mh970512.rc1
+THIS-FILE-VERSION=1
+THIS-FILE-ENDS=1997 05 20
+E-MAIL-CONTACT=l.spokes@uea.ac.uk
+midpointJD startJD   endJD    volume     manganese   copper       zinc         cadmium     barium       lead
+132.47     132.33    132.60   51.0       7.24E-09    2.83E-08     7.22E-09     1.36E-09    0.00E+00     1.63E-09
+132.97     132.60    133.33   113.3      6.73E-09    8.01E-08     2.29E-08     4.57E-10    0.00E+00     1.14E-09
+137.16     136.83    137.48   16.0       2.03E-07    6.34E-08     2.86E-07     9.41E-10    1.07E-08     1.96E-08
+137.78     137.71    137.84   137.5      9.18E-08    3.13E-08     2.31E-07     1.66E-09    5.48E-09     4.22E-08
+138.11     137.85    138.38   67.6       6.37E-08    1.37E-08     5.29E-08     3.94E-10    0.00E+00     1.28E-08
+138.62     138.59    138.65   247.6      1.95E-08    1.25E-08     4.06E-08     7.04E-10    0.00E+00     2.13E-08
+138.68     138.65    138.71   244.1      2.91E-09    2.85E-09     0.00E+00     1.42E-10    0.00E+00     7.22E-09
+138.74     138.71    138.78   141.0      4.36E-09    1.99E-09     0.00E+00     1.98E-10    0.00E+00     7.81E-09
+139.06     138.78    139.33   165.0      3.60E-09    1.91E-09     0.00E+00     1.51E-10    0.00E+00     7.65E-09
+140.65     140.99    140.31   81.6       2.77E-08    2.36E-08     1.24E-07     7.21E-10    0.00E+00     3.21E-08
+140.61     140.60    140.62   95.8       1.81E-09    2.63E-09     0.00E+00     2.72E-10    0.00E+00     5.69E-09

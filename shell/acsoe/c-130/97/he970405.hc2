@@ -1,0 +1,67 @@
+55 1001
+Rachel Burgess
+University of East Anglia, Norwich, UK
+GC-FID, NMHC, Hercules C-130A533
+ACSOE
+1 1
+1997 04 05    1998 05 07
+0
+purge time + Julian day (95)
+31
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999
+fill time
+end time
+height '
+ethane
+ethene
+propane
+unknown1
+propene
+i-butane
+n-butane
+acetylene
+trans-2-butene
+1-butene
+i-butene
+cis-2-butene
+i-pentane
+n-pentane
+trans-2-pentene
+1-pentene
+3-methyl butene
+n-hexane
+isoprene
+n-heptane
+DMS
+benzene
+toluene
+ethyl benzene
+m-+p-xylene
+o-xylene
+propadiene?
+unknown
+6
+ALTITUDE IN FEET (taken from log sheet in flight log book)
+ALL CONCENTRATIONS IN PPT(except unknowns, pptC)
+WHERE NO PEAK DETECTED HAVE USED ZERO RATHER THAN MISSING DATA MARKER VARIABLE
+toulene blank corrected for (4-8 ppt)
+sample 4 analysed twice
+sample three unusual - high n-butane and propadiene (not normally reported)
+4
+THIS-FILE-NAME=HE970405.HC2
+THIS-FILE-VERSION=2
+THIS-FILE-ENDS=1997 04 05
+E-MAIL-CONTACT=r.a.burgess@uea.ac.uk
+ 95.394641 95.396528 95.396852  1000  1160    74   222   115    30    32    40   261     5    10    20     0    12     9     0     7     0     3     5     4    52    55     7     4     5     3     0     0
+ 95.407292 95.408194 95.408634  5000  1085    36   187   101    27    21    36   195     8     6    23     2     9     9     0     3     0     3     2     6     0    38     9     2     1     5     0     0
+ 95.414745 95.419444 95.420220 10000   870    62   138    91    22    78   349   162     7     6    32     0    17    16     0     5     0     7     6     3    10    35    15     5     8     3  3619   384
+ 95.427245 95.428414 95.429907 15000   771    18   102   102    21    34   124   136    11     5    27     0    13    20     0     0     0     5    16     0     0    28    35 99999 99999 99999     0     0
+ 95.427245 95.428414 95.429907 15000   727    21   107   109    17    18    48   132     9     4    21     0    10    20     0     0     0     6    18     4     0    26    31     6    18    12     0     0
+ 95.435162 95.436493 95.438160 20000   848    37   157   150    25    33    85   144     7     9    25     0    23    56     1     7     2    13    29    12     0    31    63     7     4    12     0     0
+ 95.569618 95.570949 95.572361 20000   674    16    88    99    22    14    24   108     8     4    24     3    12    34     0     0     0     6    29     5     0    18    31     6    17    12     0     0
+ 95.576620 95.577685 95.579167 15000   813    15   102   108    12    12    18   135     4     2    18     0     7    19     0     2     0     2    17     2     9    24    15     9     9    23     0     0
+ 95.584653 95.585880 95.586620 10000   807    21   113   102    19    15    24   138     6     2    22     2     6    11     0     0     0     3     8     3     0    28    14     4     5    11     0     0
+ 95.593056 95.593750 95.594213  6000   993    75   199    95    74    26    39   164     6    32    28     4     7    10     0    25     0     3     4     6     0    36    12     3     8     7     0     0
+ 95.607870 95.609028 95.609398  3500  1232    21   318    97    23    39    71   252     6     3    25     3    18    14     0     0     0     4     2     3     0    49     9     3     5     3     0     0
+ 95.616898 95.618218 95.618519   100  1119    55   200   113    26    26    44   275     6     9    23     4    11     8     0     8     0     4     5     8    15    70    12     0     0     0     0     0

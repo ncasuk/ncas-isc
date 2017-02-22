@@ -1,0 +1,52 @@
+45 1001
+Oram, David
+University of East Anglia, Norwich, UK
+Autospec GC-MS analysis of bottle samples filled on C-130
+ACSOE, OXICOA, Flight A577
+1 1
+1997 09 18 1998 07 01
+0
+Fill start time (Fractional Julian Day)
+25
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+99999 999 999 999 999 999 999 999 999 999 999 999 999 999 999 999 999 999 999 999 999 999 999 999 999
+Altitude (ft)
+Purge start time (Fraction of day)
+Fill end time (Fraction of day)
+Pressure (mb)
+CFC-12 (ppt)
+CFC-11 (ppt)
+CFC-113 (ppt)
+HCFC-22 (ppt)
+HCFC-142b (ppt)
+HCFC-141b (ppt)
+CH3Cl (ppt)
+CH2Cl2 (ppt)
+CHCl3 (ppt)
+CH3CCl3 (ppt)
+CCl4 (ppt)
+C2HCl3 (ppt)
+C2Cl4 (ppt)
+CH3Br (ppt)
+CH2Br2 (ppt, estimated)
+CHBr3 (ppt, estimated)
+CH2ClBr (ppt, estimated)
+CHCl2Br (ppt, estimated)
+CHClBr2 (ppt, estimated)
+CH2BrCH2Br (ppt, estimated)
+CH3I (ppt, estimated)
+1
+CH2Br2, CHBr3, CH2ClBr, CHCl2Br, CHClBr2, CH2BrCH2Br and CH3I are only estimated concentrations
+5
+THIS-FILE-NAME=he970918.ha2
+THIS-FILE-VERSION=1
+THIS-FILE-ENDS=1997 09 18
+E-MAIL-CONTACT=d.e.oram@uea.ac.uk
+Fillstart  Altitude   Purgestart  Fillend  Pressure  CFC-12  CFC-11  CFC-113 HCFC-22 HCFC-142  HCFC-141   CH3Cl   CH2Cl2  CHCl3   CH3CCl3 CCl4    C2HCl3  C2Cl4   CH3Br   CH2Br2  CHBr3   CH2ClBr CHCl2Br CHClBr2 CH2BrCH2   CH3I
+261.5812615 20000    0.57765 0.58266     469   543.0   268.6   84.4    132.9   12.56   9.87    566.0   19.47   5.61    80.4    107.0   1.78    2.15    13.53   0.71    0.70    0.15    0.30    0.11    0.053   0.17
+261.5916666 14000    0.58843 0.59259     598   540.7   267.8   85.5    146.1   13.30   12.97   521.1   35.46   7.93    81.8    999     3.27    7.80    13.01   0.63    999     0.19    999     999     0.061   0.19
+261.5967592 14000    0.59352 0.59792     598   547.5   272.5   86.1    139.5   12.48   11.01   555.4   29.21   6.73    81.2    101.3   2.51    4.57    12.79   0.68    0.47    0.17    0.34    0.11    0.068   0.15
+261.6087963 7000     0.60278 0.60922     785   544.0   266.5   84.6    141.9   12.55   11.69   523.0   31.68   7.48    82.5    105.0   3.31    6.01    14.92   0.42    0.68    0.18    0.35    0.11    0.065   1.52
+261.6118055 7000     0.61042 0.61238     784   542.7   273.1   85.5    142.4   12.16   12.04   493.1   30.30   7.41    81.4    105.8   3.40    5.91    13.25   0.72    0.75    0.16    0.36    0.12    0.068   1.98
+261.625868  1000     0.62251 0.62627     979   539.2   270.3   84.3    139.8   11.75   11.18   487.5   26.14   7.59    81.3    105.4   2.53    4.21    12.56   0.75    1.00    0.17    0.35    0.13    0.059   1.65
+261.6306134 1000     0.62778 0.63096     979   544.8   273.6   85.1    142.6   11.62   11.20   493.1   27.11   7.73    80.6    105.1   2.35    3.96    13.75   0.44    0.98    0.17    0.35    0.12    0.056   2.10

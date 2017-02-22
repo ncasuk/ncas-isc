@@ -1,0 +1,63 @@
+51 1001
+Rachel Burgess
+University of East Anglia, Norwich, UK
+GC-FID, NMHC, Jetstream
+ACSOE-EASE96(OXICOA)
+1 1
+1996 07 19    1997 02 05
+0
+Time in fractional day
+29
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999
+ALTITUDE START FILL
+ALTITUDE END FILL
+LATITUDE START FILL
+LONGITUDE START FILL
+LATITUDE END FILL
+LONGITUDE END FILL
+ethane
+propane
+unknown1
+propene
+i-butane
+n-butane
+acetylene
+trans-2-butene
+1-butene
+i-butene
+c-2-butene
+cyclopentane
+i-pentane
+n-pentane
+1-pentene
+n-hexane
+isoprene
+n-heptane
+benzene
+toluene
+ethyl benzene
+m-+p-xylene
+o-xylene
+       4
+ALTITUDE IN FEET (FURTHER DETAILS FROM PAUL LIGHTMAN)
+LAT. AND LONG. IN DEGREES (NORTH AND WEST)
+ALL CONCENTRATIONS IN PPT
+WHERE NO PEAK DETECTED HAVE USED ZERO RATHER THAN MISSING DATA MARKER VARIABLE
+       4
+THIS-FILE-NAME=JS960719.HC2
+THIS-FILE-VERSION=2
+THIS-FILE-ENDS=1996 07 19
+E-MAIL-CONTACT=r.a.burgess@uea.ac.uk
+0.465972    9000    9000     53.3025    9.1669444    53.3025   9.2691667     565      15     132      21       0       0      27       0       0      74       0       0      12       2       0       0       0      10       5      35      13      73       9
+0.474306    9000    9000   53.319167    9.8513889  53.319167      9.9675     503      18     118      25       3       6      26       0       3     105       0      10       2       3       0       3       0      10      18      29      10      58       7
+0.481250    9000    9000   53.318889    10.501667  53.318889   10.617222     523      17     134      19       0       5      21       0       0      63       0       9       0       4       0       2       0       9      13      32      11      69       9
+0.493750     500     500   53.334722    10.684722  53.334167   10.618333    1010     390     128      29      98     188     217       0       0      63       0       0      84      51       0      13       0      13      97      58      14      49       6
+0.503472     500     500     53.3175        9.935      99999       99999    1029     375     131      28      97     175     225       0       0      58       0      11      74      39       0      13       9      14     100      66      12      45       5
+0.511111     560     500   53.302222          9.3  53.302222   9.2019444     968     299     119      33     114     219     214       2       3      58       0      12      91      61       9      13     178      25      88      59      12      43       7
+0.519444    3800    3840     53.3025          9.1  53.316667   10.033333     912     102     124      21      36      68     192       0       0      54       0      10      44      15       0       5       0      13      54      41      10      51       9
+0.528472    3820    3800   53.333333    9.8508333  53.333333        9.95     992     169     138      24      42      80     251       0       0      52       0       9      36      16       0       4       0      14      70      37      10      53       9
+0.536111    3800    3840   53.333333    10.501111  53.319167   10.584722     631      32     124      28       3       8      43       3       6      61       2       8       2       3       3       2       0       9      10      24       7      46       4
+0.543056    2040    2040   53.334444    10.716944  53.333611   10.618056     786     180     121      24      54     121     129       2       3      43       0      10      49      35       0       9       0      12      55      30      10      45       5
+0.552083    2060    2000    53.17778    9.9338889   53.17778        9.85    1013     228     128      26      67     132     192       0       3      53       0       0      56      37       0      10       0      13      71      45      11      52       7
+0.559722    2000    2040   53.316944    9.2688889    53.3025         9.2     980     254     137      25      94     189     191       3       4      56       0      10      74      49       3      11      12      11      77      64      13      55       5

@@ -1,0 +1,47 @@
+27 1001
+McArdle, Nicola and Thompson, Adrian
+University of East Anglia, Norwich, UK
+Aerosol Major Ion Concentrations and sulphur isotope measurements , HiVolume Aerosol Sampler, RRS Challenger, Eastern Atlantic
+ACSOE MAGE
+1 1
+1997 05 12 1999 12 07
+0
+Midpoint of Sampling Interval in Decimal Julian Day
+7
+1 1 1 1 1 1 1 
+9999 9999 9999 9999 9999 9999 9999 
+Start of Sampling Interval in Decimal Julian Day
+End of Sampling Interval in Decimal Julian Day
+chloride  (nmol m-3)
+nitrate  (nmol m-3)
+sulphate  (nmol m-3)       
+sodium   (nmol m-3)       
+d34S ( ‰)       
+1       
+Analysis for major anions by ion chromatography, sodium by ICP-AES and sulphur isotopes by stable isotope mass spectrometry       
+5       
+THIS-FILE-NAME=ca970512.hv2       
+THIS-FILE-VERSION=1       
+THIS-FILE-ENDS=1997 05 30       
+E-MAIL-CONTACT=n.mcardle@uea.ac.uk       
+Midpoint Start End Cl nmol/m3 NO3 nmol/m3 SO4 nmol/m3 Na nmol/m3 d34S ‰
+133.14	132.805	133.475	10623	36.63	424	8551	16.4
+133.66	133.478	133.841	586.7	7.62	33.9	550	16.1
+135.028	134.681	135.375	15094	31.53	576.2	12013	16.6
+136.604	136.349	136.858	954.1	173.5	107.7	1001	6.75
+137.671	137.419	137.922	729.8	345.7	205.6	814.7	6.05
+138.131	137.927	138.335	1938	171.1	258.3	1935	6.1
+139.093	138.843	139.344	5538	68.88	206.5	4372	9.95
+140.094	139.853	140.335	665	69.61	72.56	742.4	8.46
+142.718	142.47	142.967	186.8	119	69.87	150.9	7.8
+143.113	142.967	143.258	192.8	167	73.93	151	6.69
+143.674	143.422	143.927	119.4	158.3	111.6	118	5.83
+144.135	143.928	144.343	151.4	189.2	75.91	145.1	7.29
+145.097	144.849	145.344	69.74	152.3	75.6	67.57	6.48
+145.597	145.346	145.847	94.29	147.3	80.49	61.85	6.38
+146.097	145.848	146.346	96.72	115.4	107.6	126.3	6.21
+147.09	146.841	147.34	347.7	36.88	65.41	404.8	10.5
+148.205	147.963	148.447	1171	84.85	81.58	1036	10.6
+149.092	148.838	149.347	364.6	173.4	82.73	364.3	7.47
+150.163	149.978	150.349	214.6	258.1	87.76	238	6.74
+150.593	150.349	150.838	208.8	287	88.43	204	5.6

@@ -1,0 +1,67 @@
+26 1001
+Beverley Allan and Hugh Coe
+University of East Anglia, Norwich, UK 
+Differential Optical Absorption Spectrometer, Mace Head, Eire 
+ACSOE OXICOA EASE'96
+1 1
+1996 08 01  1999 03 31
+0
+Time in fractional Julian Day
+3
+1.0 1.0 1
+999 999 999
+CHLORINE DIOXIDE (OCLO) (pptv)
+ERROR FROM ANALYSIS (pptv)
+ERROR FLAG
+4
+Missing data markers represent poor raw data / hardware problems.   
+Detection limit for OClO is 2-5 ppt determined from the analysis.   
+Raw data not brilliant for this day - hence the error flag of 2.   
+8888 =concentrations at and below the detection limit (the detection limit has been calculated for each point and is given below)   
+5   
+THIS-FILE-NAME=mh960803.oc1   
+THIS-FILE-VERSION=2   
+THIS-FILE-ENDS=1996 08 03   
+E-MAIL-CONTACT=b.allan@uea.ac.uk   
+Jday OClO Analysis Error Error Flag
+216.4931	8888	0.91	2
+216.5	8888	0.88	2
+216.507	8888	0.87	2
+216.5139	8888	0.86	2
+216.5208	8888	0.84	2
+216.5278	8888	0.82	2
+216.5347	8888	0.83	2
+216.5417	8888	0.85	2
+216.5486	8888	0.79	2
+216.5556	8888	0.81	2
+216.5625	8888	0.84	2
+216.5695	8888	0.88	2
+216.5764	8888	0.9	2
+216.5833	8888	0.94	2
+216.5903	8888	0.98	2
+216.5972	8888	1	2
+216.6042	8888	0.99	2
+216.6111	8888	0.99	2
+216.6181	8888	1.01	2
+216.625	8888	1.01	2
+216.632	8888	1.01	2
+216.6389	8888	1.02	2
+216.6458	8888	1.04	2
+216.6528	8888	1.04	2
+216.6597	8888	1.02	2
+216.6667	8888	0.99	2
+216.6736	8888	0.97	2
+216.6806	8888	0.97	2
+216.6875	8888	0.97	2
+216.6945	8888	0.96	2
+216.7014	8888	0.95	2
+216.7083	8888	0.92	2
+216.7153	8888	0.92	2
+216.7222	8888	0.97	2
+216.7292	8888	0.94	2
+216.7361	8888	0.94	2
+216.7431	8888	0.9	2
+216.75	8888	0.91	2
+216.757	8888	0.9	2
+216.7639	8888	0.9	2
+216.7708	8888	0.84	2

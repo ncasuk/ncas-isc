@@ -1,0 +1,62 @@
+50 1001
+Rachel Burgess
+University of East Anglia, Norwich, UK
+GC-FID, NMHC, Jetstream
+ACSOE-EASE96(OXICOA)
+1 1
+1996 07 23    1997 02 03
+       0
+Time in fractional day
+      28
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999
+ALTITUDE START FILL
+ALTITUDE END FILL
+LATITUDE START FILL
+LONGITUDE START FILL
+LATITUDE END FILL
+LONGITUDE END FILL
+ethane
+propane
+propane
+unknown1
+propene
+i-butane
+n-butane
+acetylene
+trans-2-butene
+1-butene
+i-butene
+cyclopentane
+i-pent
+n-pent
+1-pentene
+n-hex
+isoprene
+n-heptane
+benzene
+toluene
+ethyl benzene
+m-+p-xylene
+       4
+ALTITUDE IN FEET (FURTHER DETAILS FROM PAUL LIGHTMAN)
+LAT. AND LONG. IN DEGREES (NORTH AND WEST)
+ALL CONCENTRATIONS IN PPT
+WHERE NO PEAK DETECTED HAVE USED ZERO RATHER THAN MISSING DATA MARKER VARIABLE
+       4
+THIS-FILE-NAME=JS960723.HC2
+THIS-FILE-VERSION=1
+THIS-FILE-ENDS=1996 07 23
+E-MAIL-CONTACT=r.a.burgess@uea.ac.uk
+ 0.34653     520   99999 53.300833 9.9019444     99999     99999     643      43      26     125      21       6      10      47       0       0      36       9       5       3       0       0      10      11      14      33       0       0
+ 0.35903    9000    9000 53.334444 9.9022222 53.285833 9.9355556     692      43      21     111      26       4       9      52       2       4      49       9       4       2       0       1       2       3      12      69       3       8
+ 0.36875    3700    3780 53.317778 9.9513889     99999     99999     715      52      25     120      22       6      18      45       2       2      34      11       5       9       0       6       0      18      11      44       0       0
+ 0.38333    5500    5540 53.300833    9.9175     99999     99999     610      28      15     126      19       3       7      45       2       2      38      10       2       3       5       0       0       3       9      59       0       0
+ 0.49375     500     500 53.302222 9.9169444   53.3525 9.9172222     651      40      19     121      19       6       9      59       0       0      26       9       5       3       0       0       0      11      14      28       0       0
+ 0.50347    9040    9000 53.384167  9.936111     99999     99999     676      47       0     119      19       3       8      44       0       0      41      10       0       0       0       0       0       0       9      25       0       0
+ 0.51458    3040    3040 53.301389 9.9188889     99999     99999     654      18       0     122      23       4       7      55       0       0      35       9       4       3       0       2       2      17      12      48       0       0
+ 0.52986    5920    6000 53.350278 9.9680556     99999     99999     620      32       0     120      20       4       7      46       2       1      35       9       0       0       0       0       0       0      10      90       0       0
+ 0.62222     500     460 53.301389  9.916667     99999     99999     652      46      20     121      24       8       8      56       0       0      25      12       5       4       0       1       8      10      15      26       0       0
+ 0.63264    9000    9000 53.368611 9.9172222     99999     99999     677      56       0     124      24       3       7      49       0       0      23      10       0       0       0       0       0       0      13      38       0       0
+ 0.64514    3000    3000 53.352222 9.9677778     99999     99999     681      45      22     122      21       4       7      60       2       2      37      10       1       1       0       0       0      17      15      46       0       0
+ 0.65972    5960    5980   53.3025 9.9177778     99999     99999     618      43       0     119      22       0       0      40       0       0      20       9       0       0       0       0       0       0      12     130       0       0

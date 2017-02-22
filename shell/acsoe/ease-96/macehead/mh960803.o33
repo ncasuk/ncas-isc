@@ -1,0 +1,67 @@
+26 1001
+Beverley Allan and Hugh Coe
+ University of East Anglia, Norwich, UK 
+ Differential Optical Absorption Spectrometer, Mace Head, Eire 
+ACSOE OXICOA EASE'96
+1 1
+1996 08 03  1997 01 29
+0
+Time in fractional Julian Day
+3
+1.0 1.0 1
+999 999 999
+OZONE (ppbv)
+ERROR FROM ANALYSIS (ppbv)
+ERROR FLAG
+4
+Missing data markers represent poor raw data / hardware problems.   
+Detection limit for O3 is 2.5 ppb determined from the analysis.   
+Ability to retrieve O3 was reduced during this campaign due to a particular problem in the O3 wavelength region.   
+Raw data not brilliant for this day - hence the error flag of 2 and the increased detection limit compared to other days.   
+5   
+THIS-FILE-NAME=mh960803.o33   
+THIS-FILE-VERSION=1   
+THIS-FILE-ENDS=1996 08 03   
+E-MAIL-CONTACT=b.allan@uea.ac.uk   
+Jday O3 Analysis Error Error Flag
+216.4952	29.58	2.98	2
+216.5021	29.83	2.91	2
+216.5091	28.45	2.87	2
+216.516	28.6	2.84	2
+216.5229	27.91	2.78	2
+216.5299	26.95	2.71	2
+216.5368	25.48	2.74	2
+216.5438	28.2	2.79	2
+216.5507	28.58	2.61	2
+216.5577	30.32	2.68	2
+216.5646	32.08	2.76	2
+216.5716	33.65	2.88	2
+216.5785	32.05	2.96	2
+216.5854	33.62	3.09	2
+216.5924	28.65	3.24	2
+216.5993	28.08	3.29	2
+216.6063	28.22	3.27	2
+216.6132	27.87	3.27	2
+216.6202	27.9	3.31	2
+216.6271	29.62	3.33	2
+216.6341	28.33	3.34	2
+216.641	28.44	3.36	2
+216.6479	29.11	3.41	2
+216.6549	29.15	3.42	2
+216.6618	29.45	3.35	2
+216.6688	29.95	3.27	2
+216.6757	31.03	3.18	2
+216.6827	29.2	3.18	2
+216.6896	29.49	3.18	2
+216.6966	30.41	3.17	2
+216.7035	28.65	3.13	2
+216.7104	31.04	3.02	2
+216.7174	28.96	3.04	2
+216.7243	27.79	3.2	2
+216.7313	28.87	3.09	2
+216.7382	33.05	3.09	2
+216.7452	32.14	2.98	2
+216.7521	32.49	3	2
+216.7591	32.99	2.95	2
+216.766	33.01	2.95	2
+216.7729	35.43	2.77	2

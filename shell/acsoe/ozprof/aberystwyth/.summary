@@ -1,0 +1,16 @@
+files:143
+smallest:1116
+biggest:91512
+youngest:916826253
+oldest:852301171
+size:5896537
+subdirs:3
+largest_dir:74
+smallest_file:/disks/blizzard1/archive/acsoe/data/ozprof/aberystwyth/98/ab981219.o3l
+biggest_file:/disks/blizzard1/archive/acsoe/data/ozprof/aberystwyth/98/ab981116.b21
+youngest_file:/disks/blizzard1/archive/acsoe/data/ozprof/aberystwyth/98/ab981220.o3l
+oldest_file:/disks/blizzard1/archive/acsoe/data/ozprof/aberystwyth/96/ab960605.b21
+corrupt:0
+users:[25059]
+groups:[26057]
+storetime:1288508456.82

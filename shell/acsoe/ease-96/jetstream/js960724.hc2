@@ -1,0 +1,59 @@
+49 1001
+Rachel Burgess
+University of East Anglia, Norwich, UK
+GC-FID, NMHC, Jetstream
+ACSOE-EASE96(OXICOA)
+1 1
+1996 07 24    1997 02 03
+0
+Time in fractional day
+27
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 99999
+ALTITUDE START FILL
+ALTITUDE END FILL
+LATITUDE START FILL
+LONGITUDE START FILL
+LATITUDE END FILL
+LONGITUDE END FILL
+ethane
+propane
+unknown1
+propene
+i-butane
+n-butane
+acetylene
+trans-2-butene
+1-butene
+i-butene
+cyclopentane
+i-pentane
+n-pentane
+n-hexane
+isoprene
+n-heptane
+benzene
+toluene
+ethyl benzene
+m-+p-xylene
+o-xylene
+       4
+ALTITUDE IN FEET (FURTHER DETAILS FROM PAUL LIGHTMAN)
+LAT. AND LONG. IN DEGREES (NORTH AND WEST)
+ALL CONCENTRATIONS IN PPT
+WHERE NO PEAK DETECTED HAVE USED ZERO RATHER THAN MISSING DATA MARKER VARIABLE
+       4
+THIS-FILE-NAME=JS960724.HC2
+THIS-FILE-VERSION=1
+THIS-FILE-ENDS=1996 07 24
+E-MAIL-CONTACT=r.a.burgess@uea.ac.uk
+0.427083    8960    8980 53.467222 9.4336111 53.419167 9.6177778     719      47     132      14       0       7      58       0       0      34       0       0       0       0       0       0      12      17       0       0       0
+0.451389     500     460    53.235 10.535556     99999     99999     758      70     133      20       7       8      62       0       0      34       9       3       3       0       0       0      16      33       0       0       0
+0.459722     500     500 53.352222 9.9836111 53.335556   10.0675     758      82     133      17       9      14      65       0       0      30       0       7       5       2      17       0      18      26       0       0       0
+0.463194     500   99999 53.300278 10.267778     99999     99999     778      85     128      23       7      10      63       0       0      44       8       3       3       0       0       3      18      27       0       0       0
+0.470833    3600   99999 53.218889 10.583611     99999     99999     730      62     118      15       6      53       0       0       0      36       0       0       0       0       0       0      13      19       0       0       0
+0.476389    3600    3580 53.335833 10.018333   53.3825 9.8852778     723      49     132      17       6       8      59       0       0      32       9       2       2       0       5       0       2      22       0       0       0
+0.481944    3560    3580   53.4525 9.4513889 53.484167 9.3341667     739      53     136      22       6      10      61       0       0      48      10       3       4       0       6       2      16      53       0       0       0
+0.490278    1960    2000 53.374167 9.9186111    53.335   10.0525     773      87     130      29      10      20      64       4       3      86      12      10       8       5      29      13      19      97      41      40      14
+0.493750    1980   99999 53.298134 10.268889 53.268056 10.384722     728      67     133      21       5       7      59       0       0      38       9       2       0       0       0       0      15      19       0       0       0
+0.497222    2000    2040 53.218611 10.585833     99999     99999     681      68     111      22       6       7      55       0       0      33       7       0       0       0       0       0      18      36       0       0       0

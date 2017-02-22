@@ -1,0 +1,58 @@
+25 1001
+Beverley Allan and Hugh Coe
+University of East Anglia, Norwich, UK 
+Differential Optical Absorption Spectrometer, Mace Head, Eire 
+ACSOE OXICOA EASE'96
+1 1
+1996 07 31  1997 01 29
+0
+Time in fractional Julian Day
+3
+1.0 1.0 1
+999 999 999
+BROMINE OXIDE (pptv)
+ERROR FROM ANALYSIS (pptv)
+ERROR FLAG
+3
+Missing data markers represent poor raw data / hardware problems.   
+Detection limit for BrO is apprx 2-5 ppt determined from the analysis.   
+8888 =concentrations at and below the detection limit (the detection limit has been calculated for each point and is given below)   
+5   
+THIS-FILE-NAME=mh960731.bm1   
+THIS-FILE-VERSION=2   
+THIS-FILE-ENDS=1996 07 31   
+E-MAIL-CONTACT=b.allan@uea.ac.uk   
+Jday BrO Analysis Error Error Flag
+213.7736	8888	0.67	1
+213.7806	8888	0.68	1
+213.7875	8888	0.68	1
+213.7945	8888	0.67	1
+213.8014	8888	0.66	1
+213.8084	8888	0.66	1
+213.8153	8888	0.65	1
+213.8223	8888	0.67	1
+213.8292	8888	0.69	1
+213.8361	8888	0.68	1
+213.8431	8888	0.7	1
+213.85	8888	0.7	1
+213.857	8888	0.7	1
+213.8639	8888	0.71	1
+213.8709	8888	0.7	1
+213.8778	8888	0.7	1
+213.8848	8888	0.72	1
+213.8917	8888	0.72	1
+213.8986	8888	0.74	1
+213.9056	8888	0.74	1
+213.9125	8888	0.75	1
+213.9195	999	999	3
+213.9264	8888	0.73	1
+213.9334	8888	0.74	1
+213.9403	8888	0.74	1
+213.9473	8888	0.74	1
+213.9542	999	999	3
+213.9611	8888	0.77	1
+213.9681	8888	0.77	1
+213.975	8888	0.78	1
+213.982	8888	0.78	1
+213.9889	8888	0.78	1
+213.9959	8888	0.8	1

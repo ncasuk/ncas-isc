@@ -1,0 +1,67 @@
+26 1001
+Beverley Allan and Hugh Coe
+ University of East Anglia, Norwich, UK 
+ Differential Optical Absorption Spectrometer, Mace Head, Eire 
+ACSOE OXICOA EASE'96
+1 1
+1996 08 03  1997 01 29
+0
+Time in fractional Julian Day
+3
+1.0 1.0 1
+999 999 999
+NITROGEN DIOXIDE (pptv)
+ERROR FROM ANALYSIS (pptv)
+ERROR FLAG
+4
+Missing data markers represent poor raw data / hardware problems.   
+Detection limit for NO2 is 200 ppt determined from the analysis.   
+Raw data not brilliant for this day - hence the error flag of 2 and the increased detection limit compared to other days.   
+Many data points have appeared negative for this day but most lie within the detection limits and error of the analysis.    
+5   
+THIS-FILE-NAME=mh960803.nx4   
+THIS-FILE-VERSION=1   
+THIS-FILE-ENDS=1996 08 03   
+E-MAIL-CONTACT=b.allan@uea.ac.uk   
+Jday NO2 Analysis Error Error Flag
+216.4952	-179.93	161.44	2
+216.5021	-63.25	157.41	2
+216.5091	-161.76	155.35	2
+216.516	-237.61	153.61	2
+216.5229	89.05	150.31	2
+216.5299	-272.28	146.99	2
+216.5368	-254.57	148.51	2
+216.5438	-191.17	150.86	2
+216.5507	-196.26	141.52	2
+216.5577	-176.53	144.9	2
+216.5646	-91.21	149.19	2
+216.5716	-18.69	156.19	2
+216.5785	-29.16	160.39	2
+216.5854	86.3	167.53	2
+216.5924	32.59	175.34	2
+216.5993	-7.71	178.37	2
+216.6063	28.27	177.07	2
+216.6132	77.09	176.95	2
+216.6202	118.39	179.17	2
+216.6271	198.64	180.32	2
+216.6341	-61.11	180.65	2
+216.641	-175.79	182.19	2
+216.6479	-89.55	184.59	2
+216.6549	-83.25	185.36	2
+216.6618	-132.25	181.46	2
+216.6688	-220.92	177.27	2
+216.6757	-84.49	172.41	2
+216.6827	-77.62	172.45	2
+216.6896	-140.47	172.15	2
+216.6966	-153.77	171.55	2
+216.7035	-207.6	169.25	2
+216.7104	-155.72	163.42	2
+216.7174	-213.58	164.4	2
+216.7243	-249.51	173.46	2
+216.7313	-218.9	167.34	2
+216.7382	-191.08	167.07	2
+216.7452	-158.93	161.24	2
+216.7521	-69.45	162.41	2
+216.7591	-154.96	159.54	2
+216.766	10.02	159.58	2
+216.7729	-127.32	150.22	2

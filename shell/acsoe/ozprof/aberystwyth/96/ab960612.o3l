@@ -1,0 +1,92 @@
+33  2110
+VAUGHAN, Geraint
+University of Wales, ABERYSTWYTH, U.K.
+Tropospheric Ozone DIAL System
+TOASTE-C
+1  1
+1996 06 12  1996 11 11
+0.0  300
+altitude above sea level (km)
+GMT decimal hour midway through the measurement
+2
+1e11  1.0
+999.99  999.99
+ozone number density (#/cc)
+ozone uncertainty (%)
+9
+1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0
+999 9999 99 99 999.99 999.99 9999.99 9.99 9999999
+number of altitudes reported in profile
+year of measurement
+month of measurement
+day of measurement
+station latitude (north is positive)
+station longitude (east is positive)
+station altitude (m)
+measurement duration (hours)
+number of laser shots
+0
+4
+THIS-FILE-NAME=ab960612.o3l
+THIS-FILE-VERSION=1
+THIS-FILE-ENDS=1996 06 13
+E-MAIL-CONTACT=gxv@aber.ac.uk
+22.51    13   1996   06   12   52.4   -4.1   50.0   0.50    27000
+    5.45      9.81      1.5
+    5.75      9.10      1.9
+    6.05      8.40      2.3
+    6.35      8.54      2.6
+    6.65      9.35      2.7
+    6.95      9.96      2.8
+    7.25      9.89      3.2
+    7.55      8.69      4.1
+    7.85      7.28      5.4
+    8.15      6.05      7.2
+    8.45      5.07      9.4
+    8.75      5.23     10.0
+    9.05      4.79     11.9
+22.90    11   1996   06   12   52.4   -4.1   50.0   0.27    14400
+    5.45      9.72      2.3
+    5.75      8.94      2.8
+    6.05      8.49      3.3
+    6.35      8.96      3.6
+    6.65      9.46      3.8
+    6.95      9.93      4.1
+    7.25      9.29      5.0
+    7.55      7.58      6.9
+    7.85      7.13      8.1
+    8.15      7.41      8.6
+    8.45      6.15     11.4
+15.58    16   1996   06   13   52.4   -4.1   50.0   0.50    27000
+    5.45      8.64      1.9
+    5.75      8.74      2.2
+    6.05      9.09      2.3
+    6.35      9.02      2.7
+    6.65      8.26      3.3
+    6.95      7.42      4.1
+    7.25      6.65      5.0
+    7.55      6.62      5.5
+    7.85      7.44      5.4
+    8.15      8.70      5.0
+    8.45      9.81      4.9
+    8.75      8.73      5.9
+    9.05      8.38      6.7
+    9.35      9.48      6.4
+    9.65      8.90      7.3
+    9.95      7.78      8.8
+16.01    15   1996   06   13   52.4   -4.1   50.0   0.37    19800
+    5.45      8.38      2.3
+    5.75      9.30      2.3
+    6.05      9.86      2.5
+    6.35      9.30      3.0
+    6.65      8.24      3.8
+    6.95      7.82      4.5
+    7.25      7.67      5.1
+    7.55      7.59      5.7
+    7.85      8.32      5.7
+    8.15      8.96      5.8
+    8.45      8.34      6.8
+    8.75      8.22      7.5
+    9.05      9.83      6.8
+    9.35     10.37      7.0
+    9.65      8.16      9.6

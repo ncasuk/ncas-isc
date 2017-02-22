@@ -1,0 +1,39 @@
+              30    1001
+Cape, JN
+Institute of Terrestrial Ecology, Bush Estate, Penicuik EH26 0QB, UK
+Passive diffusion tubes at HILLCLOUD sites
+HILLCLOUD ACE-2 pre-campaign
+               1       1
+            1996       6      23    1996                 12      17
+               0
+Site name
+               5
+               1       1       1       1                  1
+             999     999     999     999                999
+Jdayout
+Jdayin
+NO2 (ppb)
+NO2sd (ppb)
+NO2 error code
+               6
+NOTE: these data are of qualitative use ONLY. Values are means and standard deviations of 6 replicate tubes
+Values have all been corrcted for field blanks.
+NO2 data probably record NOx
+Samples were exposed for approximately 380 hours, given by OUT and IN times
+Where there is more than one sample set per site, racks of 6 were exposed in different locations
+For details of site locations contact J N Cape
+               5
+THIS-FILE-NAME=hd960623.nxa
+THIS-FILE-VERSION=1
+THIS-FILE-ENDS=1996 07 10
+E-MAIL-CONTACT=j.cape@ite.ac.uk
+Site            Jdayout Jdayin  NO2     sd                 error code
+Hidalgo0           177.7   191.5    -0.3                0.4       0
+Hidalgo1           177.7   191.5     0.1                0.4       0
+Taganana0          174.7   191.7     0.2                0.2       0
+Taganana1          176.6   191.7     0.2                0.4       0
+Tagananamast       176.6   191.7     0.1                0.4       0
+Tagananatunnel     176.7   191.7     0.5                0.4       0
+ElBailaderowindo   176.6   191.6     0.4                0.2       0
+ElBailaderoroof    176.6   191.6     0.2                0.3       0
+Paiba              174.8   191.7     0.1                0.2       0

@@ -1,0 +1,16 @@
+files:10
+smallest:2178
+biggest:616094
+youngest:924688513
+oldest:882282864
+size:3985177
+subdirs:0
+largest_dir:10
+smallest_file:/disks/blizzard1/archive/acsoe/data/eae-97/jetstream/js970522.ha5
+biggest_file:/disks/blizzard1/archive/acsoe/data/eae-97/jetstream/js970523.nx7
+youngest_file:/disks/blizzard1/archive/acsoe/data/eae-97/jetstream/js970523.jn3
+oldest_file:/disks/blizzard1/archive/acsoe/data/eae-97/jetstream/js970522.ha5
+corrupt:0
+users:[25059]
+groups:[26057]
+storetime:1288508426.69
