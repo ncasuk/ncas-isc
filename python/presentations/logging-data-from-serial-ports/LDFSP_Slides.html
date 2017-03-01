@@ -755,12 +755,11 @@ plt.savefig(<span class="string"><span class="delimiter">'</span><span class="co
 	<p>It is based on python. Homepage: <a class="external" href="http://www.cistools.net/">http://www.cistools.net/</a></p>
 
 
-<pre><code>cis plot temp:sensor_data.nc --xaxis time --yaxis temp --title "Papouch Thermometer Data, 2017-02-22, UoL PRD" --xstep "0.010416"  --output sensor_data_sample.svg@</code></pre>
+<pre><code>cis plot temp:sensor_data.nc --xaxis time --yaxis temp \ 
+    --title "Papouch Thermometer Data, 2017-02-22, UoL PRD" --xstep "0.010416"  \ 
+    --output sensor_data_sample.svg</code></pre>
 
-	<p style="text-align:center;"><img src="sensor_data_sample.svg" alt="" /></p>
-
-
-	<p>CIS can output as SVG, so it can be scaled without looking rubbish.</p>
+	<p class="full"><img src="sensor_data_sample.svg" alt="" /></p>
 
 
 	<a name="Further-exercises"></a>
