@@ -1,0 +1,775 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>LDFSP Slides</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<style>
+body { font:80% Verdana,Tahoma,Arial,sans-serif; }
+h1, h2, h3, h4 {  font-family: "Trebuchet MS",Georgia,"Times New Roman",serif; }
+ul.toc { padding: 4px; margin-left: 0; }
+ul.toc li { list-style-type:none; }
+ul.toc li.heading2 { margin-left: 1em; }
+ul.toc li.heading3 { margin-left: 2em; }
+a.wiki-anchor { display: none; margin-left: 6px; text-decoration: none; }
+a.wiki-anchor:hover { color: #aaa !important; text-decoration: none; }
+h1:hover a.wiki-anchor, h2:hover a.wiki-anchor, h3:hover a.wiki-anchor { display: inline; color: #ddd; }
+</style>
+</head>
+<body>
+<a name="Data-Acquisition-from-Serial-Ports"></a>
+<h1  id="title">Data Acquisition from Serial Ports<a href="#Data-Acquisition-from-Serial-Ports" class="wiki-anchor">&para;</a></h1>
+
+
+	<a name="With-Pythons-pyserial-module"></a>
+<h3  style="text-align:center;">With Python's pyserial module<a href="#With-Pythons-pyserial-module" class="wiki-anchor">&para;</a></h3>
+
+
+	<a name="Dan-Walker"></a>
+<h3  style="text-align:center;">Dan Walker<a href="#Dan-Walker" class="wiki-anchor">&para;</a></h3>
+
+
+	<a name="Serial-Ports"></a>
+<h1 >Serial Ports<a href="#Serial-Ports" class="wiki-anchor">&para;</a></h1>
+
+
+	<a name="What-is-a-serial-port"></a>
+<h3 >What is a serial port?<a href="#What-is-a-serial-port" class="wiki-anchor">&para;</a></h3>
+
+
+<blockquote>
+
+	<p>In computing, a serial port is a serial communication physical interface through which information transfers in or out one bit at a time (in contrast to a parallel port). Throughout most of the history of personal computers, data was transferred through serial ports to devices such as modems, terminals and various peripherals.</p>
+
+
+</blockquote>
+
+	<p>(ref: <a href="http://en.wikipedia.org/wiki/Serial_Port" class="external">Wikipedia</a> )</p>
+
+
+	<ul>
+	<li>Very basic form of communication. Low power, low CPU.</li>
+		<li>Protocol is called "RS-232" or "RS-485" </li>
+		<li>In common use on scientific equipment, for example NCAS's laser ceilometer.</li>
+		<li>Usually a 9-pin or 25-pin "D-Sub" port, but sometimes a variety of others</li>
+		<li>no longer common on computers. However, USB->Serial adapters are approx £15.</li>
+	</ul>
+
+
+	<a name="The-Papouch-temperature-probe"></a>
+<h1 >The Papouch temperature probe<a href="#The-Papouch-temperature-probe" class="wiki-anchor">&para;</a></h1>
+
+
+	<p style="text-align:center;"><img src="/attachments/download/630/papouchprobe.jpeg" alt="" /></p>
+
+
+	<ul>
+	<li>Very basic serial RS232 temp probe</li>
+		<li>~€20</li>
+		<li>Measures temperatures from -55°C to +125°C, 0.1°C resolution</li>
+		<li>Output is in ASCII format in °C, no conversion needed.</li>
+		<li>Port powered so needs no power source</li>
+		<li>Datasheet included in your kit</li>
+	</ul>
+
+
+	<a name="Basic-connections"></a>
+<h1 >Basic connections<a href="#Basic-connections" class="wiki-anchor">&para;</a></h1>
+
+
+	<p><a class="external" href="https://pythonhosted.org/pyserial/shortintro.html">https://pythonhosted.org/pyserial/shortintro.html</a></p>
+
+
+<pre><code class="python syntaxhl"><span class="CodeRay"><span class="comment">#!/usr/bin/python2.7</span>
+<span class="keyword">import</span> <span class="include">serial</span>
+
+ser = serial.Serial(
+   port=<span class="string"><span class="delimiter">'</span><span class="content">/dev/ttyUSB0</span><span class="delimiter">'</span></span>,
+   baudrate=<span class="integer">9600</span>,
+   bytesize=serial.EIGHTBITS,
+   parity=serial.PARITY_NONE,
+   stopbits=serial.STOPBITS_ONE
+)
+
+</span></code></pre>
+
+	<a name="Exercise"></a>
+<h2 >Exercise<a href="#Exercise" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>Figure out how to read and return data from the <code>ser</code> object.</p>
+
+
+	<p>As well as the pyserial shortintro above, you may find <a class="external" href="https://pythonhosted.org/pyserial/pyserial_api.html">https://pythonhosted.org/pyserial/pyserial_api.html</a> and the Papouch thermometer datasheet useful.</p>
+
+
+	<a name="Q1-Why-doesnt-readline-work-easily"></a>
+<h3 >Q1. Why doesn't <code>readline()</code> work (easily)?<a href="#Q1-Why-doesnt-readline-work-easily" class="wiki-anchor">&para;</a></h3>
+
+
+	<a name="Basic-connections-example"></a>
+<h1 >Basic connections example<a href="#Basic-connections-example" class="wiki-anchor">&para;</a></h1>
+
+
+	<ul>
+	<li>baudrate, bytesize, parity and stopbits are the most common parameters that need changing</li>
+		<li>They depend on the serial device in question</li>
+		<li>The Papouch thermometer 9600 baud, eight bits, no parity checking and one stopbit. ("9600 8N1") </li>
+		<li>Same as pyserial's defaults!</li>
+	</ul>
+
+
+<pre><code class="python syntaxhl"><span class="CodeRay"><span class="comment">#!/usr/bin/python2.7</span>
+
+<span class="keyword">import</span> <span class="include">serial</span>
+
+ser = serial.Serial(
+   port=<span class="string"><span class="delimiter">'</span><span class="content">/dev/ttyUSB0</span><span class="delimiter">'</span></span>,
+)
+
+<span class="keyword">print</span> ser.read(size=<span class="integer">8</span>) <span class="comment"># &quot;8&quot; here is specific to the Papouch thermometer device</span>
+
+ser.close()</span></code></pre>
+
+	<ul>
+	<li>For other parameters, see pyserial's API ( <a class="external" href="https://pythonhosted.org/pyserial/pyserial_api.html">https://pythonhosted.org/pyserial/pyserial_api.html</a>  )</li>
+	</ul>
+
+
+<pre><code>
+$ python readserial_basic.py
++025.1C
+</code></pre>
+
+	<a name="Basic-connections-example-2"></a>
+<h1 >Basic connections example - 2<a href="#Basic-connections-example-2" class="wiki-anchor">&para;</a></h1>
+
+
+	<a name="A-note-on-port-names"></a>
+<h3 >A note on port names<a href="#A-note-on-port-names" class="wiki-anchor">&para;</a></h3>
+
+
+	<ul>
+	<li><code>/dev/ttyUSB0</code> is Linux's way of referring to the first USB serial port</li>
+		<li>subsequent ones <code>/dev/ttyUSB1</code>, <code>/dev/ttyUSB2</code> and so-on </li>
+		<li>Built-in serial ports would be <code>/dev/ttyS0</code>, <code>/dev/ttyS1</code> etc. </li>
+		<li>Windows machines, the portname will be of the form <code>COM1</code>, <code>COM2</code>, <code>COM3</code>, etc. (USB ports <em>normally</em> start at <code>COM3</code>, but not always) </li>
+		<li>Mac OSX machines are different again. It will be something like <code>/dev/tty.SOMETHING</code>, e.g. <code>/dev/tty.PL2303-xxx</code></li>
+		<li>You may need to experiment to determine which the USB converter has attached to.</li>
+		<li>More on this later</li>
+	</ul>
+
+
+	<a name="Why-serreadsize8-"></a>
+<h3 >Why <code>ser.read(size=8)</code> ?<a href="#Why-serreadsize8-" class="wiki-anchor">&para;</a></h3>
+
+
+	<p>If you refer to the <a href="http://www.papouch.com/en/shop/product/tm-rs232-thermometer/tm_en.pdf" class="external">Papouch thermometer datasheet</a> 's "Communication Protocol" section, you will see:</p>
+
+
+<pre>&lt;sign&gt;&lt;3 characters – integer °C&gt;
+&lt;decimal point&gt;&lt;1 character – tenths of °C&gt;
+&lt;C&gt;&lt;Enter&gt;</pre>
+
+	<p>as a description of the output. In ASCII coding, each character is one byte so each temperature from the thermometer is eight bytes.</p>
+
+
+	<a name="Time-and-Date"></a>
+<h1 >Time and Date<a href="#Time-and-Date" class="wiki-anchor">&para;</a></h1>
+
+
+	<p>For the data to be useful you need to add a date and time reading. You can use the module <code>datetime</code> ( <a class="external" href="http://docs.python.org/2/library/datetime.html">http://docs.python.org/2/library/datetime.html</a> )</p>
+
+
+	<a name="Exercise-2"></a>
+<h2 >Exercise<a href="#Exercise-2" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>Add date and time to your output.</p>
+
+
+	<a name="Q1-What-time-format-should-you-use-Why"></a>
+<h3 >Q1. What time format should you use? Why?<a href="#Q1-What-time-format-should-you-use-Why" class="wiki-anchor">&para;</a></h3>
+
+
+	<a name="Q2-Which-timezone"></a>
+<h3 >Q2. Which timezone?<a href="#Q2-Which-timezone" class="wiki-anchor">&para;</a></h3>
+
+
+	<a name="Q3-Are-you-sure-the-datetime-call-and-the-reading-are-at-the-same-time-within-reason"></a>
+<h3 >Q3. Are you sure the datetime call and the reading are at the same time? (within reason)<a href="#Q3-Are-you-sure-the-datetime-call-and-the-reading-are-at-the-same-time-within-reason" class="wiki-anchor">&para;</a></h3>
+
+
+	<a name="Time-and-Date-example"></a>
+<h1 >Time and Date example<a href="#Time-and-Date-example" class="wiki-anchor">&para;</a></h1>
+
+
+<pre><code class="python syntaxhl"><span class="CodeRay"><span class="comment">#!/usr/bin/python2.7</span>
+
+<span class="keyword">from</span> <span class="include">datetime</span> <span class="keyword">import</span> <span class="include">datetime</span>
+<span class="keyword">import</span> <span class="include">serial</span>
+
+ser = serial.Serial(
+   port=<span class="string"><span class="delimiter">'</span><span class="content">/dev/ttyUSB0</span><span class="delimiter">'</span></span>,
+   baudrate=<span class="integer">9600</span>,
+)
+
+<span class="keyword">print</span> datetime.utcnow().isoformat(), ser.read(size=<span class="integer">8</span>) 
+
+ser.close()</span></code></pre>
+
+	<p><code>datetime.utcnow().isoformat()</code> is, as you might expect, a command to return the current <abbr title="Coordinated Universal Time">UTC</abbr> in <abbr title="International Standards Organisation">ISO</abbr> format, e.g.:</p>
+
+
+	<p><code>2014-03-06T11:55:43.852953 +025.3C</code></p>
+
+
+<pre><code class="python syntaxhl"><span class="CodeRay"><span class="keyword">print</span> datetime.utcnow().isoformat(), ser.read(size=<span class="integer">8</span>) </span></code></pre>
+
+	<ul>
+	<li> <code>datetime.utcnow()</code> call can return in advance of the <code>ser.read()</code> call</li>
+		<li>timestamp and the temperature should be as close as possible</li>
+		<li>store the data in a variable and output the variable and the time at the same time</li>
+	</ul>
+
+
+<pre><code class="python syntaxhl"><span class="CodeRay">datastring = ser.read(size=<span class="integer">8</span>)
+<span class="keyword">print</span> datetime.utcnow().isoformat(), datastring</span></code></pre>
+
+	<a name="Date-and-Time-formats"></a>
+<h1 >Date and Time formats<a href="#Date-and-Time-formats" class="wiki-anchor">&para;</a></h1>
+
+
+	<ul>
+	<li>Timezone should be in UTC or TAI in the majority of cases</li>
+		<li>Use an unambiguous format</li>
+		<li><code>isoformat()</code> produces a standard format by default - rarely is that a problem.</li>
+		<li><code>strftime()</code> will do any format you require (e.g. for documents intended to be read by people)</li>
+	</ul>
+
+
+<pre><code class="python syntaxhl"><span class="CodeRay">Python <span class="float">2.7</span><span class="float">.3</span> (default, Feb <span class="integer">21</span> <span class="integer">2014</span>, <span class="integer">13</span>:<span class="integer">11</span>:<span class="integer">38</span>) 
+[GCC <span class="float">4.4</span><span class="float">.7</span> <span class="integer">20120313</span> (Red Hat <span class="float">4.4</span><span class="float">.7</span>-<span class="integer">3</span>)] on linux2
+Type <span class="string"><span class="delimiter">&quot;</span><span class="content">help</span><span class="delimiter">&quot;</span></span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">copyright</span><span class="delimiter">&quot;</span></span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">credits</span><span class="delimiter">&quot;</span></span> <span class="keyword">or</span> <span class="string"><span class="delimiter">&quot;</span><span class="content">license</span><span class="delimiter">&quot;</span></span> <span class="keyword">for</span> more information.
+&gt;&gt;&gt; <span class="keyword">from</span> <span class="include">datetime</span> <span class="keyword">import</span> <span class="include">datetime</span>
+&gt;&gt;&gt; dt = datetime.now()
+&gt;&gt;&gt; <span class="keyword">print</span> dt
+<span class="integer">2016</span>-<span class="octal">04</span>-<span class="integer">12</span> <span class="integer">17</span>:<span class="integer">32</span>:<span class="float">38.806353</span>
+&gt;&gt;&gt; dt
+datetime.datetime(<span class="integer">2016</span>, <span class="integer">4</span>, <span class="integer">12</span>, <span class="integer">17</span>, <span class="integer">32</span>, <span class="integer">38</span>, <span class="integer">806353</span>)
+&gt;&gt;&gt; <span class="keyword">print</span> dt.strftime(<span class="string"><span class="delimiter">'</span><span class="content">%Y-%m-%d %H:%M:%S</span><span class="delimiter">'</span></span>)
+<span class="integer">2016</span>-<span class="octal">04</span>-<span class="integer">12</span> <span class="integer">17</span>:<span class="integer">32</span>:<span class="integer">38</span>
+&gt;&gt;&gt; <span class="keyword">print</span> dt.strftime(<span class="string"><span class="delimiter">'</span><span class="content">%A, %B %d, %Y</span><span class="delimiter">'</span></span>)
+Tuesday, April <span class="integer">12</span>, <span class="integer">2016</span>
+
+</span></code></pre>
+
+	<a name="Continuous-logging"></a>
+<h1 >Continuous logging<a href="#Continuous-logging" class="wiki-anchor">&para;</a></h1>
+
+
+	<p>You are probably going to want your data capture code to run indefinitely, or at least more than once. You should be familiar with flow control and looping constructs from your Intro To Python.</p>
+
+
+	<a name="Exercise-3"></a>
+<h2 >Exercise<a href="#Exercise-3" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>Add a loop to your code to continuously log the reading and time.</p>
+
+
+	<a name="Q1-What-sort-of-looping-construct-are-you-using-Why"></a>
+<h3 >Q1. What sort of looping construct are you using? Why?<a href="#Q1-What-sort-of-looping-construct-are-you-using-Why" class="wiki-anchor">&para;</a></h3>
+
+
+	<a name="Q2-What-condition-causes-the-loop-to-exit"></a>
+<h3 >Q2. What condition causes the loop to exit?<a href="#Q2-What-condition-causes-the-loop-to-exit" class="wiki-anchor">&para;</a></h3>
+
+
+	<a name="Further-exercise-if-you-have-time"></a>
+<h3 >Further exercise if you have time.<a href="#Further-exercise-if-you-have-time" class="wiki-anchor">&para;</a></h3>
+
+
+	<p>Try and get the same output using <code>readline()</code> instead. Why might this be preferable for other instruments?</p>
+
+
+	<a name="Continuous-logging-example"></a>
+<h1 >Continuous logging example<a href="#Continuous-logging-example" class="wiki-anchor">&para;</a></h1>
+
+
+	<p>In most cases, you will need to log more than one data point. A basic modification is fairly simple, using a <code>while</code> loop:</p>
+
+
+<pre><code class="python syntaxhl"><span class="CodeRay"><span class="comment">#!/usr/bin/python2.7</span>
+
+<span class="keyword">from</span> <span class="include">datetime</span> <span class="keyword">import</span> <span class="include">datetime</span>
+<span class="keyword">import</span> <span class="include">serial</span>
+
+ser = serial.Serial(
+   port=<span class="string"><span class="delimiter">'</span><span class="content">/dev/ttyUSB0</span><span class="delimiter">'</span></span>,
+   baudrate=<span class="integer">9600</span>,
+)
+
+<span class="keyword">while</span> ser.isOpen():
+   datastring = ser.read(size=<span class="integer">8</span>)
+   <span class="keyword">print</span> datetime.utcnow().isoformat(), datastring
+
+ser.close()</span></code></pre>
+
+	<p>returns something like:</p>
+
+
+<pre>2014-03-06T14:20:28.147494 +023.9C
+2014-03-06T14:20:28.849280 +024.0C
+2014-03-06T14:20:38.769283 +024.0C
+2014-03-06T14:20:48.688270 +024.1C
+2014-03-06T14:20:58.608165 +024.1C
+</pre>
+
+	<a name="Continuous-logging-with-readline"></a>
+<h1 >Continuous logging with <code>readline()</code><a href="#Continuous-logging-with-readline" class="wiki-anchor">&para;</a></h1>
+
+
+	<ul>
+	<li>The example thermometer <em>always</em> returns exactly eight bytes, and so <code>ser.read(size=8)</code> is fine. </li>
+		<li>instruments do not always return fixed-length data, and instead separate the readings (or sets of readings) with a special character. </li>
+		<li>Usually <a href="http://en.wikipedia.org/wiki/Newline" class="external">newline</a>  or <a href="http://en.wikipedia.org/wiki/Carriage_return" class="external">carriage return</a> </li>
+		<li>The pyserial module provides <code>readline()</code> to handle this case.</li>
+	</ul>
+
+
+	<ul>
+	<li>worked differently prior to python v2.6</li>
+	</ul>
+
+
+<pre><code class="python syntaxhl"><span class="CodeRay"><span class="comment">#!/usr/bin/python2.7</span>
+
+<span class="keyword">from</span> <span class="include">datetime</span> <span class="keyword">import</span> <span class="include">datetime</span>
+<span class="keyword">import</span> <span class="include">serial</span>, <span class="include">io</span>
+
+ser = serial.Serial(
+   port=<span class="string"><span class="delimiter">'</span><span class="content">/dev/ttyUSB0</span><span class="delimiter">'</span></span>,
+   baudrate=<span class="integer">9600</span>,
+)
+
+sio = io.TextIOWrapper(io.BufferedRWPair(ser, ser, <span class="integer">1</span>), encoding=<span class="string"><span class="delimiter">'</span><span class="content">ascii</span><span class="delimiter">'</span></span>, newline=<span class="string"><span class="delimiter">'</span><span class="char">\r</span><span class="delimiter">'</span></span>)
+
+<span class="keyword">while</span> ser.isOpen():
+   datastring = sio.readline()
+   <span class="keyword">print</span> datetime.utcnow().isoformat(), datastring
+
+ser.close()</span></pre></code>
+
+	<a name="Outputting-to-a-file"></a>
+<h1 >Outputting to a file<a href="#Outputting-to-a-file" class="wiki-anchor">&para;</a></h1>
+
+
+	<p>Usually you will want to output the data to a file rather than the terminal, so, e.g., the data are on disk in case of a fault or similar.</p>
+
+
+	<a name="Exercise-4"></a>
+<h2 >Exercise<a href="#Exercise-4" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>Alter your code to write the data out to a file.</p>
+
+
+	<a name="Outputting-to-a-file-example"></a>
+<h1 >Outputting to a file example<a href="#Outputting-to-a-file-example" class="wiki-anchor">&para;</a></h1>
+
+
+<pre><code class="python syntaxhl"><span class="CodeRay"><span class="comment">#!/usr/bin/python</span>
+<span class="docstring"><span class="delimiter">'''</span><span class="content">This version of the readserial program demonstrates</span><span class="content">
+</span><span class="content">using python to write an output file</span><span class="delimiter">'''</span></span>
+
+<span class="keyword">from</span> <span class="include">datetime</span> <span class="keyword">import</span> <span class="include">datetime</span>
+<span class="keyword">import</span> <span class="include">serial</span>, <span class="include">io</span>
+
+outfile=<span class="string"><span class="delimiter">'</span><span class="content">/tmp/serial-temperature.tsv</span><span class="delimiter">'</span></span>
+
+ser = serial.Serial(
+   port=<span class="string"><span class="delimiter">'</span><span class="content">/dev/ttyUSB0</span><span class="delimiter">'</span></span>,
+   baudrate=<span class="integer">9600</span>,
+)
+
+sio = io.TextIOWrapper(
+   io.BufferedRWPair(ser, ser, <span class="integer">1</span>),
+   encoding=<span class="string"><span class="delimiter">'</span><span class="content">ascii</span><span class="delimiter">'</span></span>, newline=<span class="string"><span class="delimiter">'</span><span class="char">\r</span><span class="delimiter">'</span></span>
+)
+
+<span class="keyword">with</span> <span class="predefined">open</span>(outfile,<span class="string"><span class="delimiter">'</span><span class="content">a</span><span class="delimiter">'</span></span>) <span class="keyword">as</span> f: <span class="comment">#appends to existing file</span>
+   <span class="keyword">while</span> ser.isOpen():
+      datastring = sio.readline()
+      <span class="comment">#\t is tab; \n is line separator</span>
+      f.write(datetime.utcnow().isoformat() + <span class="string"><span class="delimiter">'</span><span class="char">\t</span><span class="delimiter">'</span></span> + datastring + <span class="string"><span class="delimiter">'</span><span class="char">\n</span><span class="delimiter">'</span></span>)
+      f.flush() <span class="comment">#included to force the system to write to disk</span>
+
+ser.close()</span></code></pre>
+
+	<p>(see <code>python/exercises/example_code/ldfsp.py</code> in your <code>git</code> checkout)</p>
+
+
+	<a name="Locating-your-serial-port-device"></a>
+<h1 >Locating your serial port device<a href="#Locating-your-serial-port-device" class="wiki-anchor">&para;</a></h1>
+
+
+	<ul>
+	<li>Multiple USB->serial devices on one machine may not come back in the same order on reboot</li>
+		<li>You can get multi-port USB->serial devices</li>
+		<li>On Linux, there are alternative ways of addressing the device</li>
+	</ul>
+
+
+	<a name="By-USB-ID"></a>
+<h3 >By USB ID<a href="#By-USB-ID" class="wiki-anchor">&para;</a></h3>
+
+
+<pre class="small"><code class="shell syntaxhl"><span class="CodeRay">[user01@unst ~]$ ls -F /dev/serial/by-id/*
+/dev/serial/by-id/usb-Prolific_Technology_Inc._USB-Serial_Controller_D-if00-port0@
+</span></code></pre>
+
+	<ul>
+	<li>No use if the devices have the same USB ID (e.g. if they are identical)</li>
+		<li>Even devices that look different may have the same USB id if they are the same electronically</li>
+	</ul>
+
+
+	<a name="By-Path"></a>
+<h3 >By Path<a href="#By-Path" class="wiki-anchor">&para;</a></h3>
+
+
+<pre class="small"><code class="shell syntaxhl"><span class="CodeRay">[user01@unst ~]$ ls -F /dev/serial/by-path/*
+/dev/serial/by-path/pci-0000:00:14.0-usb-0:1:1.0-port0@
+/dev/serial/by-path/pci-0000:00:14.0-usb-0:2:1.0-port0@
+</span></code></pre>
+
+	<ul>
+	<li>Identifies them by which port they're plugged in to</li>
+	</ul>
+
+
+	<a name="Finding-out-serial-connection-details"></a>
+<h1 >Finding out serial connection details<a href="#Finding-out-serial-connection-details" class="wiki-anchor">&para;</a></h1>
+
+
+	<a name="Check-the-documentation"></a>
+<h2 >Check the documentation<a href="#Check-the-documentation" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>Most instruments with serial access will have a (possibly quite short) section in the manual detailing the connection settings. Of course, your instrument might be quite old and the manual lost, in which case:</p>
+
+
+	<a name="Ask-the-manufacturer"></a>
+<h2 >Ask the manufacturer<a href="#Ask-the-manufacturer" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>With any luck, the manual will be on their website. Of course they might be out of business, or unwilling or unable to help, in which case:</p>
+
+
+	<a name="Ask-the-Internet"></a>
+<h2 >Ask the Internet!<a href="#Ask-the-Internet" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>Use a search engine of your choice</p>
+
+
+	<a name="Trial-and-error"></a>
+<h2 >Trial and error<a href="#Trial-and-error" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>As long as you get the voltage right (usually 3.3v or 5v) you <strong>probably</strong> can't damage  your instrument by trying various combinations of serial settings until something works. 9600-8N1 is usually the best place to start</p>
+
+
+	<a name="Outputting-in-NetCDF-format"></a>
+<h1 >Outputting in NetCDF format<a href="#Outputting-in-NetCDF-format" class="wiki-anchor">&para;</a></h1>
+
+
+	<p>Assuming you've got some data of the format:</p>
+
+
+<pre>
+2017-02-22T10:00:08.457120 +019.4C
+2017-02-22T10:00:18.438098 +019.4C
+2017-02-22T10:00:28.419100 +019.4C
+2017-02-22T10:00:38.400093 +019.4C
+2017-02-22T10:00:48.381103 +019.3C
+2017-02-22T10:00:58.362099 +019.3C
+2017-02-22T10:01:08.342102 +019.3C
+…
+</pre>
+
+	<p>You wouldn't really be happy with that as an archive file - if you came back to it in a few years (or someone else did, perhaps after you've moved on) there's several items of missing information.</p>
+
+
+	<a name="Converting-data-from-text-to-Python-datatypes"></a>
+<h1 >Converting data from text to Python datatypes.<a href="#Converting-data-from-text-to-Python-datatypes" class="wiki-anchor">&para;</a></h1>
+
+
+	<p>Before we write a NetCDF file, we must convert the text file to usable data. Our temperature is in a slightly weird format due to the Papouch sensor including the units, so we need functions to convert the string into a number and the time into a Python `datetime` object.</p>
+
+
+	<a name="Exercise-5"></a>
+<h2 >Exercise<a href="#Exercise-5" class="wiki-anchor">&para;</a></h2>
+
+
+	<a name="Q1-Write-a-function-to-convert-the-time-as-written-in-your-datafile-and-return-a-Python-datetime-object"></a>
+<h3 >Q1. Write a function to convert the time as written in your datafile and return a Python <code>datetime</code> object.<a href="#Q1-Write-a-function-to-convert-the-time-as-written-in-your-datafile-and-return-a-Python-datetime-object" class="wiki-anchor">&para;</a></h3>
+
+
+	<a name="Q2-Write-a-function-to-convert-the-temperature-as-written-in-your-datafile-and-return-a-float-in-Kelvin"></a>
+<h3 >Q2. Write a function to convert the temperature as written in your datafile and return a <code>float</code> in Kelvin.<a href="#Q2-Write-a-function-to-convert-the-temperature-as-written-in-your-datafile-and-return-a-float-in-Kelvin" class="wiki-anchor">&para;</a></h3>
+
+
+	<p style="text-align:center;">(T <sub>K</sub> = T <sub>C</sub> + 273.15)</p>
+
+
+	<a name="Converting-data-from-text-to-Python-datatypes-2"></a>
+<h1 >Converting data from text to Python datatypes - 2<a href="#Converting-data-from-text-to-Python-datatypes-2" class="wiki-anchor">&para;</a></h1>
+
+
+<pre><code class="python syntaxhl"><span class="CodeRay"><span class="keyword">def</span> <span class="function">convert_time</span>(tm):
+    tm = datetime.strptime(tm, <span class="string"><span class="delimiter">&quot;</span><span class="content">%Y-%m-%dT%H:%M:%S.%f</span><span class="delimiter">&quot;</span></span>)
+    <span class="keyword">return</span> tm
+
+<span class="keyword">def</span> <span class="function">convert_temp</span>(temp):
+    value = temp.strip(<span class="string"><span class="delimiter">&quot;</span><span class="content">+</span><span class="delimiter">&quot;</span></span>).strip(<span class="string"><span class="delimiter">&quot;</span><span class="content">C</span><span class="delimiter">&quot;</span></span>).lstrip(<span class="string"><span class="delimiter">&quot;</span><span class="content">0</span><span class="delimiter">&quot;</span></span>)
+    <span class="keyword">return</span> <span class="predefined">float</span>(value) + <span class="float">273.15</span>
+</span></pre></code>
+
+	<p><code>strptime</code> is the opposite of <code>strftime</code> that we used earlier.</p>
+
+
+	<a name="Reading-data-in-with-the-csv-module"></a>
+<h1 >Reading data in with the <code>csv</code> module<a href="#Reading-data-in-with-the-csv-module" class="wiki-anchor">&para;</a></h1>
+
+
+	<p>Python has a module designed for reading in text formats. It's called <code>csv</code>, although it also does tab-separated and related structured ASCII formats. We only need the base reader object here. (Other reader objects deal with more complex cases - f.ex. <code>DictReader</code>)</p>
+
+
+	<a name="httpsdocspythonorg2librarycsvhtml"></a>
+<h2 ><a class="external" href="https://docs.python.org/2/library/csv.html">https://docs.python.org/2/library/csv.html</a><a href="#httpsdocspythonorg2librarycsvhtml" class="wiki-anchor">&para;</a></h2>
+
+
+	<a name="Exercise-6"></a>
+<h2 >Exercise<a href="#Exercise-6" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>Q1. Read your datafile into Python using the <code>csv</code> module such that you end up with list object(s) containing floating-point temperature in K and timestamps as Python <code>datetime</code> objects.</p>
+
+
+	<a name="Reading-data-in-with-the-csv-module-2"></a>
+<h1 >Reading data in with the <code>csv</code> module -2<a href="#Reading-data-in-with-the-csv-module-2" class="wiki-anchor">&para;</a></h1>
+
+
+<pre><code class="python syntaxhl"><span class="CodeRay">infile=<span class="string"><span class="delimiter">'</span><span class="content">sample-serial-temperature-2h.tsv</span><span class="delimiter">'</span></span>
+outfile=<span class="string"><span class="delimiter">'</span><span class="content">sensor-data.nc</span><span class="delimiter">'</span></span>
+<span class="keyword">from</span> <span class="include">csv</span> <span class="keyword">import</span> <span class="include">reader</span>
+
+<span class="comment"># Parse the data into python lists</span>
+times = []
+temps = []
+
+<span class="comment">#open infile and read data into lists</span>
+<span class="keyword">with</span> <span class="predefined">open</span>(infile, <span class="string"><span class="delimiter">'</span><span class="content">rb</span><span class="delimiter">'</span></span>) <span class="keyword">as</span> tsvfile:
+   tsvreader = reader(tsvfile, delimiter=<span class="string"><span class="delimiter">'</span><span class="char">\t</span><span class="delimiter">'</span></span>)
+   <span class="keyword">for</span> row <span class="keyword">in</span> tsvreader:
+      times.append(convert_time(row[<span class="integer">0</span>]))
+      temps.append(convert_temp(row[<span class="integer">1</span>]))
+</span></pre></code>
+
+	<p>The call to <code>reader</code> returns an iterator so we can iterate over it with a <code>for</code> loop.</p>
+
+
+	<a name="Writing-NetCDF-files-with-Python"></a>
+<h1 >Writing NetCDF files with Python<a href="#Writing-NetCDF-files-with-Python" class="wiki-anchor">&para;</a></h1>
+
+
+	<p>We can write the data from the serial logging exercise to a new NetCDF file.</p>
+
+
+	<ul>
+	<li>Create a <code>Dataset</code> (use the format <code>NETCDF4_CLASSIC</code>)</li>
+		<li>Convert your time series to a suitable CF-compliant series</li>
+		<li>Create a suitable <code>Dimension</code> for your time series</li>
+		<li>Create <code>Variable</code> objects for Temp and Time using appropriate units etc.</li>
+		<li>Assign appropriate metadata to the Temp <code>Variable</code> and and the <code>Dataset</code></li>
+		<li>Add your time series and temp values to the <code>Dataset</code></li>
+		<li>Close and write your <code>Dataset</code>. Test that it parses correctly eith <code>ncdump</code></li>
+	</ul>
+
+
+	<a name="Time-series"></a>
+<h1 >Time series<a href="#Time-series" class="wiki-anchor">&para;</a></h1>
+
+
+	<p>NetCDF using CF conventions stores times as an offset from a base time rather than an absolute time, so we first subtract <code>base_time</code>, and then convert the resulting <code>timedelta</code> object to an offset in seconds.</p>
+
+
+<pre><code class="python syntaxhl"><span class="CodeRay"><span class="comment"># Set reference time and convert datetime values to offset values from reference time</span>
+<span class="comment">#reference time is the first time in the input data</span>
+base_time = times[<span class="integer">0</span>]
+time_values = []
+
+<span class="keyword">for</span> t <span class="keyword">in</span> times:
+    value = t - base_time
+    ts = value.total_seconds()
+    time_values.append(ts)
+
+time_units = <span class="string"><span class="delimiter">&quot;</span><span class="content">seconds since </span><span class="delimiter">&quot;</span></span> + base_time.strftime(<span class="string"><span class="delimiter">'</span><span class="content">%Y-%m-%d %H:%M:%S</span><span class="delimiter">'</span></span>)</span></pre></code>
+
+	<a name="Create-the-NetCDF-dimensions-38-variables"></a>
+<h1 >Create the NetCDF dimensions &#38; variables<a href="#Create-the-NetCDF-dimensions-38-variables" class="wiki-anchor">&para;</a></h1>
+
+
+<pre><code class="python syntaxhl"><span class="CodeRay"><span class="comment"># Create the output file (NetCDF dataset)</span>
+dataset = Dataset(outfile, <span class="string"><span class="delimiter">&quot;</span><span class="content">w</span><span class="delimiter">&quot;</span></span>, format=<span class="string"><span class="delimiter">'</span><span class="content">NETCDF4_CLASSIC</span><span class="delimiter">'</span></span>)
+
+<span class="comment"># Create the time dimension - with unlimited length</span>
+time_dim = dataset.createDimension(<span class="string"><span class="delimiter">&quot;</span><span class="content">time</span><span class="delimiter">&quot;</span></span>, <span class="predefined-constant">None</span>)
+
+<span class="comment"># Create the time variable</span>
+time_var = dataset.createVariable(<span class="string"><span class="delimiter">&quot;</span><span class="content">time</span><span class="delimiter">&quot;</span></span>, np.float64, (<span class="string"><span class="delimiter">&quot;</span><span class="content">time</span><span class="delimiter">&quot;</span></span>,))
+time_var[:] = time_values
+time_var.units = time_units
+time_var.standard_name = <span class="string"><span class="delimiter">&quot;</span><span class="content">time</span><span class="delimiter">&quot;</span></span> 
+time_var.calendar = <span class="string"><span class="delimiter">&quot;</span><span class="content">standard</span><span class="delimiter">&quot;</span></span> 
+
+<span class="comment"># Create the temp variable</span>
+temp = dataset.createVariable(<span class="string"><span class="delimiter">&quot;</span><span class="content">temp</span><span class="delimiter">&quot;</span></span>, np.float32, (<span class="string"><span class="delimiter">&quot;</span><span class="content">time</span><span class="delimiter">&quot;</span></span>,))
+temp[:] = temps</span></code></pre>
+
+	<a name="Metadata"></a>
+<h1 >Metadata<a href="#Metadata" class="wiki-anchor">&para;</a></h1>
+
+
+	<p>One of the advantages of NetCDF is that it can contain metadata. We'll set a dictionary to contain it so we don't repeat ourselves.</p>
+
+
+<pre><code class="python syntaxhl"><span class="CodeRay"><span class="comment"># Set the variable attributes</span>
+temp.var_id = <span class="string"><span class="delimiter">&quot;</span><span class="content">temp</span><span class="delimiter">&quot;</span></span> 
+temp.long_name = <span class="string"><span class="delimiter">&quot;</span><span class="content">Temperature of sensor (K)</span><span class="delimiter">&quot;</span></span> 
+temp.units = <span class="string"><span class="delimiter">&quot;</span><span class="content">K</span><span class="delimiter">&quot;</span></span> 
+temp.stabdard_name = <span class="string"><span class="delimiter">&quot;</span><span class="content">air_temperature</span><span class="delimiter">&quot;</span></span> 
+
+<span class="comment"># Set the global attributes</span>
+dataset.Conventions = <span class="string"><span class="delimiter">&quot;</span><span class="content">CF-1.6</span><span class="delimiter">&quot;</span></span> 
+dataset.institution = <span class="string"><span class="delimiter">&quot;</span><span class="content">NCAS</span><span class="delimiter">&quot;</span></span> 
+dataset.title = <span class="string"><span class="delimiter">&quot;</span><span class="content">My first CF-netCDF file</span><span class="delimiter">&quot;</span></span> 
+dataset.history = <span class="string"><span class="delimiter">&quot;</span><span class="content">%s: Written with script: write_sensor_data_to_netcdf.py</span><span class="delimiter">&quot;</span></span> % (datetime.now().strftime(<span class="string"><span class="delimiter">&quot;</span><span class="content">%x %X</span><span class="delimiter">&quot;</span></span>))
+</span></pre></code>
+
+	<a name="Plotting-data"></a>
+<h1 >Plotting data<a href="#Plotting-data" class="wiki-anchor">&para;</a></h1>
+
+
+	<p>You can do a quick-and-dirty plot with <code>ncview</code>:</p>
+
+
+	<p><code>ncview sensor_data.nc</code></p>
+
+
+	<p style="text-align:center;"><img src="sensor-data-ncview.png" alt="" /></p>
+
+
+	<p>Obviously, this is not publication quality.</p>
+
+
+	<a name="Exercise-7"></a>
+<h3 >Exercise<a href="#Exercise-7" class="wiki-anchor">&para;</a></h3>
+
+
+	<p style="text-align:center;">Q1. Produce a line plot of temperature vs time using <code>matplotlib</code> and reading the data from your NetCDF file.</p>
+
+
+	<a name="Plotting-data-2"></a>
+<h1 >Plotting data<a href="#Plotting-data-2" class="wiki-anchor">&para;</a></h1>
+
+
+<pre><code class="python syntaxhl"><span class="CodeRay"><span class="comment">#!/usr/bin/python2.7</span>
+
+<span class="docstring"><span class="delimiter">'''</span><span class="content"> Plots a line graph from a NetCDF file </span><span class="delimiter">'''</span></span>
+
+<span class="keyword">from</span> <span class="include">netCDF4</span> <span class="keyword">import</span> <span class="include">Dataset</span>
+<span class="keyword">import</span> <span class="include">numpy</span> <span class="keyword">as</span> np
+
+datafile = <span class="string"><span class="delimiter">'</span><span class="content">sensor_data.nc</span><span class="delimiter">'</span></span>
+
+nc = Dataset(datafile, mode=<span class="string"><span class="delimiter">'</span><span class="content">r</span><span class="delimiter">'</span></span>)
+
+temps = nc.variables[<span class="string"><span class="delimiter">'</span><span class="content">temp</span><span class="delimiter">'</span></span>][:]
+times = nc.variables[<span class="string"><span class="delimiter">'</span><span class="content">time</span><span class="delimiter">'</span></span>][:]
+
+times = num2date(time[:],units=time.units, calendar=time.calendar)
+
+plt.plot_date(times,temps)
+plt.savefig(<span class="string"><span class="delimiter">'</span><span class="content">sensor_data.png</span><span class="delimiter">'</span></span>)
+</span></code></pre>
+
+	<a name="Plotting-data-with-labels"></a>
+<h1 >Plotting data - with labels<a href="#Plotting-data-with-labels" class="wiki-anchor">&para;</a></h1>
+
+
+	<p>After <code>times = num2date(time[:],units=time.units, calendar=time.calendar)</code></p>
+
+
+<pre><code class="python syntaxhl"><span class="CodeRay">
+<span class="comment">#get &quot;handles&quot; to affect plot styling</span>
+fig, ax = plt.subplots()
+<span class="comment">#tick every tenth minute</span>
+ax.xaxis.set_major_locator(MinuteLocator(byminute=<span class="predefined">range</span>(<span class="integer">0</span>,<span class="integer">60</span>,<span class="integer">10</span>)))
+
+<span class="comment">#format of date on x-axis (display minutes, uses strftime)</span>
+ax.xaxis.set_major_formatter(DateFormatter(<span class="string"><span class="delimiter">'</span><span class="content">%H:%M</span><span class="delimiter">'</span></span>))
+
+<span class="comment">#tick every minute</span>
+ax.xaxis.set_minor_locator(MinuteLocator())
+ax.autoscale_view()
+
+<span class="comment">#line graph</span>
+plt.plot_date(times,temps,<span class="string"><span class="delimiter">'</span><span class="content">-</span><span class="delimiter">'</span></span>)
+labels = ax.get_xticklabels()
+plt.setp(labels, rotation=<span class="integer">90</span>, fontsize=<span class="integer">10</span>, horizontalalignment=<span class="string"><span class="delimiter">'</span><span class="content">center</span><span class="delimiter">'</span></span>)
+plt.xlabel(time.standard_name)
+plt.ylabel(temp.standard_name + <span class="string"><span class="delimiter">'</span><span class="content"> / </span><span class="delimiter">'</span></span> + temp.units)
+plt.title(nc.title)
+
+<span class="comment">#tidy up layout automatically</span>
+fig.tight_layout()
+
+plt.savefig(<span class="string"><span class="delimiter">'</span><span class="content">sensor_data.png</span><span class="delimiter">'</span></span>)
+</span></code></pre>
+
+	<p>(see <code>python/exercises/example_code/plot-netcdf.py</code> in your <code>git</code> checkout)</p>
+
+
+	<a name="Plotting-data-with-CIS-Community-Intercomparison-Suite"></a>
+<h1 >Plotting data with CIS (Community Intercomparison Suite)<a href="#Plotting-data-with-CIS-Community-Intercomparison-Suite" class="wiki-anchor">&para;</a></h1>
+
+
+	<p>Another option is CIS</p>
+
+
+	<p style="text-align:center;"><em>"CIS is an open source command-line tool for easy collocation, visualization, analysis, and comparison of diverse gridded and ungridded datasets used in the atmospheric sciences"</em></p>
+
+
+	<p>It is based on python. Homepage: <a class="external" href="http://www.cistools.net/">http://www.cistools.net/</a></p>
+
+
+<pre><code>cis plot temp:sensor_data.nc --xaxis time --yaxis temp \ 
+    --title "Papouch Thermometer Data, 2017-02-22, UoL PRD" --xstep "0.010416"  \ 
+    --output sensor_data_sample.svg</code></pre>
+
+	<p class="full"><img src="sensor_data_sample.svg" alt="" /></p>
+
+
+	<a name="Further-exercises"></a>
+<h1 >Further exercises<a href="#Further-exercises" class="wiki-anchor">&para;</a></h1>
+
+
+	<a name="Command-line-options"></a>
+<h2 >Command-line options<a href="#Command-line-options" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>e.g. using <code>optparse</code> (for Python < v2.7) or <code>argparse</code> (Python ≥ 2.7)</p></pre></pre></pre></pre></pre>
+</body>
+</html>

@@ -1,7 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/python2.7
 
 """
-write_sensor_data_to_netcdf.py
+write_sensor_data_to_netcdf-dw.py
 ==============================
 
 Writes some tabular data to a NetCDF file.
@@ -11,20 +11,32 @@ Writes some tabular data to a NetCDF file.
 import time
 from netCDF4 import Dataset
 from datetime import datetime, timedelta
-from netCDF4 import num2date, date2num
 import numpy as np
 
-# Prepare the data first
-rows = """2014-03-06T14:20:28.147494 +023.9C
-2014-03-06T14:20:28.849280 +024.0C
-2014-03-06T14:20:38.769283 +024.0C
-2014-03-06T14:20:48.688270 +024.1C
-2014-03-06T14:20:58.608165 +024.1C
-2014-03-06T14:21:08.528660 +024.2C
-2014-03-06T14:21:18.447250 +024.3C
-2014-03-06T14:21:28.367255 +024.3C
-2014-03-06T14:21:38.288262 +024.3C
-2014-03-06T14:21:48.208270 +024.2C""".split("\n")
+#grab data from infile
+INFILE='sample-serial-temperature-2h.tsv'
+from csv import reader
+
+#functions to convert from text file format to 
+#numbers
+def convert_time(tm):
+    tm = datetime.strptime(tm, "%Y-%m-%dT%H:%M:%S.%f")
+    return tm
+
+def convert_temp(temp):
+    value = temp.strip("+").strip("C").lstrip("0")
+    return float(value) + 273.15
+
+# Parse the data into python lists
+times = []
+temps = []
+
+#open infile and read data into lists
+with open(INFILE, 'rb') as tsvfile:
+   tsvreader = reader(tsvfile, delimiter='\t')
+   for row in tsvreader:
+      times.append(convert_time(row[0]))
+      temps.append(convert_temp(row[1]))
 
 variable_metadata = {
     "var_id": "temp",
@@ -38,25 +50,9 @@ global_metadata = {
     "title": "My first CF-netCDF file",
     "history": "%s: Written with script: write_sensor_data_to_netcdf.py" % (datetime.now().strftime("%x %X"))}
 
-def convert_time(tm):
-    tm = datetime.strptime(tm, "%Y-%m-%dT%H:%M:%S.%f")
-    return tm
-
-def convert_temp(temp):
-    value = temp.strip("+").strip("C").lstrip("0")
-    return float(value) - 273.15
-
-# Parse the data into python lists
-times = []
-temps = []
-
-for row in rows:
-    tm, temp = row.strip().split()
-    times.append(convert_time(tm))
-    temps.append(convert_temp(temp))
-
 # Set reference time and convert datetime values to offset values from reference time
-base_time = datetime(2014, 3, 6, 14, 20, 28)
+#reference time is the first time in the input data
+base_time = times[0]
 time_values = []
 
 for t in times:
@@ -64,7 +60,7 @@ for t in times:
     ts = value.total_seconds()
     time_values.append(ts)
 
-time_units = "seconds since 2014-03-06 14:20:28"
+time_units = "seconds since " + base_time.strftime('%Y-%m-%d %H:%M:%S')
 
 # Create the output file (NetCDF dataset)
 output_file = "sensor_data.nc"

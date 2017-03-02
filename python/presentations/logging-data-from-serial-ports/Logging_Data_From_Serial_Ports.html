@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Logging Data From Serial Ports</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<style>
+body { font:80% Verdana,Tahoma,Arial,sans-serif; }
+h1, h2, h3, h4 {  font-family: "Trebuchet MS",Georgia,"Times New Roman",serif; }
+ul.toc { padding: 4px; margin-left: 0; }
+ul.toc li { list-style-type:none; }
+ul.toc li.heading2 { margin-left: 1em; }
+ul.toc li.heading3 { margin-left: 2em; }
+a.wiki-anchor { display: none; margin-left: 6px; text-decoration: none; }
+a.wiki-anchor:hover { color: #aaa !important; text-decoration: none; }
+h1:hover a.wiki-anchor, h2:hover a.wiki-anchor, h3:hover a.wiki-anchor { display: inline; color: #ddd; }
+</style>
+</head>
+<body>
+<a name="Data-Acquisition-From-Serial-Ports"></a>
+<h1  id="title">Data Acquisition From Serial Ports<a href="#Data-Acquisition-From-Serial-Ports" class="wiki-anchor">&para;</a></h1>
+
+
+	<a name="What-is-a-serial-port"></a>
+<h2 >What is a serial port?<a href="#What-is-a-serial-port" class="wiki-anchor">&para;</a></h2>
+
+
+	<blockquote>
+		<p>In computing, a serial port is a serial communication physical interface through which information transfers in or out one bit at a time (in contrast to a parallel port). Throughout most of the history of personal computers, data was transferred through serial ports to devices such as modems, terminals and various peripherals. <br />(ref: <a href="http://en.wikipedia.org/wiki/Serial_Port" class="external">Wikipedia</a> )</p>
+	</blockquote>
+
+
+	<p>Usually, this means the <a href="http://en.wikipedia.org/wiki/RS-232" class="external">RS-232</a> standard, or, less frequently,  <a href="http://en.wikipedia.org/wiki/RS-485" class="external">RS-485</a> .</p>
+
+
+	<p>They are a very basic method of communication with devices, still in common use for scientific equipment. However, most modern desktop and laptop computers do not come with serial ports, and instead we use them via a USB converter.</p>
+
+
+	<p>Physically, the serial port is (usually) a 9- or 25- pin "D-Sub" port, although other connectors are possible, including a 3.5mm jack of the sort used for headphones.</p>
+
+
+	<p style="text-align:center;"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Serial_port.jpg/320px-Serial_port.jpg" alt="" /><br /><strong>A 9-pin male D-Sub connector</strong></p>
+
+
+	<p>Today we'll be using a USB serial 9-pin male D-sub converter and a thermometer with a 9-pin female connector.</p>
+
+
+	<a name="Serial-port-access-in-python"></a>
+<h2 >Serial port access in python<a href="#Serial-port-access-in-python" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>Access to serial ports in Python is done via the pyserial module. Your laptops should already have it installed, so it can be imported in the usual way with:</p>
+
+
+<code class="python syntaxhl"><span class="CodeRay"><span class="keyword">import</span> <span class="include">serial</span></span></code>
+
+	<p>As we will usually only need the Serial class, you could also use</p>
+
+
+<code class="python syntaxhl"><span class="CodeRay"><span class="keyword">from</span> <span class="include">serial</span> <span class="keyword">import</span> <span class="include">Serial</span></span></code>
+
+	<p>if you prefer.</p>
+
+
+<pre><code class="python syntaxhl"><span class="CodeRay"><span class="comment">#!/usr/bin/python2.7</span>
+
+<span class="keyword">import</span> <span class="include">serial</span>
+
+ser = serial.Serial(
+   port=<span class="string"><span class="delimiter">'</span><span class="content">/dev/ttyUSB0</span><span class="delimiter">'</span></span>,
+   baudrate=<span class="integer">9600</span>,
+   bytesize=serial.EIGHTBITS,
+   parity=serial.PARITY_NONE,
+   stopbits=serial.STOPBITS_ONE
+)
+
+<span class="comment"># &quot;8&quot; here is specific to the Papouch thermometer device</span>
+<span class="keyword">print</span> ser.read(size=<span class="integer">8</span>)
+ser.close()
+</span></code></pre>
+
+	<p>I've added the most common parameters that describe how to connect to a particular device. "baudrate" defines the speed of the communication; bytesize, parity and stopbits define the format and error-checking of the incoming data. Eight bits, no parity checking and one stopbit is the most common, but others do exist - you will need to check the datasheet for the particular device.</p>
+
+
+	<p>The Papouch thermometer we're using today communicates at 9600 baud, eight bits, no parity checking and one stopbit, (you may see a shorthand like "9600 8N1" for this) which are pyserial's defaults. We can therefore reduce the above snippet to:</p>
+
+
+<pre class="page"><code class="python syntaxhl"><span class="CodeRay"><span class="comment">#!/usr/bin/python2.7</span>
+
+<span class="keyword">import</span> <span class="include">serial</span>
+
+ser = serial.Serial(
+   port=<span class="string"><span class="delimiter">'</span><span class="content">/dev/ttyUSB0</span><span class="delimiter">'</span></span>,
+)
+
+<span class="keyword">print</span> ser.read(size=<span class="integer">8</span>)
+
+ser.close()</span></code></pre>
+
+	<p><em>in this particular case</em>. You may need to specify other parameters for other devices(see <a href="https://pythonhosted.org/pyserial/pyserial_api.html" class="external">pyserial's <abbr title="Application Programming Interface">API</abbr> documentation</a> for more details).</p>
+
+
+	<p>If you run this code in the usual way:</p>
+
+
+<pre><code>
+$ python readserial_basic.py
++025.1C
+</code></pre>
+
+	<a name="Why-serreadsize8-"></a>
+<h3 >Why <code>ser.read(size=8)</code> ?<a href="#Why-serreadsize8-" class="wiki-anchor">&para;</a></h3>
+
+
+	<p>If you refer to the <a href="http://www.papouch.com/en/shop/product/tm-rs232-thermometer/tm_en.pdf" class="external">Papouch thermometer datasheet's</a> "Communication Protocol" section, you will see:</p>
+
+
+<pre>&lt;sign&gt;&lt;3 characters – integer °C&gt;
+&lt;decimal point&gt;&lt;1 character – tenths of °C&gt;
+&lt;C&gt;&lt;Enter&gt;</pre>
+
+	<p>as a description of the output. In ASCII coding, each character is one byte, so each temperature from the thermometer is eight bytes. We can't use the <code>readline()</code> function at this stage as the End of Line character is a carriage return rather than a newline. More on this later.</p>
+
+
+	<a name="Date-and-time"></a>
+<h2 >Date and time<a href="#Date-and-time" class="wiki-anchor">&para;</a></h2>
+
+
+	<p><code>+025.1C</code> is a valid temperature, but if you're logging an instrument, you will also need the time (for a static instrument; obviously you may also need to log position, etc.)</p>
+
+
+	<p>Assuming your computer has an accurate clock, you can use that. We'll need Python's datetime module.</p>
+
+
+<pre class="page"><code class="python syntaxhl"><span class="CodeRay"><span class="comment">#!/usr/bin/python2.7</span>
+
+<span class="keyword">from</span> <span class="include">datetime</span> <span class="keyword">import</span> <span class="include">datetime</span>
+<span class="keyword">import</span> <span class="include">serial</span>
+
+ser = serial.Serial(
+   port=<span class="string"><span class="delimiter">'</span><span class="content">/dev/ttyUSB0</span><span class="delimiter">'</span></span>,
+   baudrate=<span class="integer">9600</span>,
+)
+
+<span class="keyword">print</span> datetime.utcnow().isoformat(), ser.read(size=<span class="integer">8</span>) 
+
+ser.close()</span></code></pre>
+
+	<p><code>datetime.utcnow().isoformat()</code> is, as you might expect, a command to return the current <abbr title="Coordinated Universal Time">UTC</abbr> is <abbr title="International Standards Organisation">ISO</abbr> format, e.g.:</p>
+
+
+	<p><code>2014-03-06T11:55:43.852953 +025.3C</code></p>
+
+
+	<p>Obviously, this is much more precise than required here, but you may well have instruments that are capable of sub-second accuracy at some stage.</p>
+
+
+	<p>A major problem with the above code is the line:</p>
+
+
+<code class="python syntaxhl"><span class="CodeRay"><span class="keyword">print</span> datetime.utcnow().isoformat(), ser.read(size=<span class="integer">8</span>) </span></code>
+
+	<p>It is not immediately obvious that the <code>datetime.utcnow()</code> call can return in advance of the <code>ser.read()</code> call, which will stall until the thermometer returns data. To ensure that the timestamp and the temperature line up as closely as possible, we can store the data in a variable and output the variable and the time at the same time, reducing the gap between them:</p>
+
+
+<pre><code class="python syntaxhl"><span class="CodeRay">datastring = ser.read(size=<span class="integer">8</span>)
+<span class="keyword">print</span> datetime.utcnow().isoformat(), datastring</span></code></pre>
+
+	<a name="Date-and-Time-formats"></a>
+<h3 >Date and Time formats<a href="#Date-and-Time-formats" class="wiki-anchor">&para;</a></h3>
+
+
+	<p>I have used the ISO format here. The <code>datetime</code> module is capable of outputting any format you require (left as an exercise for the reader) but I would urge you to consider very carefully if you are thinking of using another one.  ISO format is unambiguous, well-defined, and easy to sort electronically, and these things will save you time when you come back to your data later.</p>
+
+
+	<a name="Continuous-logging"></a>
+<h2  class="page">Continuous logging<a href="#Continuous-logging" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>In most cases, you will need to log more than one data point. A basic modification is fairly simple, using a <code>while</code> loop:</p>
+
+
+<pre><code class="python syntaxhl"><span class="CodeRay"><span class="comment">#!/usr/bin/python2.7</span>
+
+<span class="keyword">from</span> <span class="include">datetime</span> <span class="keyword">import</span> <span class="include">datetime</span>
+<span class="keyword">import</span> <span class="include">serial</span>
+
+ser = serial.Serial(
+   port=<span class="string"><span class="delimiter">'</span><span class="content">/dev/ttyUSB0</span><span class="delimiter">'</span></span>,
+   baudrate=<span class="integer">9600</span>,
+)
+
+<span class="keyword">while</span> ser.isOpen():
+   datastring = ser.read(size=<span class="integer">8</span>)
+   <span class="keyword">print</span> datetime.utcnow().isoformat(), datastring
+
+ser.close()</span></code></pre>
+
+	<p>returns something like:</p>
+
+
+<pre>2014-03-06T14:20:28.147494 +023.9C
+2014-03-06T14:20:28.849280 +024.0C
+2014-03-06T14:20:38.769283 +024.0C
+2014-03-06T14:20:48.688270 +024.1C
+2014-03-06T14:20:58.608165 +024.1C
+2014-03-06T14:21:08.528660 +024.2C
+2014-03-06T14:21:18.447250 +024.3C
+2014-03-06T14:21:28.367255 +024.3C
+2014-03-06T14:21:38.288262 +024.3C
+2014-03-06T14:21:48.208270 +024.2C</pre>
+
+	<p>While you could <a href="http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-3.html" class="external">redirect the output</a> to a file in the shell:</p>
+
+
+	<p><code>$ python readserial_continuous.py >> ~/temperature_log</code></p>
+
+
+	<p>This has the drawback that the data are not always appended to the file until the output stops (i.e. the program is interrupted), or the buffer fills,  so using Python's inbuilt file functions is preferable.</p>
+
+
+	<p class="page">Here's the final version, also using <code>readline()</code>:</p>
+
+
+<pre><code class="python syntaxhl"><span class="CodeRay"><span class="comment">#!/usr/bin/python2.7</span>
+<span class="docstring"><span class="delimiter">'''</span><span class="content">This version of the readserial program demonstrates </span><span class="content">
+</span><span class="content">using python to write an output file</span><span class="delimiter">'''</span></span>
+
+<span class="keyword">from</span> <span class="include">datetime</span> <span class="keyword">import</span> <span class="include">datetime</span>
+<span class="keyword">import</span> <span class="include">serial</span>, <span class="include">io</span>
+
+outfile=<span class="string"><span class="delimiter">'</span><span class="content">/tmp/serial-temperature.tsv</span><span class="delimiter">'</span></span>
+
+ser = serial.Serial(
+   port=<span class="string"><span class="delimiter">'</span><span class="content">/dev/ttyUSB0</span><span class="delimiter">'</span></span>,
+   baudrate=<span class="integer">9600</span>,
+)
+
+sio = io.TextIOWrapper(
+   io.BufferedRWPair(ser, ser, <span class="integer">1</span>), 
+   encoding=<span class="string"><span class="delimiter">'</span><span class="content">ascii</span><span class="delimiter">'</span></span>, newline=<span class="string"><span class="delimiter">'</span><span class="char">\r</span><span class="delimiter">'</span></span>
+)
+
+<span class="keyword">with</span> <span class="predefined">open</span>(outfile,<span class="string"><span class="delimiter">'</span><span class="content">a</span><span class="delimiter">'</span></span>) <span class="keyword">as</span> f: <span class="comment">#appends to existing file </span>
+   <span class="keyword">while</span> ser.isOpen():
+      datastring = sio.readline()
+      <span class="comment">#\t is tab; \n is line separator</span>
+      f.write(datetime.utcnow().isoformat() + <span class="string"><span class="delimiter">'</span><span class="char">\t</span><span class="delimiter">'</span></span> + datastring + <span class="string"><span class="delimiter">'</span><span class="char">\n</span><span class="delimiter">'</span></span>)
+      f.flush() <span class="comment">#included to force the system to write to disk</span>
+
+ser.close()</span></code></pre>
+
+	<a name="A-note-on-readline"></a>
+<h3 >A note on <code>readline()</code><a href="#A-note-on-readline" class="wiki-anchor">&para;</a></h3>
+
+
+	<p>The example thermometer <em>always</em> returns exactly eight bytes, and so <code>ser.read(size=8)</code> is a good way of reading it. However, in the more general case, instruments do not always return fixed-length data, and instead separate the readings (or sets of readings) with a special character. Often, this is <a href="http://en.wikipedia.org/wiki/Newline" class="external">newline</a> , but sometimes it is, as here, <a href="http://en.wikipedia.org/wiki/Carriage_return" class="external">carriage return</a> or a combination of the two. The pyserial module provides <code>readline()</code> to handle this case; it will read all data up to the separator (Usually called "end-of-line", or EOL).</p>
+
+
+	<p>In versions of Python prior to v2.6, the EOL character could be specified in a <code>readline()</code> call. However, due to change in the way the pyserial module functions, this is no longer directly possible in recent versions. The Serial class must be wrapped in the <code>io.TextIOWrapper</code> class:</p>
+
+
+<code class="python syntaxhl"><span class="CodeRay">sio = io.TextIOWrapper(io.BufferedRWPair(ser, ser, <span class="integer">1</span>), encoding=<span class="string"><span class="delimiter">'</span><span class="content">ascii</span><span class="delimiter">'</span></span>, newline=<span class="string"><span class="delimiter">'</span><span class="char">\r</span><span class="delimiter">'</span></span>)</span></code>
+
+	<p>and then the readline can be called on the wrapper:</p>
+
+
+<code class="python syntaxhl"><span class="CodeRay">datastring = sio.readline()</span></code>
+
+	<p>I have specified the EOL character as carriage return, although in fact Python's <a href="http://docs.python.org/2/glossary.html#term-universal-newlines" class="external">Universal Newlines</a> function will automatically compensate once the <code>io.TextIOWrapper</code> is used.</p>
+
+
+	<a name="Further-exercises"></a>
+<h2 >Further exercises<a href="#Further-exercises" class="wiki-anchor">&para;</a></h2>
+
+
+	<a name="Command-line-options"></a>
+<h3 >Command-line options<a href="#Command-line-options" class="wiki-anchor">&para;</a></h3>
+
+
+	<p>It is possible to specify parameters such as the outputfile name and port on the command line using various python modules, such as <a href="https://docs.python.org/2.7/library/argparse.html" class="external">argparse</a> ¹. If you have time it is good practice to make your programs as useful as possible by allowing options to be changed. (e.g. if you have two USB->serial converters and you need to listen to both)</p>
+
+
+	<a name="fflush-statement"></a>
+<h3 ><code>f.flush()</code> statement<a href="#fflush-statement" class="wiki-anchor">&para;</a></h3>
+
+
+	<p>What happens when this is removed? Why is this a problem?</p>
+
+
+	<p>1. If you are using a version of python older than v2.7, the module is different and is called <code>optparse</code></p>
+
+
+	<a name="Notes-on-port-names"></a>
+<h2  class="page">Notes on port names<a href="#Notes-on-port-names" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>"<code>/dev/ttyUSB0</code>" is Linux's way of referring to the first USB serial port. (if you had another, it would be <code>/dev/ttyUSB1</code>, etc. Built-in serial ports would be <code>/dev/ttyS0</code> etc.)</p>
+
+
+	<p>On Windows machines, the portname will be of the form <code>COM3</code> (or <code>COM4</code>, <code>COM1</code>, etc.)</p>
+
+
+	<p>Mac OSX is different again - to quote</p>
+
+
+<blockquote>
+
+	<p>They could be pretty much anything. They'll probably be /dev/tty.SOMETHING, but there's no guarantee of that. For example, my USB->serial dongle is: /dev/tty.usbserial-FTG6RCEJ (Ref: <a href="http://stackoverflow.com/questions/14074413/serial-port-names-on-mac-os-x" class="external">Stack Overflow</a> )</p>
+
+
+</blockquote>
+
+	<p>You may need to experiment to determine which the USB converter has attached to.</p>
+
+
+	<p>A problem can arise if you need to attach multiple serial devices to one machine, as if the machine reboots they may not come back in the same order. In that case, I suggest getting a single USB device with multiple serial ports on it - we have one in our Cabo Verde site with 16 ports. In this case the order of the ports will remain the same.</p>
+
+
+	<p>Alternately, on Linux, you can try alternative ways of addressing the device. I've plugged two serial devices into one laptop here, and you can try and locate them by USB device ID:</p>
+
+
+<pre class="small"><code class="shell syntaxhl"><span class="CodeRay">[user01@unst ~]$ ls -F /dev/serial/by-id/*
+/dev/serial/by-id/usb-Prolific_Technology_Inc._USB-Serial_Controller_D-if00-port0@
+</span></code></pre>
+
+	<p>As you can see, this is of no use if the devices have the same USB ID (that is, if they are identical devices - and many will appear to be different but will be the same inside)</p>
+
+
+<pre class="small"><code class="shell syntaxhl"><span class="CodeRay">[user01@unst ~]$ ls -F /dev/serial/by-path/*
+/dev/serial/by-path/pci-0000:00:14.0-usb-0:1:1.0-port0@
+/dev/serial/by-path/pci-0000:00:14.0-usb-0:2:1.0-port0@
+</span></code></pre>
+
+	<p>Which identifies them by which port they're plugged in to.</p>
+</body>
+</html>
