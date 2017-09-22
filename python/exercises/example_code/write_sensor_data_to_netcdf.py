@@ -14,7 +14,7 @@ from datetime import datetime, timedelta
 import numpy as np
 
 #grab data from infile
-INFILE='sample-serial-temperature-2h.tsv'
+INFILE='../example_data/sample-serial-temperature-2h.tsv'
 from csv import reader
 
 #functions to convert from text file format to 
@@ -37,18 +37,6 @@ with open(INFILE, 'rb') as tsvfile:
    for row in tsvreader:
       times.append(convert_time(row[0]))
       temps.append(convert_temp(row[1]))
-
-variable_metadata = {
-    "var_id": "temp",
-    "long_name": "Temperature of sensor (K)",
-    "units": "K",
-    "standard_name": "air_temperature"}
-
-global_metadata = {
-    "Conventions": "CF-1.6",
-    "institution": "Leeds Uni",
-    "title": "My first CF-netCDF file",
-    "history": "%s: Written with script: write_sensor_data_to_netcdf.py" % (datetime.now().strftime("%x %X"))}
 
 # Set reference time and convert datetime values to offset values from reference time
 #reference time is the first time in the input data
@@ -80,13 +68,16 @@ time_var.calendar = "standard"
 temp = dataset.createVariable("temp", np.float32, ("time",))
 temp[:] = temps
 
-# Set the variable attributes
-for (attr, value) in variable_metadata.items():
-    setattr(temp, attr, value)
-
-# Set the global attributes
-for (attr, value) in global_metadata.items():
-    setattr(dataset, attr, value)
+#  Set   the   variable attributes
+temp.var_id =  "temp"   
+temp.long_name =  "Temperature   of sensor   (K)"  
+temp.units  =  "K"   
+temp.stabdard_name   =  "air_temperature" 
+#  Set   the   global   attributes
+dataset.Conventions  =  "CF-1.6" 
+dataset.institution  =  "NCAS"   
+dataset.title  =  "My   first CF-netCDF   file" 
+dataset.history   =  "%s:  Written  with  script:  write_sensor_data_to_netcdf.py"  %  (datetime.now().strftime("%x  %X"))
 
 # Write the file
 dataset.close()
