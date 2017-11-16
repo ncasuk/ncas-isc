@@ -24,7 +24,7 @@ class Band(object):
     def employ(self, member, wage):
         "Adds new band member and wage."
         if wage > 100:
-            raise ValueError("{} costs too much - cannot join the band!".format(member))
+            raise ValueError("{0} costs too much - cannot join the band!".format(member))
 
         self.wages[member] = wage
 
