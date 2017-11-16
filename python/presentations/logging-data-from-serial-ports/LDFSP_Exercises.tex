@@ -1,0 +1,159 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[top=30pt,bottom=30pt,left=48pt,right=46pt]{geometry}
+\usepackage{exsheets}
+\usepackage{exsheets-listings}
+\usepackage{minted}
+\definecolor{lightyellow}{HTML}{FFFFE0}
+
+\begin{document}
+\section{Logging Data From Serial Ports Exercise}
+
+{\center~Make sure you are using Python 2.7}
+
+\begin{question}
+Import the \texttt{serial} module and 
+open the serial port with the appropriate parameters.
+\end{question}
+\newsavebox\serbasic
+\begin{lrbox}{\serbasic}
+\begin{minipage}{\textwidth}
+\begin{minted}[bgcolor=lightyellow]{python}
+#!/usr/bin/python2.7
+import serial
+
+ser = serial.Serial(
+   port='/dev/ttyUSB0',
+   baudrate=9600,
+   bytesize=serial.EIGHTBITS,
+   parity=serial.PARITY_NONE,
+   stopbits=serial.STOPBITS_ONE
+
+\end{minted}
+\end{minipage}
+\end{lrbox}
+
+
+\begin{solution}
+\noindent\usebox\serbasic
+\end{solution}
+\begin{question}
+Get a reading from the temperature probe.
+\end{question}
+\begin{solution}
+\texttt{print ser.read(size=8)}
+\par
+"8" here is specific to the Papouch thermometer device.
+\end{solution}
+\begin{question}
+Add a date and time reading to your output, using sensible choices for 
+format, timezone, etc.
+\end{question}
+\begin{question}
+Prove to yourself that there is a potential problem with a "gap" between 
+the reading and the timestamp.
+\end{question}
+\begin{solution}
+Compare:
+
+\texttt{print datetime.utcnow().isoformat(), ser.read(size=8)}
+
+
+\noindent~and:
+
+
+\texttt{datastring = ser.read(size=8)}\par
+\texttt{print datetime.utcnow().isoformat(), datastring}
+
+\noindent~(run each one a few times in succession, and look at the differences between
+the timestamps)
+\end{solution}
+\begin{question}
+Add a loop to your code to continuously log the reading and time. What would be a good exit condition? Hint: try \texttt{dir(serial.Serial)} to see what methods 
+might be of use.
+\end{question}
+\newsavebox\serloop
+\begin{lrbox}{\serloop}
+\begin{minipage}{\textwidth}
+\begin{minted}[bgcolor=lightyellow]{python}
+while ser.isOpen():
+   datastring = ser.read(size=8)
+   print datetime.utcnow().isoformat(), datastring
+\end{minted}
+\end{minipage}
+\end{lrbox}
+
+\begin{solution}
+Several ways, but the simplest is:
+
+\noindent\usebox\serloop
+
+\end{solution}
+
+\begin{question}
+Rewrite your code to use \texttt{readline()}.
+\end{question}
+\newsavebox\readlinebox
+\begin{lrbox}{\readlinebox}
+\begin{minipage}{\textwidth}
+\begin{minted}[bgcolor=lightyellow]{python}
+import io
+…
+sio = io.TextIOWrapper(io.BufferedRWPair(ser, ser, 1), encoding='ascii', newline='\r')
+
+while ser.isOpen():
+   datastring = sio.readline()
+   print datetime.utcnow().isoformat(), datastring
+\end{minted}
+\end{minipage}
+\end{lrbox}
+
+\begin{solution}
+\noindent\usebox\readlinebox
+\end{solution}
+\begin{question}
+Alter your code to write the data out to a file.
+\end{question}
+
+\newsavebox\logfile
+\begin{lrbox}{\logfile}
+\begin{minipage}{\textwidth}
+\begin{minted}[bgcolor=lightyellow]{python}
+#!/usr/bin/python
+'''This version of the readserial program demonstrates
+using python to write an output file'''
+
+from datetime import datetime
+import serial, io
+
+outfile='/tmp/serial-temperature.tsv'
+
+ser = serial.Serial(
+   port='/dev/ttyUSB0',
+   baudrate=9600,
+)
+
+sio = io.TextIOWrapper(
+   io.BufferedRWPair(ser, ser, 1),
+   encoding='ascii', newline='\r'
+)
+
+with open(outfile,'a') as f: #appends to existing file
+   while ser.isOpen():
+      datastring = sio.readline()
+      #\t is tab; \n is line separator
+      f.write(datetime.utcnow().isoformat() + '\t' + datastring + '\n')
+      f.flush() #included to force the system to write to disk
+
+ser.close()
+\end{minted}
+\end{minipage}
+\end{lrbox}
+\newpage
+\begin{solution}
+\noindent\usebox\logfile
+\par
+(see \texttt{python/exercises/example\_code/ldfsp.py} in your \texttt{ncas-isc} checkout)
+\end{solution}
+\newpage
+\printsolutions
+\end{document}
