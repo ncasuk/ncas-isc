@@ -5,14 +5,15 @@
 \usepackage{minted}
 \definecolor{lightyellow}{HTML}{FFFFE0}
 \usepackage{fontspec}
+%NCAS Green colour
+\definecolor{NCASgreen}{HTML}{186F4D}
+\usepackage[colorlinks=true,urlcolor=NCASgreen]{hyperref}
 \setsansfont{Open Sans}
 \setmonofont{Ubuntu Mono}
 \setmainfont{Liberation Serif}
 \usepackage{mathtools}
 \usepackage{unicode-math}
 \setmathfont{Asana Math}
-%NCAS Green colour
-\definecolor{NCASgreen}{HTML}{186F4D}
 
 \begin{document}
 \section{Logging Data From Serial Ports Exercise}
@@ -36,7 +37,7 @@ ser = serial.Serial(
    bytesize=serial.EIGHTBITS,
    parity=serial.PARITY_NONE,
    stopbits=serial.STOPBITS_ONE
-
+)
 \end{minted}
 \end{minipage}
 \end{lrbox}
@@ -165,4 +166,142 @@ ser.close()
 \end{solution}
 \newpage
 \printsolutions
+\newpage
+\section{Writing and Plotting NetCDF files Exercise}
+\begin{question}
+Write a function to convert the time as written in
+your datafile and return a Python \texttt{datetime}
+object.
+\end{question}p
+\newsavebox\timeconv
+\begin{lrbox}{\timeconv}
+\begin{minipage}{\textwidth}
+\begin{minted}[bgcolor=lightyellow]{python}
+def convert_time(tm):
+    tm = datetime.strptime(tm, "%Y-%m-%dT%H:%M:%S.%f")
+    return tm
+\end{minted}
+\end{minipage}
+\end{lrbox}
+\begin{solution}
+\noindent\usebox\timeconv
+
+\texttt{strptime} is the opposite of \texttt{strftime} that we used
+\end{solution}
+\begin{question}
+Write a function to convert the temperature as
+written in your datafile and return a \texttt{float} in
+Kelvin.
+
+{\center $T_K = T_C + 273.15$}
+\end{question}
+\newsavebox\tempconv
+\begin{lrbox}{\tempconv}
+\begin{minipage}{\textwidth}
+\begin{minted}[bgcolor=lightyellow]{python}
+def convert_temp(temp):
+    value = temp.strip("+").strip("C").lstrip("0")
+    return float(value) + 273.15
+\end{minted}
+\end{minipage}
+\end{lrbox}
+\begin{solution}
+\noindent\usebox\tempconv
+\end{solution}
+\begin{question}
+Read your datafile into Python using the \texttt{csv} module such
+that you end up with list object(s) containing floating-point
+temperature in K and timestamps as Python \texttt{datetime} objects.
+
+
+see: {\href{https://docs.python.org/2/library/csv.html}{https://docs.python.org/2/library/csv.html}}
+\end{question}
+\newsavebox\csvread
+\begin{lrbox}{\csvread}
+\begin{minipage}{\textwidth}
+\begin{minted}[bgcolor=lightyellow]{python}
+infile='sample-serial-temperature-2h.tsv' #Or whatever your infile is called
+outfile='sensor-data.nc'
+from csv import reader
+
+# Parse the data into python lists
+times = []
+temps = []
+
+#open infile and read data into lists
+with open(infile, 'rb') as tsvfile:
+   tsvreader = reader(tsvfile, delimiter='\t')
+   for row in tsvreader:
+      times.append(convert_time(row[0]))
+      temps.append(convert_temp(row[1]))
+\end{minted}
+\end{minipage}
+\end{lrbox}
+\begin{solution}
+\noindent\usebox\csvread
+\end{solution}
+\begin{question}
+\begin{itemize}
+\item
+  Create a \texttt{Dataset} (use the format \texttt{NETCDF4\_CLASSIC})
+\item
+  Convert your time series to a suitable CF-compliant series
+\item
+  Create a suitable \texttt{Dimension} for your time series
+\item
+  Create \texttt{Variable} objects for Temp and Time using appropriate
+  units etc.
+\item
+  Assign appropriate metadata to the Temp \texttt{Variable} and and the
+  \texttt{Dataset}
+\item
+  Add your time series and temp values to the \texttt{Dataset}
+\item
+  Close and write your \texttt{Dataset}. Test that it parses correctly
+  with \texttt{ncdump}
+\end{itemize}
+\end{question}
+\begin{solution}
+See: \texttt{python/exercises/example\_code/write\_sensor\_data\_to\_netcdf.py} in your \texttt{ncas-isc} checkout.
+\end{solution}
+
+\begin{question}[name=Bonus Exercise]
+You can do a quick-and-dirty plot with \texttt{ncview}:\par
+\vspace{1em}
+\texttt{ncview sensor\_data.nc}\par
+\vspace{1em}
+\noindent~This isn't publication quality. Produce a line plot of temperature vs time using \texttt{matplotlib}
+and reading the data from your NetCDF file.
+\end{question}
+\begin{solution}
+See: \texttt{python/exercises/example\_code/plot-netcdf.py}
+\end{solution}
+\newsavebox\cisexample
+\begin{lrbox}{\cisexample}
+\begin{minipage}{\textwidth}
+\begin{verbatim}
+cis plot temp:sensor_data.nc --xaxis time --yaxis temp \ 
+    --title "Papouch Thermometer Data, 2017-02-22, UoL PRD" --xstep "0.010416"  \ 
+    --output sensor_data_sample.svg
+\end{verbatim}
+\end{minipage}
+\end{lrbox}
+\begin{question}[name=Bonus Exercise]
+\emph{``CIS is an open source command-line tool for easy collocation,
+visualization, analysis, and comparison of diverse gridded and ungridded
+datasets used in the atmospheric sciences''}
+\vspace{1em}
+It is based on python. Homepage:
+\href{http://www.cistools.net/}{http://www.cistools.net/}
+\vspace{1em}
+\noindent\usebox\cisexample
+\vspace{1em}
+Experiment with CIS.
+\end{question}
+\begin{solution}
+See: \texttt{python/presentations/logging-data-from-serial-ports/sensor\_data\_sample.svg}
+\end{solution}
+
+\newpage
+\printsolutions[section]
 \end{document}
