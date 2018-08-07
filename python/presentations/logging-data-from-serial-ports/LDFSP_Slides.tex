@@ -2,6 +2,7 @@
 \documentclass[aspectratio=1610,9pt]{beamer} % test beamer document
 \usepackage[T1]{fontenc}
 \usepackage[cache=false]{minted}
+\renewcommand{\MintedPygmentize}{pygmentize-3.4}
 \usepackage{wrapfig}
 \usetheme{ncas}
 \definecolor{lightyellow}{HTML}{FFFFE0}
@@ -10,10 +11,6 @@
 \subtitle{With Python's pyserial module}
 
 \author{Dan Walker}
-\newcommand\myheading[1]{%
-  \par\bigskip
-  {\Large\bfseries\center~#1}\par\smallskip}
-
 
 \begin{document}
 
@@ -68,7 +65,7 @@ modems, terminals and various peripherals.
 \item
   Very basic serial RS232 temp probe
 \item
-  \textasciitilde{}\euro{}20
+  approx €20
 \item
   Measures temperatures from -55°C to +125°C, 0.1°C resolution
 \item
@@ -84,7 +81,7 @@ modems, terminals and various peripherals.
 \begin{frame}[fragile=singleslide]
 \frametitle{Basic connections}
 
-\href{https://pyserial.readthedocs.io}{https://pyserial.readthedocs.io}
+\href{https://pythonhosted.org/pyserial/shortintro.html}{https://pythonhosted.org/pyserial/shortintro.html}
 
 \begin{minted}[bgcolor=lightyellow]{python}
 #!/usr/bin/python2.7
@@ -99,9 +96,15 @@ ser = serial.Serial(
 )
 \end{minted}
 
+\subsection{Exercise}
+
+Figure out how to read and return data from the \texttt{ser} object.
+
 As well as the pyserial shortintro above, you may find
 \url{https://pythonhosted.org/pyserial/pyserial_api.html}
 and the Papouch thermometer datasheet useful.
+
+\subsubsection{Q1. Why doesn't \texttt{readline()} work (easily)?}
 
 \end{frame}
 \begin{frame}[fragile]
@@ -124,7 +127,31 @@ and the Papouch thermometer datasheet useful.
 \end{itemize}
 \end{frame}
 \begin{frame}[fragile]
-\frametitle{Basic connections - Port names}
+
+\begin{minted}[bgcolor=lightyellow]{python}
+#!/usr/bin/python2.7
+
+import serial
+
+ser = serial.Serial(
+   port='/dev/ttyUSB0',
+)
+
+print ser.read(size=8) # "8" here is specific to the Papouch thermometer device
+
+ser.close()
+\end{minted}
+
+\begin{verbatim}
+$ python readserial_basic.py
++025.1C
+\end{verbatim}
+
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{Basic connections example - 2}
+
+\subsubsection{A note on port names}
 
 \begin{itemize}
 \itemsep1pt\parskip0pt\parsep0pt
@@ -146,73 +173,17 @@ and the Papouch thermometer datasheet useful.
 \item
   You may need to experiment to determine which the USB converter has
   attached to.
-\end{itemize}
-\end{frame}
-\begin{frame}[fragile]
-\frametitle{Locating your serial port device}
-
-\begin{itemize}
-\itemsep1pt\parskip0pt\parsep0pt
 \item
-  Multiple USB-\textgreater{}serial devices on one machine may not come
-  back in the same order on reboot
-\item
-  You can get multi-port USB-\textgreater{}serial devices
-\item
-  On Linux, there are alternative ways of addressing the device
-\end{itemize}
-\end{frame}
-\begin{frame}[fragile]
-\frametitle{Locating your serial port device}
-
-\center{By USB ID}
-
-\begin{verbatim}
-[user01@unst ~]$ ls -F /dev/serial/by-id/*
-/dev/serial/by-id/usb-Prolific_Technology_Inc._USB-Serial_Controller_D-if00-port0@
-\end{verbatim}
-
-\begin{itemize}
-\itemsep1pt\parskip0pt\parsep0pt
-\item
-  No use if the devices have the same USB ID (e.g. if they are
-  identical)
-\item
-  Even devices that look different may have the same USB id if they are
-  the same electronically
-\end{itemize}
-
-\center{By Path}
-
-\begin{verbatim}
-[user01@unst ~]$ ls -F /dev/serial/by-path/*
-/dev/serial/by-path/pci-0000:00:14.0-usb-0:1:1.0-port0@
-/dev/serial/by-path/pci-0000:00:14.0-usb-0:2:1.0-port0@
-\end{verbatim}
-
-\begin{itemize}
-\itemsep1pt\parskip0pt\parsep0pt
-\item
-  Identifies them by which port they're plugged in to
+  More on this later
 \end{itemize}
 
 \end{frame}
 \begin{frame}[fragile]
-\frametitle{Reading Data}
-
-\begin{itemize}
-\item \texttt{read()} to read a fixed number of bytes 
-\item \texttt{readline()} to read a line of data ending in a newline.
-\end{itemize}
-
-For most instruments, \texttt{readline()} is easier, but for the 
-temperature probe, you must use \texttt{ser.read(size=8)}.
-\end{frame}
-\begin{frame}[fragile]
-\frametitle{Reading Data - Temperature probe}
-
-From the \href{http://www.papouch.com/en/shop/product/tm-rs232-thermometer/tm_en.pdf}{Papouch thermometer datasheet}
-
+\frametitle{Why \texttt{ser.read(size=8)} ?}
+If you refer to the
+\href{http://www.papouch.com/en/shop/product/tm-rs232-thermometer/tm_en.pdf}{Papouch
+thermometer datasheet} 's ``Communication Protocol'' section, you will
+see:
 
 \begin{verbatim}
 <sign><3 characters – integer °C>
@@ -220,11 +191,8 @@ From the \href{http://www.papouch.com/en/shop/product/tm-rs232-thermometer/tm_en
 <C><Enter>
 \end{verbatim}
 
-\begin{itemize}
-\item In ASCII coding, each character is one byte
-\item so a temperature from the thermometer is exactly eight bytes
-\item \texttt{readline()} expects {\itshape~newline} to separate but probe separates by {\itshape~carriage return}
-\end{itemize}
+as a description of the output. In ASCII coding, each character is one
+byte so each temperature from the thermometer is eight bytes.
 
 \end{frame}
 \begin{frame}
@@ -237,7 +205,7 @@ Python includes a standard module for this, \texttt{datetime} (
 \begin{itemize}
 \item Can process times in a very wide variety of formats
 \item Can deal with different timezones (if you ask it to)
-\item Other date/time modules are available, but \texttt{datetime} is always avaiable.
+\item Other date/time modules are available, but \texttt{datetime} is alwyas avaiable.
 \end{itemize}
 \end{frame}
 \begin{frame}[fragile]
@@ -257,32 +225,21 @@ Python includes a standard module for this, \texttt{datetime} (
   intended to be read by people)
 \end{itemize}
 
-\end{frame}
-\begin{frame}[fragile]
-\frametitle{Date and Time examples}
 
-Current time:
+\subsection{Exercise}
 
-\begin{verbatim}
->>> from datetime import datetime
->>> dt = datetime.now()
->>> print dt
-2016-04-12 17:32:38.806353
->>> dt
-datetime.datetime(2016, 4, 12, 17, 32, 38, 806353)
-\end{verbatim}
+Add date and time to your output.
 
-Custom formats:
+\subsubsection{Q1. What time format should you use?
+Why?}
 
-\begin{verbatim}
->>> print dt.strftime('%Y-%m-%d %H:%M:%S')
-2016-04-12 17:32:38
->>> print dt.strftime('%A, %B %d, %Y')
-Tuesday, April 12, 2016
-\end{verbatim}
+\subsubsection{Q2. Which timezone?}
+
+\subsubsection{Q3. Are you sure the datetime call and the reading are at
+the same time? (within
+reason)}
 
 \end{frame}
-
 \begin{frame}[fragile]
 \frametitle{Time and Date example}
 
@@ -303,9 +260,9 @@ ser.close()
 \end{minted}
 \end{frame}
 \begin{frame}[fragile]
-\frametitle{Time and Date example}
 
-\texttt{datetime.utcnow().isoformat()} returns the current UTC in ISO format, e.g.:
+\texttt{datetime.utcnow().isoformat()} is, as you might expect, a
+command to return the current UTC in ISO format, e.g.:
 
 \texttt{2014-03-06T11:55:43.852953 +025.3C}
 
@@ -332,9 +289,87 @@ print datetime.utcnow().isoformat(), datastring
 
 \end{frame}
 \begin{frame}[fragile]
-\frametitle{\texttt{readline()}}
+\begin{verbatim}
+Python 2.7.3 (default, Feb 21 2014, 13:11:38) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-3)] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from datetime import datetime
+>>> dt = datetime.now()
+>>> print dt
+2016-04-12 17:32:38.806353
+>>> dt
+datetime.datetime(2016, 4, 12, 17, 32, 38, 806353)
+>>> print dt.strftime('%Y-%m-%d %H:%M:%S')
+2016-04-12 17:32:38
+>>> print dt.strftime('%A, %B %d, %Y')
+Tuesday, April 12, 2016
+\end{verbatim}
+
+\end{frame}
+\begin{frame}
+\frametitle{Continuous logging}
+
+You are probably going to want your data capture code to run
+indefinitely, or at least more than once. You should be familiar with
+flow control and looping constructs from your Intro To Python.
+
+\subsection{Exercise}
+
+Add a loop to your code to continuously log the reading and time.
+
+\subsubsection{Q1. What sort of looping construct are you using?
+Why?}
+
+\subsubsection{Q2. What condition causes the loop to
+exit?}
+
+\subsubsection{Further exercise if you have
+time.}
+
+Try and get the same output using \texttt{readline()} instead. Why might
+this be preferable for other instruments?
+
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{Continuous logging
+example}
+
+In most cases, you will need to log more than one data point. A basic
+modification is fairly simple, using a \texttt{while} loop:
+
+\begin{minted}[bgcolor=lightyellow]{python}
+#!/usr/bin/python2.7
+
+from datetime import datetime
+import serial
+
+ser = serial.Serial(
+   port='/dev/ttyUSB0',
+   baudrate=9600,
+)
+
+while ser.isOpen():
+   datastring = ser.read(size=8)
+   print datetime.utcnow().isoformat(), datastring
+
+ser.close()
+\end{minted}
+
+returns something like:
+
+\begin{verbatim}
+2014-03-06T14:20:28.147494 +023.9C
+2014-03-06T14:20:28.849280 +024.0C
+2014-03-06T14:20:38.769283 +024.0C
+2014-03-06T14:20:48.688270 +024.1C
+\end{verbatim}
+
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{Continuous logging with \texttt{readline()}}
 
 \begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
 \item
   The example thermometer \emph{always} returns exactly eight bytes, and
   so \texttt{ser.read(size=8)} is fine.
@@ -346,43 +381,154 @@ print datetime.utcnow().isoformat(), datastring
   \href{http://en.wikipedia.org/wiki/Carriage_return}{carriage return}
 \item
   The pyserial module provides \texttt{readline()} to handle this case.
+\item
+  worked differently prior to python v2.6
 \end{itemize}
+\end{frame}
+\begin{frame}[fragile]
+
+\begin{minted}[bgcolor=lightyellow]{python}
+#!/usr/bin/python2.7
+
+from datetime import datetime
+import serial, io
+
+ser = serial.Serial(
+   port='/dev/ttyUSB0',
+   baudrate=9600,
+)
+
+sio = io.TextIOWrapper(io.BufferedRWPair(ser, ser, 1), encoding='ascii', newline='\r')
+
+while ser.isOpen():
+   datastring = sio.readline()
+   print datetime.utcnow().isoformat(), datastring
+
+ser.close()
+\end{minted}
+
+\end{frame}
+\begin{frame}
+\frametitle{Outputting to a file}
+
+Usually you will want to output the data to a file rather than the
+terminal, so, e.g., the data are on disk in case of a fault or similar.
+
+\subsection{Exercise}
+
+Alter your code to write the data out to a file.
+
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{Outputting to a file
+example}
+
+\begin{minted}[bgcolor=lightyellow]{python}
+#!/usr/bin/python
+'''This version of the readserial program demonstrates
+using python to write an output file'''
+
+from datetime import datetime
+import serial, io
+
+outfile='/tmp/serial-temperature.tsv'
+
+ser = serial.Serial(
+   port='/dev/ttyUSB0',
+   baudrate=9600,
+)
+
+sio = io.TextIOWrapper(
+   io.BufferedRWPair(ser, ser, 1),
+   encoding='ascii', newline='\r'
+)
+
+\end{minted}
+(cont)
+\end{frame}
+\begin{frame}[fragile]
+\begin{minted}[bgcolor=lightyellow]{python}
+with open(outfile,'a') as f: #appends to existing file
+   while ser.isOpen():
+      datastring = sio.readline()
+      #\t is tab; \n is line separator
+      f.write(datetime.utcnow().isoformat() + '\t' + datastring + '\n')
+      f.flush() #included to force the system to write to disk
+
+ser.close()
+\end{minted}
+
+(see \texttt{python/exercises/example\_code/ldfsp.py} in your
+\texttt{git} checkout)
+
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{Locating your serial port device}
 
 \begin{itemize}
 \itemsep1pt\parskip0pt\parsep0pt
 \item
-  worked differently prior to python v2.6
+  Multiple USB-\textgreater{}serial devices on one machine may not come
+  back in the same order on reboot
+\item
+  You can get multi-port USB-\textgreater{}serial devices
+\item
+  On Linux, there are alternative ways of addressing the device
+\end{itemize}
+
+\subsubsection{By USB ID}
+
+\begin{verbatim}
+[user01@unst ~]$ ls -F /dev/serial/by-id/*
+/dev/serial/by-id/usb-Prolific_Technology_Inc._USB-Serial_Controller_D-if00-port0@
+\end{verbatim}
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  No use if the devices have the same USB ID (e.g. if they are
+  identical)
+\item
+  Even devices that look different may have the same USB id if they are
+  the same electronically
+\end{itemize}
+
+\subsubsection{By Path}
+
+\begin{verbatim}
+[user01@unst ~]$ ls -F /dev/serial/by-path/*
+/dev/serial/by-path/pci-0000:00:14.0-usb-0:1:1.0-port0@
+/dev/serial/by-path/pci-0000:00:14.0-usb-0:2:1.0-port0@
+\end{verbatim}
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Identifies them by which port they're plugged in to
 \end{itemize}
 
 \end{frame}
 \begin{frame}
-\frametitle{Finding out serial connection details}
+\frametitle{Finding out serial connection
+details}
 
-\myheading{Check the documentation}
+\subsection{Check the
+documentation}
 
 Most instruments with serial access will have a (possibly quite short)
 section in the manual detailing the connection settings. Of course, your
 instrument might be quite old and the manual lost, in which case:
-\end{frame}
-\begin{frame}
-\frametitle{Finding out serial connection details}
 
-\myheading{Ask the manufacturer}
+\subsection{Ask the manufacturer}
 
 With any luck, the manual will be on their website. Of course they might
 be out of business, or unwilling or unable to help, in which case:
 
-\end{frame}
-\begin{frame}
-\frametitle{Finding out serial connection details}
-\myheading{Ask the Internet!}
+\subsection{Ask the Internet!}
 
 Use a search engine of your choice
 
-\end{frame}
-\begin{frame}
-\frametitle{Finding out serial connection details}
-\myheading{Trial and error}
+\subsection{Trial and error}
 
 As long as you get the voltage right (usually 3.3v or 5v) you
 \textbf{probably} can't damage your instrument by trying various
@@ -391,7 +537,8 @@ usually the best place to start
 
 \end{frame}
 \begin{frame}[fragile]
-\frametitle{Outputting in NetCDF format}
+\frametitle{Outputting in NetCDF
+format}
 
 Assuming you've got some data of the format:
 
@@ -420,13 +567,13 @@ data. Our temperature is in a slightly weird format due to the Papouch
 sensor including the units, so we need functions to convert the string
 into a number and the time into a Python `datetime` object.
 
-\myheading{Exercise}
+\subsection{Exercise}
 
-\center{Q1. Write a function to convert the time as written in
+\subsubsection{Q1. Write a function to convert the time as written in
 your datafile and return a Python \texttt{datetime}
 object.}
 
-\center{Q2. Write a function to convert the temperature as
+\subsubsection{Q2. Write a function to convert the temperature as
 written in your datafile and return a \texttt{float} in
 Kelvin.}
 
@@ -460,9 +607,9 @@ Python has a module designed for reading in text formats. It's called
 ASCII formats. We only need the base reader object here. (Other reader
 objects deal with more complex cases - f.ex. \texttt{DictReader})
 
-\myheading{\href{https://docs.python.org/2/library/csv.html}{https://docs.python.org/2/library/csv.html}}
+\subsection{\href{https://docs.python.org/2/library/csv.html}{https://docs.python.org/2/library/csv.html}}
 
-\myheading{Exercise}
+\subsection{Exercise}
 
 Q1. Read your datafile into Python using the \texttt{csv} module such
 that you end up with list object(s) containing floating-point
@@ -601,7 +748,7 @@ You can do a quick-and-dirty plot with \texttt{ncview}:
 
 Obviously, this is not publication quality.
 
-\center{Exercise}
+\subsubsection{Exercise}
 
 Q1. Produce a line plot of temperature vs time using \texttt{matplotlib}
 and reading the data from your NetCDF file.
@@ -692,5 +839,13 @@ cis plot temp:sensor_data.nc --xaxis time --yaxis temp \
 
 \includegraphics[width=\textwidth]{sensor_data_sample}
 
+\end{frame}
+\begin{frame}
+\frametitle{Further exercises}
+
+\subsection{Command-line options}
+
+e.g. using \texttt{optparse} (for Python \textless{} v2.7) or
+\texttt{argparse} (Python ≥ 2.7)
 \end{frame}
 \end{document}
