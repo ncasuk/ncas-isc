@@ -137,7 +137,7 @@ ser = serial.Serial(
    port='/dev/ttyUSB0',
 )
 
-print ser.read(size=8) # "8" here is specific to the Papouch thermometer device
+print(ser.read(size=8)) # "8" here is specific to the Papouch thermometer device
 
 ser.close()
 \end{minted}
@@ -254,7 +254,7 @@ ser = serial.Serial(
    baudrate=9600,
 )
 
-print datetime.utcnow().isoformat(), ser.read(size=8) 
+print(datetime.utcnow().isoformat(), ser.read(size=8))
 
 ser.close()
 \end{minted}
@@ -267,7 +267,7 @@ command to return the current UTC in ISO format, e.g.:
 \texttt{2014-03-06T11:55:43.852953 +025.3C}
 
 \begin{verbatim}
-print datetime.utcnow().isoformat(), ser.read(size=8) 
+print(datetime.utcnow().isoformat(), ser.read(size=8))
 \end{verbatim}
 
 \begin{itemize}
@@ -284,7 +284,7 @@ print datetime.utcnow().isoformat(), ser.read(size=8)
 
 \begin{verbatim}
 datastring = ser.read(size=8)
-print datetime.utcnow().isoformat(), datastring
+print(datetime.utcnow().isoformat(), datastring)
 \end{verbatim}
 
 \end{frame}
@@ -295,13 +295,13 @@ Python 2.7.3 (default, Feb 21 2014, 13:11:38)
 Type "help", "copyright", "credits" or "license" for more information.
 >>> from datetime import datetime
 >>> dt = datetime.now()
->>> print dt
+>>> print(dt)
 2016-04-12 17:32:38.806353
 >>> dt
 datetime.datetime(2016, 4, 12, 17, 32, 38, 806353)
->>> print dt.strftime('%Y-%m-%d %H:%M:%S')
+>>> print(dt.strftime('%Y-%m-%d %H:%M:%S'))
 2016-04-12 17:32:38
->>> print dt.strftime('%A, %B %d, %Y')
+>>> print(dt.strftime('%A, %B %d, %Y'))
 Tuesday, April 12, 2016
 \end{verbatim}
 
@@ -350,7 +350,7 @@ ser = serial.Serial(
 
 while ser.isOpen():
    datastring = ser.read(size=8)
-   print datetime.utcnow().isoformat(), datastring
+   print(datetime.utcnow().isoformat(), datastring)
 
 ser.close()
 \end{minted}
@@ -402,7 +402,7 @@ sio = io.TextIOWrapper(io.BufferedRWPair(ser, ser, 1), encoding='ascii', newline
 
 while ser.isOpen():
    datastring = sio.readline()
-   print datetime.utcnow().isoformat(), datastring
+   print(datetime.utcnow().isoformat(), datastring)
 
 ser.close()
 \end{minted}
