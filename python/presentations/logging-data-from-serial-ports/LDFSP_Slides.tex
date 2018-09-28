@@ -84,7 +84,7 @@ modems, terminals and various peripherals.
 \href{https://pythonhosted.org/pyserial/shortintro.html}{https://pythonhosted.org/pyserial/shortintro.html}
 
 \begin{minted}[bgcolor=lightyellow]{python}
-#!/usr/bin/python2.7
+#!/usr/bin/env python
 import serial
 
 ser = serial.Serial(
@@ -129,7 +129,7 @@ and the Papouch thermometer datasheet useful.
 \begin{frame}[fragile]
 
 \begin{minted}[bgcolor=lightyellow]{python}
-#!/usr/bin/python2.7
+#!/usr/bin/env python
 
 import serial
 
@@ -144,7 +144,7 @@ ser.close()
 
 \begin{verbatim}
 $ python readserial_basic.py
-+025.1C
+b'+018.9C\r'
 \end{verbatim}
 
 \end{frame}
@@ -244,7 +244,7 @@ reason)}
 \frametitle{Time and Date example}
 
 \begin{minted}[bgcolor=lightyellow]{python}
-#!/usr/bin/python2.7
+#!/usr/bin/env python
 
 from datetime import datetime
 import serial
@@ -264,7 +264,7 @@ ser.close()
 \texttt{datetime.utcnow().isoformat()} is, as you might expect, a
 command to return the current UTC in ISO format, e.g.:
 
-\texttt{2014-03-06T11:55:43.852953 +025.3C}
+\texttt{2018-09-28T13:24:39.773878 b'+018.8C\r'}
 
 \begin{verbatim}
 print(datetime.utcnow().isoformat(), ser.read(size=8))
@@ -290,19 +290,19 @@ print(datetime.utcnow().isoformat(), datastring)
 \end{frame}
 \begin{frame}[fragile]
 \begin{verbatim}
-Python 2.7.3 (default, Feb 21 2014, 13:11:38) 
-[GCC 4.4.7 20120313 (Red Hat 4.4.7-3)] on linux2
+Python 3.6.5 |Anaconda, Inc.| (default, Apr 29 2018, 16:14:56)
+[GCC 7.2.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> from datetime import datetime
 >>> dt = datetime.now()
 >>> print(dt)
-2016-04-12 17:32:38.806353
+2018-09-28 14:27:40.039017
 >>> dt
-datetime.datetime(2016, 4, 12, 17, 32, 38, 806353)
+datetime.datetime(2018, 9, 28, 14, 27, 40, 39017)
 >>> print(dt.strftime('%Y-%m-%d %H:%M:%S'))
-2016-04-12 17:32:38
+2018-09-28 14:27:40
 >>> print(dt.strftime('%A, %B %d, %Y'))
-Tuesday, April 12, 2016
+Friday, September 28, 2018
 \end{verbatim}
 
 \end{frame}
@@ -331,14 +331,13 @@ this be preferable for other instruments?
 
 \end{frame}
 \begin{frame}[fragile]
-\frametitle{Continuous logging
-example}
+\frametitle{Continuous logging example}
 
 In most cases, you will need to log more than one data point. A basic
 modification is fairly simple, using a \texttt{while} loop:
 
 \begin{minted}[bgcolor=lightyellow]{python}
-#!/usr/bin/python2.7
+#!/usr/bin/env python
 
 from datetime import datetime
 import serial
@@ -358,10 +357,10 @@ ser.close()
 returns something like:
 
 \begin{verbatim}
-2014-03-06T14:20:28.147494 +023.9C
-2014-03-06T14:20:28.849280 +024.0C
-2014-03-06T14:20:38.769283 +024.0C
-2014-03-06T14:20:48.688270 +024.1C
+2018-09-28T13:30:56.788659 b'+018.8C\r'
+2018-09-28T13:31:06.780694 b'+018.7C\r'
+2018-09-28T13:31:16.770664 b'+018.8C\r'
+2018-09-28T13:31:26.762724 b'+018.7C\r'
 \end{verbatim}
 
 \end{frame}
@@ -388,10 +387,11 @@ returns something like:
 \begin{frame}[fragile]
 
 \begin{minted}[bgcolor=lightyellow]{python}
-#!/usr/bin/python2.7
+#!/usr/bin/env python
 
 from datetime import datetime
-import serial, io
+import serial
+import io
 
 ser = serial.Serial(
    port='/dev/ttyUSB0',
@@ -399,6 +399,8 @@ ser = serial.Serial(
 )
 
 sio = io.TextIOWrapper(io.BufferedRWPair(ser, ser, 1), encoding='ascii', newline='\r')
+#Needed for Python 3
+sio._CHUNK_SIZE =1
 
 while ser.isOpen():
    datastring = sio.readline()
@@ -424,7 +426,7 @@ Alter your code to write the data out to a file.
 example}
 
 \begin{minted}[bgcolor=lightyellow]{python}
-#!/usr/bin/python
+#!/usr/bin/env python
 '''This version of the readserial program demonstrates
 using python to write an output file'''
 
@@ -442,6 +444,9 @@ sio = io.TextIOWrapper(
    io.BufferedRWPair(ser, ser, 1),
    encoding='ascii', newline='\r'
 )
+
+#Needed for Python 3
+sio._CHUNK_SIZE =1
 
 \end{minted}
 (cont)
@@ -758,7 +763,7 @@ and reading the data from your NetCDF file.
 \frametitle{Plotting data}
 
 \begin{minted}[bgcolor=lightyellow]{python}
-#!/usr/bin/python2.7
+#!/usr/bin/env python
 
 ''' Plots a line graph from a NetCDF file '''
 
