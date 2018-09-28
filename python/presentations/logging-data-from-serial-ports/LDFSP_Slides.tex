@@ -200,7 +200,7 @@ byte so each temperature from the thermometer is eight bytes.
 
 For the data to be useful you need to add a date and time reading.
 Python includes a standard module for this, \texttt{datetime} (
-\url{http://docs.python.org/2/library/datetime.html}
+\url{https://docs.python.org/3/library/datetime.html}
 )
 \begin{itemize}
 \item Can process times in a very wide variety of formats
@@ -274,7 +274,7 @@ print(datetime.utcnow().isoformat(), ser.read(size=8))
 \itemsep1pt\parskip0pt\parsep0pt
 \item
   \texttt{datetime.utcnow()} call can return in advance of the
-  \texttt{ser.read()} call
+  \texttt{ser.read()} call (run \texttt{readserial\_example\_advance\_read.py} to demonstrate this) 
 \item
   timestamp and the temperature should be as close as possible
 \item
@@ -612,7 +612,7 @@ Python has a module designed for reading in text formats. It's called
 ASCII formats. We only need the base reader object here. (Other reader
 objects deal with more complex cases - f.ex. \texttt{DictReader})
 
-\subsection{\href{https://docs.python.org/2/library/csv.html}{https://docs.python.org/2/library/csv.html}}
+\url{https://docs.python.org/3/library/csv.html}
 
 \subsection{Exercise}
 
@@ -749,18 +749,13 @@ You can do a quick-and-dirty plot with \texttt{ncview}:
 
 \texttt{ncview sensor\_data.nc}
 
-\includegraphics[width=\textwidth]{sensor-data-ncview.png}
+\includegraphics[width=0.7\textwidth]{sensor-data-ncview.png}
 
-Obviously, this is not publication quality.
-
-\subsubsection{Exercise}
-
-Q1. Produce a line plot of temperature vs time using \texttt{matplotlib}
-and reading the data from your NetCDF file.
+Obviously, this is not publication quality!
 
 \end{frame}
 \begin{frame}[fragile]
-\frametitle{Plotting data}
+    \frametitle{Plotting data with \texttt{matplotlib}}
 
 \begin{minted}[bgcolor=lightyellow]{python}
 #!/usr/bin/env python
@@ -832,7 +827,7 @@ visualization, analysis, and comparison of diverse gridded and ungridded
 datasets used in the atmospheric sciences''}
 
 It is based on python. Homepage:
-\href{http://www.cistools.net/}{http://www.cistools.net/}
+\url{http://www.cistools.net/}
 
 \begin{verbatim}
 cis plot temp:sensor_data.nc --xaxis time --yaxis temp \ 
@@ -848,9 +843,10 @@ cis plot temp:sensor_data.nc --xaxis time --yaxis temp \
 \begin{frame}
 \frametitle{Further exercises}
 
-\subsection{Command-line options}
+\begin{block}{Command-line options}
 
 e.g. using \texttt{optparse} (for Python \textless{} v2.7) or
 \texttt{argparse} (Python ≥ 2.7)
+\end{block}
 \end{frame}
 \end{document}
