@@ -18,8 +18,6 @@
 \begin{document}
 \section{Logging Data From Serial Ports Exercise}
 
-{\center~Make sure you are using Python 2.7}
-
 \begin{question}
 Import the \texttt{serial} module and 
 open the serial port with the appropriate parameters.
@@ -28,7 +26,7 @@ open the serial port with the appropriate parameters.
 \begin{lrbox}{\serbasic}
 \begin{minipage}{\textwidth}
 \begin{minted}[bgcolor=lightyellow]{python}
-#!/usr/bin/python2.7
+#!/usr/bin/env python
 import serial
 
 ser = serial.Serial(
@@ -50,7 +48,7 @@ ser = serial.Serial(
 Get a reading from the temperature probe.
 \end{question}
 \begin{solution}
-\texttt{print ser.read(size=8)}
+\texttt{print(ser.read(size=8))}
 \par
 "8" here is specific to the Papouch thermometer device.
 \end{solution}
@@ -58,25 +56,6 @@ Get a reading from the temperature probe.
 Add a date and time reading to your output, using sensible choices for 
 format, timezone, etc.
 \end{question}
-\begin{question}
-Prove to yourself that there is a potential problem with a "gap" between 
-the reading and the timestamp.
-\end{question}
-\begin{solution}
-Compare:
-
-\texttt{print datetime.utcnow().isoformat(), ser.read(size=8)}
-
-
-\noindent~and:
-
-
-\texttt{datastring = ser.read(size=8)}\par
-\texttt{print datetime.utcnow().isoformat(), datastring}
-
-\noindent~(run each one a few times in succession, and look at the differences between
-the timestamps)
-\end{solution}
 \begin{question}
 Add a loop to your code to continuously log the reading and time. What would be a good exit condition? Hint: try \texttt{dir(serial.Serial)} to see what methods 
 might be of use.
@@ -214,7 +193,7 @@ that you end up with list object(s) containing floating-point
 temperature in K and timestamps as Python \texttt{datetime} objects.
 
 
-see: {\href{https://docs.python.org/2/library/csv.html}{https://docs.python.org/2/library/csv.html}}
+see: \url{https://docs.python.org/3/library/csv.html}
 \end{question}
 \newsavebox\csvread
 \begin{lrbox}{\csvread}
