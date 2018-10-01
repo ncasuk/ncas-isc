@@ -88,6 +88,7 @@ Rewrite your code to use \texttt{readline()}.
 import io
 …
 sio = io.TextIOWrapper(io.BufferedRWPair(ser, ser, 1), encoding='ascii', newline='\r')
+sio._CHUNK_SIZE =1
 
 while ser.isOpen():
    datastring = sio.readline()
