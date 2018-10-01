@@ -106,35 +106,7 @@ Alter your code to write the data out to a file.
 \newsavebox\logfile
 \begin{lrbox}{\logfile}
 \begin{minipage}{\textwidth}
-\begin{minted}[bgcolor=lightyellow]{python}
-#!/usr/bin/python
-'''This version of the readserial program demonstrates
-using python to write an output file'''
-
-from datetime import datetime
-import serial, io
-
-outfile='/tmp/serial-temperature.tsv'
-
-ser = serial.Serial(
-   port='/dev/ttyUSB0',
-   baudrate=9600,
-)
-
-sio = io.TextIOWrapper(
-   io.BufferedRWPair(ser, ser, 1),
-   encoding='ascii', newline='\r'
-)
-
-with open(outfile,'a') as f: #appends to existing file
-   while ser.isOpen():
-      datastring = sio.readline()
-      #\t is tab; \n is line separator
-      f.write(datetime.utcnow().isoformat() + '\t' + datastring + '\n')
-      f.flush() #included to force the system to write to disk
-
-ser.close()
-\end{minted}
+\inputminted[bgcolor=lightyellow]{python}{../../../python/exercises/example_code/ldfsp.py}
 \end{minipage}
 \end{lrbox}
 \newpage
@@ -165,7 +137,7 @@ def convert_time(tm):
 \begin{solution}
 \noindent\usebox\timeconv
 
-\texttt{strptime} is the opposite of \texttt{strftime} that we used
+\texttt{strptime} is the opposite of \texttt{strftime} that we used earlier.
 \end{solution}
 \begin{question}
 Write a function to convert the temperature as
