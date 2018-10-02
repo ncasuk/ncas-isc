@@ -32,7 +32,7 @@ times = []
 temps = []
 
 #open infile and read data into lists
-with open(INFILE, 'rb') as tsvfile:
+with open(INFILE, 'rt') as tsvfile:
    tsvreader = reader(tsvfile, delimiter='\t')
    for row in tsvreader:
       times.append(convert_time(row[0]))
@@ -82,5 +82,5 @@ dataset.history   =  "%s:  Written  with  script:  write_sensor_data_to_netcdf.p
 # Write the file
 dataset.close()
 
-print "Wrote: %s" % output_file
-print "Try: ncdump %s" % output_file
+print("Wrote: %s" % output_file)
+print("Try: ncdump %s" % output_file)
