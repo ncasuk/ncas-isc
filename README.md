@@ -4,7 +4,7 @@ This repository holds teaching materials for the NCAS Introduction to Scientific
 ## Overview
 The course covers:
 - Introduction to the Linux shell
-- Introduction to basic Python (2.7)
+- Introduction to basic Python (3.7)
 - Data manipulation and visualisation in Python
 
 ## Presentations
