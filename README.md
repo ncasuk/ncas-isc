@@ -17,7 +17,9 @@ The presentations are located at:
 The exercises are located at:
 
 - [Linux shell](https://github.com/ncasuk/ncas-isc/blob/master/shell/presentations/shell_exercises_and_solutions.doc?raw=true)
-- [Python](https://github.com/ncasuk/ncas-isc/tree/master/python/exercises)
+- [Python](https://github.com/ncasuk/ncas-isc/tree/master/python/exercises)  
+
+A repository of completed Python exercises can be found [here](https://github.com/tommygod3/isc-exercises)  
 
 ## Want to re-use these materials?
 Feel free to fork this repository on GitHub and re-use these materials however you like.
