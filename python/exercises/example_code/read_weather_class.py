@@ -49,5 +49,5 @@ class Weather(object):
 
 # Test it with:
 weather = Weather("example_data/weather_meta.csv")
-print weather.header
-print weather.data
+print(weather.header)
+print(weather.data)
