@@ -28,12 +28,12 @@ class Band(object):
 
         self.wages[member] = wage
 
-    def writeAnnualReport(self):
+    def write_annual_report(self):
         "Displays annual report for band."
-        print "Band name: %s\n" % self.name
-        print "%20s | %s" % ("Band member", "Weekly Wage")
+        print("Band name: %s\n" % self.name)
+        print("%20s | %s" % ("Band member", "Weekly Wage"))
 
         members = self.wages.keys()
 
         for member in members:
-            print "%20s | %.2f " % (member, self.wages[member])
+            print("%20s | %.2f " % (member, self.wages[member]))

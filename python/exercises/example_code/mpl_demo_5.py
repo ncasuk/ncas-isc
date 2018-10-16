@@ -87,10 +87,8 @@ CS = plt.contour(Z, levels,
 zc = CS.collections[6]
 plt.setp(zc, linewidth=4)
 
-plt.clabel(CS, levels[1::2],  # label every second level
-           inline=1,
-           fmt='%1.1f',
-           fontsize=14)
+# label every level
+plt.clabel(CS, inline=1, fmt='%1.1f', fontsize=14) 
 
 # make a colorbar for the contour lines
 CB = plt.colorbar(CS, shrink=0.8, extend='both')

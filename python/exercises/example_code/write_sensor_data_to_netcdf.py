@@ -72,7 +72,7 @@ temp[:] = temps
 temp.var_id =  "temp"   
 temp.long_name =  "Temperature   of sensor   (K)"  
 temp.units  =  "K"   
-temp.stabdard_name   =  "air_temperature" 
+temp.standard_name   =  "air_temperature" 
 #  Set   the   global   attributes
 dataset.Conventions  =  "CF-1.6" 
 dataset.institution  =  "NCAS"   

@@ -25,7 +25,7 @@ for app in applicants:
 hs.sack("Danny")
 
 members = hs.getMembers()
-print members
+print(members)
 
 hs.promote("Kym", 5)
 hs.writeAnnualReport()

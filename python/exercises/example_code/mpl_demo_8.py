@@ -3,7 +3,7 @@ from netCDF4 import Dataset, date2index
 import numpy as np
 import matplotlib.pyplot as plt
 # Open a remote netCDF dataset.
-dataset = Dataset("example_data/tas_day_HadGEM2-ES_rcp45_r1i1p1_20460101-20651231_mon_avg_change.nc")
+dataset = Dataset("../example_data/tas_rcp45_2055_mon_avg_change.nc")
 timevar = dataset.variables['time']
 tas = dataset.variables['tas'][0,:].squeeze()
 lats = dataset.variables['lat'][:]

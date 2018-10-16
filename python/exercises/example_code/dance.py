@@ -22,11 +22,11 @@ def boogie(dance_moves):
     these_moves = moves + dance_moves
 
     for count in range(1, 5):
-        print count,
+        print(count,)
         time.sleep(0.3)
 
-    print "GO!"
+    print("GO!")
     for i in range(50):
         time.sleep(0.3)
         index = random.randint(0, len(these_moves) - 1)
-        print these_moves[index] + ","
+        print(these_moves[index] + ",")

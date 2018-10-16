@@ -4,10 +4,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 from datetime import datetime
 
-date = datetime(2007,12,15,0) # date to plot.
+date = datetime(1981,9,1,0) # date to plot.
+
+
 
 # Open a remote netCDF dataset.
-dataset = Dataset('http://www.ncdc.noaa.gov/thredds/dodsC/OISST-V2-AVHRR_agg')
+dataset = Dataset("http://www.ncei.noaa.gov/thredds/dodsC/OisstBase/NetCDF/AVHRR/198109/avhrr-only-v2.19810901.nc")
 timevar = dataset.variables['time']
 timeindex = date2index(date,timevar) # find time index for desired date.
 

@@ -30,13 +30,13 @@ class Band(object):
 
     def writeAnnualReport(self):
         "Displays annual report for band."
-        print "Band name: {0}\n".format(self.name)
-        print "{0:20s} | {1:s}".format("Band member", "Weekly Wage")
+        print("Band name: {0}\n".format(self.name))
+        print("{0:20s} | {1:s}".format("Band member", "Weekly Wage"))
 
         members = self.wages.keys()
 
         for member in members:
-            print "{0:20s} | {1:.2f}".format(member, self.wages[member])
+            print("{0:20s} | {1:.2f}".format(member, self.wages[member]))
             
     def getMembers(self):
         "Return a list of band members."

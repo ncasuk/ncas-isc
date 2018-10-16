@@ -18,8 +18,8 @@ def readHeader(fname):
     return header
 
 # Test it with
-head = readHeader("example_data/weather_meta.csv")
-print head
+head = readHeader("../example_data/weather_meta.csv")
+print(head)
 
 def readData(fname):
     "Reads a data file `fname` and returns a dictionary of arrays of values."
@@ -48,5 +48,4 @@ def readData(fname):
 
     return data
 
-print readData("example_data/weather_meta.csv")
-
+print(readData("../example_data/weather_meta.csv"))
