@@ -18,7 +18,7 @@ def readHeader(fname):
     return header
 
 # Test it with
-head = readHeader("example_data/weather_meta.csv")
+head = readHeader("../example_data/weather_meta.csv")
 print(head)
 
 def readData(fname):
@@ -48,4 +48,4 @@ def readData(fname):
 
     return data
 
-print(readData("example_data/weather_meta.csv"))
+print(readData("../example_data/weather_meta.csv"))

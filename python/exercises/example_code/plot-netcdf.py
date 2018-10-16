@@ -16,8 +16,8 @@ nc = Dataset(datafile, mode='r')
 temp = nc.variables['temp']
 temps = temp[:]
 time = nc.variables['time']
-
-times = num2date(time[:],units=time.units, calendar=time.calendar)
+times = []
+times = num2date(list(time[:]),units=time.units, calendar=time.calendar)
 
 #get "handles" to affect plot styling
 fig, ax = plt.subplots()

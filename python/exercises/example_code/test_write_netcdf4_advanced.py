@@ -54,9 +54,5 @@ for n in range(5):
 
 times[:] = date2num(dates, units = times.units, calendar = times.calendar)
 
-
 # Close file
 dataset.close()
-
-
-
