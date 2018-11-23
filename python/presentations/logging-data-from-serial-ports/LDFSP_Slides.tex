@@ -199,7 +199,7 @@ Python includes a standard module for this, \texttt{datetime} (
 \begin{itemize}
 \item Can process times in a very wide variety of formats
 \item Can deal with different timezones (if you ask it to)
-\item Other date/time modules are available, but \texttt{datetime} is alwyas avaiable.
+\item Other date/time modules are available, but \texttt{datetime} is always avaiable.
 \end{itemize}
 \end{frame}
 \begin{frame}[fragile]
@@ -579,7 +579,7 @@ times = []
 temps = []
 
 #open infile and read data into lists
-with open(infile, 'rb') as tsvfile:
+with open(infile, 'rt') as tsvfile:
    tsvreader = reader(tsvfile, delimiter='\t')
    for row in tsvreader:
       times.append(convert_time(row[0]))
@@ -615,7 +615,7 @@ file.
   Add your time series and temp values to the \texttt{Dataset}
 \item
   Close and write your \texttt{Dataset}. Test that it parses correctly
-  eith \texttt{ncdump}
+  with \texttt{ncdump}
 \end{itemize}
 
 \end{frame}
@@ -774,7 +774,7 @@ It is based on python. Homepage:
 \url{http://www.cistools.net/}
 
 \begin{verbatim}
-cis plot temp:sensor_data.nc --xaxis time --yaxis temp \ 
+cis plot temp:sensor_data.nc --xaxis time \ 
     --title "Papouch Thermometer Data, 2017-02-22, UoL PRD" --xstep "0.010416"  \ 
     --output sensor_data_sample.svg
 \end{verbatim}
