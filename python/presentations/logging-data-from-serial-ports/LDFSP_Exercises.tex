@@ -13,6 +13,7 @@
 \setmainfont{Liberation Serif}
 \usepackage{mathtools}
 \usepackage{unicode-math}
+\usepackage[all]{nowidow}
 \setmathfont{Asana Math}
 
 \begin{document}
@@ -110,10 +111,7 @@ Alter your code to write the data out to a file.
 \inputminted[bgcolor=lightyellow]{python}{../../../python/exercises/example_code/ldfsp.py}
 \end{minipage}
 \end{lrbox}
-\newpage
 \begin{solution}
-\noindent\usebox\logfile
-\par
 (see \texttt{python/exercises/example\_code/ldfsp.py} in your \texttt{ncas-isc} checkout)
 \end{solution}
 \newpage
@@ -124,7 +122,7 @@ Alter your code to write the data out to a file.
 Write a function to convert the time as written in
 your datafile and return a Python \texttt{datetime}
 object.
-\end{question}p
+\end{question}
 \newsavebox\timeconv
 \begin{lrbox}{\timeconv}
 \begin{minipage}{\textwidth}

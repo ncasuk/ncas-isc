@@ -96,15 +96,9 @@ ser = serial.Serial(
 )
 \end{minted}
 
-\subsection{Exercise}
-
-Figure out how to read and return data from the \texttt{ser} object.
-
 As well as the pyserial shortintro above, you may find
 \url{https://pythonhosted.org/pyserial/pyserial_api.html}
 and the Papouch thermometer datasheet useful.
-
-\subsubsection{Q1. Why doesn't \texttt{readline()} work (easily)?}
 
 \end{frame}
 \begin{frame}[fragile]
@@ -205,7 +199,7 @@ Python includes a standard module for this, \texttt{datetime} (
 \begin{itemize}
 \item Can process times in a very wide variety of formats
 \item Can deal with different timezones (if you ask it to)
-\item Other date/time modules are available, but \texttt{datetime} is alwyas avaiable.
+\item Other date/time modules are available, but \texttt{datetime} is always avaiable.
 \end{itemize}
 \end{frame}
 \begin{frame}[fragile]
@@ -224,20 +218,6 @@ Python includes a standard module for this, \texttt{datetime} (
   \texttt{strftime()} will do any format you require (e.g. for documents
   intended to be read by people)
 \end{itemize}
-
-
-\subsection{Exercise}
-
-Add date and time to your output.
-
-\subsubsection{Q1. What time format should you use?
-Why?}
-
-\subsubsection{Q2. Which timezone?}
-
-\subsubsection{Q3. Are you sure the datetime call and the reading are at
-the same time? (within
-reason)}
 
 \end{frame}
 \begin{frame}[fragile]
@@ -312,22 +292,6 @@ Friday, September 28, 2018
 You are probably going to want your data capture code to run
 indefinitely, or at least more than once. You should be familiar with
 flow control and looping constructs from your Intro To Python.
-
-\subsection{Exercise}
-
-Add a loop to your code to continuously log the reading and time.
-
-\subsubsection{Q1. What sort of looping construct are you using?
-Why?}
-
-\subsubsection{Q2. What condition causes the loop to
-exit?}
-
-\subsubsection{Further exercise if you have
-time.}
-
-Try and get the same output using \texttt{readline()} instead. Why might
-this be preferable for other instruments?
 
 \end{frame}
 \begin{frame}[fragile]
@@ -415,10 +379,6 @@ ser.close()
 
 Usually you will want to output the data to a file rather than the
 terminal, so, e.g., the data are on disk in case of a fault or similar.
-
-\subsection{Exercise}
-
-Alter your code to write the data out to a file.
 
 \end{frame}
 \begin{frame}[fragile]
@@ -572,16 +532,6 @@ data. Our temperature is in a slightly weird format due to the Papouch
 sensor including the units, so we need functions to convert the string
 into a number and the time into a Python `datetime` object.
 
-\subsection{Exercise}
-
-\subsubsection{Q1. Write a function to convert the time as written in
-your datafile and return a Python \texttt{datetime}
-object.}
-
-\subsubsection{Q2. Write a function to convert the temperature as
-written in your datafile and return a \texttt{float} in
-Kelvin.}
-
 (T \textsubscript{K} = T \textsubscript{C} + 273.15)
 
 \end{frame}
@@ -614,12 +564,6 @@ objects deal with more complex cases - f.ex. \texttt{DictReader})
 
 \url{https://docs.python.org/3/library/csv.html}
 
-\subsection{Exercise}
-
-Q1. Read your datafile into Python using the \texttt{csv} module such
-that you end up with list object(s) containing floating-point
-temperature in K and timestamps as Python \texttt{datetime} objects.
-
 \end{frame}
 \begin{frame}[fragile]
 \frametitle{Reading data in with the \texttt{csv} module
@@ -635,7 +579,7 @@ times = []
 temps = []
 
 #open infile and read data into lists
-with open(infile, 'rb') as tsvfile:
+with open(infile, 'rt') as tsvfile:
    tsvreader = reader(tsvfile, delimiter='\t')
    for row in tsvreader:
       times.append(convert_time(row[0]))
@@ -671,7 +615,7 @@ file.
   Add your time series and temp values to the \texttt{Dataset}
 \item
   Close and write your \texttt{Dataset}. Test that it parses correctly
-  eith \texttt{ncdump}
+  with \texttt{ncdump}
 \end{itemize}
 
 \end{frame}
@@ -830,7 +774,7 @@ It is based on python. Homepage:
 \url{http://www.cistools.net/}
 
 \begin{verbatim}
-cis plot temp:sensor_data.nc --xaxis time --yaxis temp \ 
+cis plot temp:sensor_data.nc --xaxis time \ 
     --title "Papouch Thermometer Data, 2017-02-22, UoL PRD" --xstep "0.010416"  \ 
     --output sensor_data_sample.svg
 \end{verbatim}
