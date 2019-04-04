@@ -16,7 +16,7 @@ The course covers:
 -  [Python](https://github.com/ncasuk/ncas-isc/tree/master/python/exercises)  
 
 [Example code directory used in Python sessions](https://github.com/ncasuk/ncas-isc/tree/master/python/exercises/example_code)  
-[Example data directory used in Pyton sessions](https://github.com/ncasuk/ncas-isc/tree/master/python/exercises/example_data)
+[Example data directory used in Pyton sessions](https://github.com/ncasuk/ncas-isc/tree/master/python/exercises/example_data)  
 [Repository of completed Python exercises](https://github.com/tommygod3/isc-exercises)  
 
 ## Index  
