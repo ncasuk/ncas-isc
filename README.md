@@ -21,12 +21,12 @@ The course covers:
 
 ## Index  
 ### Overview Presentations  
-* [Algorithmic thinking](https://github.com/ncasuk/ncas-isc/blob/master/overview_presentations/Algorithmic_thinking.pdf)  
-    * [Exercise](https://github.com/ncasuk/ncas-isc/blob/master/overview_presentations/Algorithmic_thinking_exercise_1.pdf)  
-    * [Worksheet](https://github.com/ncasuk/ncas-isc/blob/master/overview_presentations/Algorithmic_thinking_exercise_1_worksheet.pdf)  
-* [NCAS, CMS, CEDA and JASMIN overview](https://github.com/ncasuk/ncas-isc/blob/master/overview_presentations/NCAS_CMS_CEDA_JASMIN_overview.pdf)  
-* [Parallel processing of large datasets](https://github.com/ncasuk/ncas-isc/blob/master/overview_presentations/Parallel_Processing_Large_Data.pdf)  
-* [Why good data curation is essential to doing good science](https://github.com/ncasuk/ncas-isc/blob/master/overview_presentations/Why_good_data_management_is_essential_for_good_science.pdf)  
+* [Algorithmic thinking](https://github.com/ncasuk/ncas-isc/blob/master/working_practices/Algorithmic_thinking.pdf)  
+    * [Exercise](https://github.com/ncasuk/ncas-isc/blob/master/working_practices/Algorithmic_thinking_exercise_1.pdf)  
+    * [Worksheet](https://github.com/ncasuk/ncas-isc/blob/master/working_practices/Algorithmic_thinking_exercise_1_worksheet.pdf)  
+* [NCAS, CMS, CEDA and JASMIN overview](https://github.com/ncasuk/ncas-isc/blob/master/working_practices/NCAS_CMS_CEDA_JASMIN_overview.pdf)  
+* [Parallel processing of large datasets](https://github.com/ncasuk/ncas-isc/blob/master/working_practices/Parallel_Processing_Large_Data.pdf)  
+* [Why good data curation is essential to doing good science](https://github.com/ncasuk/ncas-isc/blob/master/working_practices/Why_good_data_management_is_essential_for_good_science.pdf)  
 ### The Linux Shell  
 1. [Text editors and terminals](https://github.com/ncasuk/ncas-isc/blob/master/shell/presentations/01_editors.pdf)  
 2. Git and Version Control
