@@ -1,1 +1,10 @@
-LDFSP_Slides-temp.pdf
+LDFSP_*-temp.pdf
+LDFSP_*.aux
+LDFSP_*.log
+LDFSP_*.textile
+LDFSP_*.nav
+LDFSP_*.out
+LDFSP_*.snm
+LDFSP_*.vrb
+LDFSP_*.toc
+_minted*

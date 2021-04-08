@@ -10,9 +10,9 @@ def readHeader(fname):
     comments = head[1:6]
     return (location, variable, units, comments)
 
-(location, variable, units, comments) = readHeader("example_data/uk_rainfall.txt")
-print location, variable, units
-print comments[1]
+(location, variable, units, comments) = readHeader("../example_data/uk_rainfall.txt")
+print(location, variable, units)
+print(comments[1])
 
 def checkValue(value):
     # Check if value should be a float 
@@ -54,10 +54,10 @@ def readData(fname):
 
     return data
         
-data = readData("example_data/uk_rainfall.txt")
-print data["Year"]
-print data["JAN"]
+data = readData("../example_data/uk_rainfall.txt")
+print(data["Year"])
+print(data["JAN"])
 
 winter = data["WIN"]
-print MA.is_masked(winter[0])
-print MA.is_masked(winter[1])
+print(MA.is_masked(winter[0]))
+print(MA.is_masked(winter[1]))

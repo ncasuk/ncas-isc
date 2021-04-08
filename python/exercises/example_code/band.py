@@ -24,16 +24,16 @@ class Band(object):
     def employ(self, member, wage):
         "Adds new band member and wage."
         if wage > 100:
-            raise ValueError("{} costs too much - cannot join the band!".format(member))
+            raise ValueError("{0} costs too much - cannot join the band!".format(member))
 
         self.wages[member] = wage
 
-    def writeAnnualReport(self):
+    def write_annual_report(self):
         "Displays annual report for band."
-        print "Band name: %s\n" % self.name
-        print "%20s | %s" % ("Band member", "Weekly Wage")
+        print("Band name: %s\n" % self.name)
+        print("%20s | %s" % ("Band member", "Weekly Wage"))
 
         members = self.wages.keys()
 
         for member in members:
-            print "%20s | %.2f " % (member, self.wages[member])
+            print("%20s | %.2f " % (member, self.wages[member]))

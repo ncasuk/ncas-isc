@@ -1,9 +1,10 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 '''This version of the readserial program demonstrates 
 using python to write an output file'''
 
 from datetime import datetime
-import serial, io
+import serial
+import io
 
 outfile='/tmp/serial-temperature.tsv'
 
@@ -16,6 +17,7 @@ sio = io.TextIOWrapper(
    io.BufferedRWPair(ser, ser, 1), 
    encoding='ascii', newline='\r'
 )
+sio._CHUNK_SIZE =1
 
 with open(outfile,'a') as f: #appends to existing file 
    while ser.isOpen():

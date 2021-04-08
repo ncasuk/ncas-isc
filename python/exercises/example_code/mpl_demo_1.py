@@ -4,7 +4,7 @@ plt.plot([1,2,3,4])
 plt.savefig("demo_1a.png")
 plt.show()
 
-print "USE plt.figure() or plt.show()"
+print("USE plt.figure() or plt.show()")
 
 plt.plot([0,0.5,1,1.2])
 plt.plot([1,2,3,4])

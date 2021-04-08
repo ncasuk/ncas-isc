@@ -12,8 +12,8 @@ import numpy as np
 # Open netCDF dataset and extract data
 dataset = Dataset("example_data/tas.nc")
 tas = dataset.variables['tas'][0,:].squeeze()
-lon_values = dataset.variables['lon'][:]
-lat_values = dataset.variables['lat'][:]
+lons = dataset.variables['lon'][:]
+lats = dataset.variables['lat'][:]
 
 # Create meshgrid 
-lons, lats = np.meshgrid(lon_values, lat_values)
+#lons, lats = np.meshgrid(lon_values, lat_values)
