@@ -4,7 +4,9 @@ original author: Matt Pritchard
 Adapted for ISC from JASMIN workshop materials: Alison Pamment
 ---
 
-> **_NOTE:_**  Adapted for the ISC from JASMIN workshop materials by Alison Pamment. At these events, training accounts are **temporarily** assigned to course participants. In this way we can make sure that all participants have access to all the necessary resources and can minimise logistical issues during the events.
+> **_NOTE:_** For the purpose of this course you will be accessing resources on the [JASMIN](https://jasmin.ac.uk/about/) computing platform.
+
+> **_NOTE:_**  For the purpose of this course, training accounts are **temporarily** assigned to course participants. In this way we can make sure that all participants have access to all the necessary resources and can minimise logistical issues during the events.
 For continued use of JASMIN beyound the duration of the course, or for use of the training materials outside of one of the organised events, users are asked to apply for their own, regular JASMIN account via the normal process if they don't already have one, using an email address associated with their host institution.
 
 > **_NOTE:_**  If the email address you've given us for your **JASMIN training account** is provided by an online service like Gmail, Hotmail or Outlook.com, we recommend that you make that account as secure as possible using 2-factor authentication: please check how to enable this with your own service provider.
@@ -223,7 +225,7 @@ If not, you will need to try again before you will be able to log in to a remote
 
 3. Could not open a connection to your authentication agent
 
-   This means that the agent is not running, for some reason. If you can't out why, having checked the instructions above for your platform, you can start it manually with
+   This means that the agent is not running, for some reason. If you can't find out why, having checked the instructions above for your platform, you can start it manually with
    ```
    $ eval (ssh-agent -s)
    agent pid 1234    # or some similar output
