@@ -11,7 +11,7 @@ For continued use of JASMIN beyound the duration of the course, or for use of th
 
 > **_NOTE:_**  If the email address you've given us for your **JASMIN training account** is provided by an online service like Gmail, Hotmail or Outlook.com, we recommend that you make that account as secure as possible using 2-factor authentication: please check how to enable this with your own service provider.
 
-> **_NOTE:_**  This takes you up to (but not including) the step of actually connecting to JASMIN: This is the subject of [ex01](../ex01). You don't need to try that here: it's just about getting everything set up so that it should work when you do.
+> **_NOTE:_**  This takes you up to (but not including) the step of actually connecting to JASMIN: That is the subject of the pre-course session that was advertised in the course joining instructions. This exercise is just about getting everything set up so that it should work when you do connect.
 
 # Exercise 0: Getting set up for the ISC course
 
