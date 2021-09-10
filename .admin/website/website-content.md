@@ -51,7 +51,9 @@ The course will provide:
 
 You will be tutored by experts from the Centre for Environmental Data Analysis (CEDA) and
 other NCAS institutions. The trainers have extensive experience of using Linux and Python to 
-develop software for analysing and managing scientific data.
+develop software for analysing and managing scientific data. CEDA manages (i) the multi-petabyte 
+[CEDA Archive](https://archive.ceda.ac.uk/) of environmental data and (ii) the large-scale data 
+analysis [JASMIN](https://jasmin.ac.uk/) platform.
 
 ## COURSE SCHEDULE
 
