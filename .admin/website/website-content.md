@@ -2,7 +2,9 @@
 
 **Dates: November 2021**
 
-**Location: NCAS HQ, University of Leeds**
+**Duration: 5 days (full-time)**
+
+**Location: Online**
 
 ## Intro section...
 
