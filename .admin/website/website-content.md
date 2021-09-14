@@ -16,7 +16,7 @@ skills that are essential for almost all researchers in modern scientific
 disciplines. Participants will learn how to use basic scripting 
 to transfer and manage data, write modular code for automating repetitive 
 tasks, use Python to handle/visualise scientific data and use version 
-systems to capture and manage their workflows effectively.
+constrol systems to capture and manage their workflows effectively.
 
 The course will also provide you with the necessary experience needed 
 to attend our [Data Analysis Tools](https://www.ncas.ac.uk/study-with-us/data-analysis-tools/) course.
