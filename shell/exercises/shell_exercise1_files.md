@@ -1,61 +1,28 @@
-<!-- JavaScript Bundle with Popper -->
-<head>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <link href="exercise.css" rel="stylesheet">
-</head>
-    <body>
-      <div class="container">
+# Exercise 1: Exploring the file system
 
-<h1>Exercise 1: Exploring the file system</h1>
-
-<h2>Aim</h2>
+## Aim
 Login and look at some files. 
-<h2>Issues covered</h2>
-Commands: <code>pwd, ls, gedit, cd, cp, mv, mkdir, rm, rmdir, man</code>. What’s in  <code>/tmp</code>, <code>/</code> and <code>/etc</code>
-<h2>Instructions</h2>
 
-<ol>
+## Issues covered
+Commands: `pwd`, `ls`, `gedit`, `cd`, `cp`, `mv`, `mkdir`, `rm`, `rmdir`, `man`. What’s in  `/tmp`, `/` and `/etc`
 
-<li>Let's get started by logging in. </li>
-    <ol>
-<li>Login to the laptop (you should have a username and password).</li>
-<li>Start a terminal window.</li>
-</ol>
+## Instructions
 
+1. Let's get started by logging in. 
+  - Login to the laptop (you should have a username and password).
+  - Start a terminal window.
 
-<li>Have a look around your home directory.  Try the following commands.
-<pre>pwd
-ls 
-ls -l
-ls -a
-ls ..
-ls shell
-</pre>
-</li>
+2. Have a look around your home directory.  Try the following commands.
 
-<div id="sol1" class="solution">
-<pre> 
-$ pwd
-/Users/sjp23/play/workshop_shell
-$ ls
-acsoe
-$ ls -l
-total 0
-drwxr-x---  16 sjp23  staff  544 26 Feb 16:21 acsoe
-$ ls -a
-.	..	acsoe
-$ ls ..
-badc			dataman		workshop_shell
-$ ls acsoe
-00README	eae-96	ease-96	freetex-96	hillcloud-96	lterm
-c-130	eae-97	ease-97	freetex-98	hillcloud-97	ozprof
-</pre>
-</div>
-<button id="b_sol1" class="btn btn-primary">Solution</button> <script>$( "#b_sol1" ).click(function() {$( "#sol1" ).toggle( "slow" );});</script>
+    pwd
+    ls 
+    ls -l
+    ls -a
+    ls ..
+    ls shell
+
 
 <li>Let’s have a look somewhere else. Change directory to <code>acsoe</code>. 
 <pre>
