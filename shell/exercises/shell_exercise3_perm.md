@@ -1,4 +1,4 @@
-[Solutions](shell_exercise3_perm_sol.md)  [Exercise list](shell_exercise_index.md)
+| [Solutions](shell_exercise3_perm_sol.md) | [Exercise list](shell_exercise_index.md) |
 
 # Exercise 3: Permissions
 
