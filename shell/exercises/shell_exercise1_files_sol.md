@@ -2,7 +2,7 @@
 
 # Exercise 1 Solutions: Exploring the file system
 
-[1.2](#ex2)
+[2](#ex2)
 
     $ pwd
     /Users/sjp23/play/workshop_shell
@@ -19,7 +19,7 @@
     00README	eae-96	ease-96	freetex-96	hillcloud-96	lterm
     c-130	eae-97	ease-97	freetex-98	hillcloud-97	ozprof
 
-[1.3](#ex3)
+[3](#ex3)
 
     $ cd acsoe
     $ pwd
@@ -49,7 +49,7 @@
     acsoe
 
 
-[1.3](#ex3)
+[4](#ex4)
 
 Make a file called "myfile" in "/tmp" with gedit.
 
