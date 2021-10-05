@@ -1,7 +1,7 @@
 
 # Shell Exercises
 
-- [Exercise 1 - The File System] (shell_exercise1_files.md)
+- [Exercise 1] (shell_exercise1_files.md) - The File System
 - [Exercise 2 - Pipes and Filters] (shell_exercise2_pipes.md) 
 - [Exercise 3 - Permissions] (shell_exercise3_perm.md) 
 - [Exercise 4 - Needle in a Haystake] (shell_exercise4_find.md) 
