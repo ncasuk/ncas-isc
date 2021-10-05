@@ -24,6 +24,9 @@
     $ cd acsoe
     $ pwd
     /Users/sjp23/play/workshop_shell/acsoe
+
+> Note my working directory is not the same as yours because you are on a different computer. 
+
     $ ls
     00README	eae-96	ease-96	freetex-96	hillcloud-96	lterm
     c-130	eae-97	ease-97	freetex-98	hillcloud-97	ozprof
