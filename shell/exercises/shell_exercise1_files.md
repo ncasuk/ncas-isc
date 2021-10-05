@@ -16,12 +16,12 @@ Commands: `pwd`, `ls`, `gedit`, `cd`, `cp`, `mv`, `mkdir`, `rm`, `rmdir`, `man`.
 
 2. Have a look around your home directory.  Try the following commands.
 
-    pwd
-    ls 
-    ls -l
-    ls -a
-    ls ..
-    ls shell
+        `pwd`
+        ls 
+        ls -l
+        ls -a
+        ls ..
+        ls shell
 
 
 <li>Let’s have a look somewhere else. Change directory to <code>acsoe</code>. 
