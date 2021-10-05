@@ -1,25 +1,5 @@
-<!-- JavaScript Bundle with Popper -->
-<head>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    </head>
-    <body>
-      <div class="container">
+| [Questions](shell_exercise6_wakeup_git.md) | [Exercise list](shell_exercise_index.md) |
 
-Exercise 6: Wake up
-
-AIM
-What did we do yesterday?
-Issues covered
-Stuff from yesterday.
-
-Instructions
-
-1.	Make a pipe and filter command to find the third biggest file (by number of lines) in the acsoe directory. (use find, sort tail and head) 
-2.	Use $() to store the result in a variable. 
-X = $(my long command with |pipes and | filters)
-3.	Use echo to show the result is stored in the variable.
-echo $X
 
 
  

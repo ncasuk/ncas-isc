@@ -1,3 +1,4 @@
+| [Questions](shell_exercise3_perm.md) | [Exercise list](shell_exercise_index.md) |
 
  
 # Solution 3: Permissions

@@ -1,4 +1,5 @@
 
+| [Questions](shell_exercise1_files.md) | [Exercise list](shell_exercise_index.md) |
 
 # Exercise 1 Solutions: Exploring the file system
 

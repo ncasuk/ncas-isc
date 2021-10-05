@@ -1,3 +1,4 @@
+| [Questions](shell_exercise2_pipes.md) | [Exercise list](shell_exercise_index.md) |
 
 # Solution 2: Pipes and filters
 

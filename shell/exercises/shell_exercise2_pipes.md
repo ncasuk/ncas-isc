@@ -1,3 +1,4 @@
+| [Solutions](shell_exercise2_pipes_sol.md) | [Exercise list](shell_exercise_index.md) |
 
 # Exercise 2: Pipes and filters
 
@@ -15,5 +16,3 @@ Using shell command completion and history.
 3. Use `*` to look for the longest file in all the subdirectories of `acsoe/eae-97`.
 4. Have a play with the arrow keys and the tab key - what do they do? Try the `history` command. 
 
-
-[Solutions](shell_exercise2_pipes_sol.md)  

@@ -1,29 +1,7 @@
-<!-- JavaScript Bundle with Popper -->
-<head>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-</head>
-<body>
-  <div class="container">
+| [Questions](shell_exercise7_scripts.md) | [Exercise list](shell_exercise_index.md) |
 
- 
-<h1>Exercise 7: Shell scripts</h1>
-<a class="btn">test</a>
-<h2>AIM</h2>
-<p>Use a shell script to look at output and error redirection.</p>
-<h2>Issues covered</h2>
-<code> >, >>, >>, which, tail, for</code> loops. Interpreter header lines.
 
-<h2>Instructions</h2>
 
-<ol>
-<li>Go into "acsoe/eae-97/macehead". This is a directory containing only files and no subdirectories.</li>
-<li>Make a shell script that loops over the files in a directory printing the last line in each file. Redirect the output to a file.</li>
-  <li>Make a subdirectory to trigger an error message from the tail command. Append this to an error log. Run the command a few times. </li>
-    <li>Make sure your script is only executable by you and it has the right #! first line. </li>
-      <li>Use which to find the python interpreter. Try changing the first line to point to that interpreter instead. What happens now when you run it?</li>
-    </ol>
- 
 
 <h2>Solution 7: Shell scripts</h2>
 1-4.
