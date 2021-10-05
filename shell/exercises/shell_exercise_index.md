@@ -1,6 +1,7 @@
 
 # Shell Exercises
 
+- [Exercise 0] (https://ceda.ac.uk) - The File System
 - [Exercise 1] (shell_exercise1_files.md) - The File System
 - [Exercise 2 - Pipes and Filters] (shell_exercise2_pipes.md) 
 - [Exercise 3 - Permissions] (shell_exercise3_perm.md) 
