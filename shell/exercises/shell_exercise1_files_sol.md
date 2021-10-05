@@ -3,6 +3,7 @@
 # Exercise 1 Solutions: Exploring the file system
 
 [Exercise 2](#ex2)
+
     $ pwd
     /Users/sjp23/play/workshop_shell
     $ ls
