@@ -2,18 +2,17 @@
 <head>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-       <link href="exercise.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link href="exercise.css" rel="stylesheet">
 </head>
     <body>
       <div class="container">
 
 <h1>Exercise 1: Exploring the file system</h1>
 
-<h2>AIM</h2>
+<h2>Aim</h2>
 Login and look at some files. 
 <h2>Issues covered</h2>
 Commands: <code>pwd, ls, gedit, cd, cp, mv, mkdir, rm, rmdir, man</code>. What’s in  <code>/tmp</code>, <code>/</code> and <code>/etc</code>
@@ -38,48 +37,8 @@ ls shell
 </pre>
 </li>
 
-
-<p>
-    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-      Link with href
-    </a>
-    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-      Button with data-target
-    </button>
-  </p>
-  <div class="collapse" id="collapseExample">
-    <div class="card card-body">
-      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-    </div>
-  </div>
-
-<li>Let’s have a look somewhere else. Change directory to acsoe. 
-<pre>
-    $ cd ncas-isc/shell/acsoe
-</pre>
-Now repeat (2)
-</li>
-
-<li>Manipulating some files and directories.</li>
-<ol>
-<li>Make a file called "myfile" in "/tmp" with gedit.</li>
-<li>Make a subdirectory in "/tmp" called "mydir"</li>
-<li>Rename the file "myfile.txt" and the subdirectory "X"</li>
-<li>Copy "myfile.txt" into the "X" subdirectory</li>
-<li>Tidy up - delete the file and subdirectory</li>
-<li>Use the "man ls" command to find other listing options. Experiment… have a look in "/", and "/etc".</li>
-<li>How not to do it:</li>
-<li>Use cd with no arguments to jump back to your home directory.</li>
-<li>Go into the "pain" directory</li>
-<li>Use ls to see what files are here</li>
-<li>Move them to more sensible names (if you can).</li>
-</ol>
-</ol>
-
-<h1>Solution 1: Exploring the file system</h1>
-
-2.
-<pre>
+<div id="sol1" class="solution">
+<pre> 
 $ pwd
 /Users/sjp23/play/workshop_shell
 $ ls
@@ -95,8 +54,17 @@ $ ls acsoe
 00README	eae-96	ease-96	freetex-96	hillcloud-96	lterm
 c-130	eae-97	ease-97	freetex-98	hillcloud-97	ozprof
 </pre>
+</div>
+<button id="b_sol1" class="btn btn-primary">Solution</button> <script>$( "#b_sol1" ).click(function() {$( "#sol1" ).toggle( "slow" );});</script>
 
-3.
+<li>Let’s have a look somewhere else. Change directory to <code>acsoe</code>. 
+<pre>
+$ cd ncas-isc/shell/acsoe
+</pre>
+Now repeat (2)
+</li>
+
+<div id="sol2" class="solution">
 <pre>
 $ cd acsoe
 $ pwd
@@ -125,8 +93,27 @@ c-130		ease-96	freetex-98 lterm
 $ ls ..
 acsoe
 </pre>
+</div>
+<button id="b_sol2" class="btn btn-primary">Solution</button> <script>$( "#b_sol2" ).click(function() {$( "#sol2" ).toggle( "slow" );});</script>
 
-4.
+
+<li>Manipulating some files and directories.</li>
+<ol>
+<li>Make a file called "myfile" in "/tmp" with gedit.</li>
+<li>Make a subdirectory in "/tmp" called "mydir"</li>
+<li>Rename the file "myfile.txt" and the subdirectory "X"</li>
+<li>Copy "myfile.txt" into the "X" subdirectory</li>
+<li>Tidy up - delete the file and subdirectory</li>
+<li>Use the "man ls" command to find other listing options. Experiment… have a look in "/", and "/etc".</li>
+<li>How not to do it:</li>
+<li>Use cd with no arguments to jump back to your home directory.</li>
+<li>Go into the "pain" directory</li>
+<li>Use ls to see what files are here</li>
+<li>Move them to more sensible names (if you can).</li>
+</ol>
+
+
+<div id="sol3" class="solution">
 <pre>
 <span class="cmd">$ cd /tmp</span>
 <span class="cmd">$ gedit myfile</span>
@@ -172,3 +159,6 @@ total 0
 -rw-r--r--  1 sjp23  staff  0 20 Mar 12:49 What_the_dollar
 -rw-r--r--  1 sjp23  staff  0 20 Mar 12:53 omega  
 </pre>
+</div>
+<button id="b_sol3" class="btn btn-primary">Solution</button> <script>$( "#b_sol3" ).click(function() {$( "#sol3" ).toggle( "slow" );});</script>
+</ol>
