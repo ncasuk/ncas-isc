@@ -23,7 +23,7 @@ Commands: `pwd`, `ls`, `gedit`, `cd`, `cp`, `mv`, `mkdir`, `rm`, `rmdir`, `man`.
         ls ..
         ls shell
 
-    [Solutions](shell_exercise_files_sol.md#ex2)        
+    [Solutions](shell_exercise1_files_sol.md#ex2)        
 
 3. Let’s have a look somewhere else. Change directory to `acsoe`. 
 
