@@ -21,9 +21,7 @@ Commands: `pwd`, `ls`, `gedit`, `cd`, `cp`, `mv`, `mkdir`, `rm`, `rmdir`, `man`.
         ls -l
         ls -a
         ls ..
-        ls shell
-
-    [Solutions](shell_exercise1_files_sol.md#ex2)        
+        ls shell      
 
 3. Let’s have a look somewhere else. Change directory to `acsoe`. 
 
@@ -47,3 +45,4 @@ Commands: `pwd`, `ls`, `gedit`, `cd`, `cp`, `mv`, `mkdir`, `rm`, `rmdir`, `man`.
     Use `ls` to see what files are here
     Move them to more sensible names (if you can).
 
+[Solutions](shell_exercise1_files_sol.md)  

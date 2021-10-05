@@ -16,4 +16,4 @@ Using shell command completion and history.
 4. Have a play with the arrow keys and the tab key - what do they do? Try the `history` command. 
 
 
-
+[Solutions](shell_exercise2_pipes_sol.md)  
