@@ -1,4 +1,4 @@
-
+[Solutions](shell_exercise3_perm_sol.md)  [Exercise list](shell_exercise_index.md)
 
 # Exercise 3: Permissions
 
@@ -26,4 +26,3 @@ Commands: `chmod`, `ls -l`, `more`, `less`, `chgrp`
     3. Experiment with the permissions on the directory.
 
  
-[Solutions](shell_exercise3_perm_sol.md)  
