@@ -14,11 +14,11 @@ Commands: `find`, `grep`.
     1. Change directory to acsoe.
     2. Use the find command to look for the file called `needle.txt`.
 
-2. Expand your search to look for files with needle anywhere in the filename. Same again but use a `*` or two. 
+2. Expand your search to look for files with `needle` anywhere in the filename. You need the same command again but use a `*` or two. 
 3. Use grep to find the word needle in the files under `acsoe/ease-96/Jetstream`.
 4. Use the `man` page for `grep` to work out how to do a case insensitive search for needle. 
 5. Use `grep` on the `js960724.ps2` file to print all lines without `1` in. (use the man page to find the right option)
-6. Use grep on the `js960724.ps2` file to print all lines without `4` or `6` in, but does contain `33`. 
-     (use a pipes to chain `grep` commands together)
+6. Use grep on the `js960724.ps2` file to print all lines without `4` or `6` in, but do contain `33`.  
+   (Hint: use pipes to  chain `grep` commands together)
 
 

@@ -6,7 +6,7 @@
 Login and look at some files. 
 
 ## Issues covered
-Commands: `pwd`, `ls`, `gedit`, `cd`, `cp`, `mv`, `mkdir`, `rm`, `rmdir`, `man`. What’s in  `/tmp`, `/` and `/etc`
+Commands: `pwd`, `ls`, `nano`, `cd`, `cp`, `mv`, `mkdir`, `rm`, `rmdir`, `man`. What’s in  `/tmp`, `/` and `/etc`
 
 ## Instructions
 
@@ -31,10 +31,10 @@ Commands: `pwd`, `ls`, `gedit`, `cd`, `cp`, `mv`, `mkdir`, `rm`, `rmdir`, `man`.
 
 4. Manipulating some files and directories.
 
-    - Make a file called "myfile" in "/tmp" with gedit.
-    - Make a subdirectory in "/tmp" called "mydir"
-    - Rename the file "myfile.txt" and the subdirectory "X"
-    - Copy "myfile.txt" into the "X" subdirectory
+    - Make a file called `myfile` in `/tmp` with `nano`.
+    - Make a subdirectory in `/tmp` called `mydir`
+    - Rename the file `myfile.txt` and the subdirectory `X`
+    - Copy `myfile.txt` into the `X` subdirectory
     - Tidy up - delete the file and subdirectory
 
     Use the `man ls` command to find other listing options. Experiment… have a look in `/`, and `/etc`.
@@ -45,4 +45,4 @@ Commands: `pwd`, `ls`, `gedit`, `cd`, `cp`, `mv`, `mkdir`, `rm`, `rmdir`, `man`.
     Use `ls` to see what files are here
     Move them to more sensible names (if you can).
 
-[Solutions](shell_exercise1_files_sol.md)  
+ 

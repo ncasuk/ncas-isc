@@ -1,21 +1,21 @@
 | [Solutions](shell_exercise8_ssh_sol.md) | [Exercise list](shell_exercise_index.md) |
 
-SSH
+# SSH
 
-AIM
+## Aim
 Have a go at using ssh.
-Issues covered
-ssh, scp, df
 
-Instructions
+## Issues covered
+`ssh`, `scp`, `df`
 
-Note: User names and IP addresses may change.
+## Instructions
 
-1.	ssh to "xuser1@10.30.10.119". 
-2.	Use ls, pwd and other commands to prove to yourself it’s a different computer.
-3.	Logout (use exit or ^D)
-4.	Use scp to copy some files to the remote computer. 
-5.	Login again and ls the files. 
-6.	Logout
-7.	Use ssh to run df on the remote computer.
+1. cd to `/tmp` and make a file `touch <username>.txt`
+2.	ssh to `<username>@sci2.jasmin.ac.uk`. 
+3.	This computer shares the same home directory as `sci1.jasmin.ac.uk` but not `/tmp`.  Use ls, pwd and other commands to prove to yourself it’s the same home directory. Then change directory to `/tmp`. The `<username>.txt` will not be there as it is a different computer.
+4.	Logout (use exit or ^D)
+5.	Use scp to copy some files to `/tmp` on the remote computer. 
+6.	Login again and list the files you copied. 
+7.	Logout
+8.	Use ssh to run `df /tmp` on the remote computer.
 
