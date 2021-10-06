@@ -2,15 +2,6 @@
 
 # Solution 8: SSH
 
-1.  
-2.	
-3.	
-4.	Logout (use exit or ^D)
-5.	Use scp to copy some files to `/tmp` on the remote computer. 
-6.	Login again and list the files you copied. 
-7.	Logout
-8.	Use ssh to run `df /tmp` on the remote computer.
-
 1. cd to `/tmp` and make a file `touch <username>.txt`
 
         $ cd /tmp
@@ -136,7 +127,7 @@
         /dev/sda5        3997376 70336   3700944   2% /tmp
 
   For comparision `df` on sci1.
-  
+
         $ df /tmp
         Filesystem     1K-blocks    Used Available Use% Mounted on
         /dev/sda5        3997376 1169952   2601328  32% /tmp

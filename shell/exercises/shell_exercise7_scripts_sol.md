@@ -59,7 +59,7 @@
         23 1001 
         ...
 
-    The output contains the last lines from some binary files so it may not make a lot of sence! 
+The output contains the last lines from some binary files so it may not make a lot of sence! 
 
 5. 
 
