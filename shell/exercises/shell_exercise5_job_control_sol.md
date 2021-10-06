@@ -98,8 +98,17 @@
         [2]-  Done                    ./snooze.sh
         [3]+  Done                    ./snooze.sh
 
-        
+7.
 
+        $ Y=hello
+        $ echo * $Y
+        aria2-1.34.0 aria2-1.34.0.tar bcron bcron.old crontamer.py csum csum_old Desktop Documents downloader Downloads edc_reformat eumetcast_transfers extract-era-data.sh york_workshop_shell york_workshop_shell.tar.gz hello
+        $ echo "* $Y"
+        * hello
+        $ echo '* $Y'
+        * $Y
+
+        
 
 
 

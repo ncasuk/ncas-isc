@@ -1,4 +1,4 @@
-| [Solutions](shell_exercise6_wakeup_git_sol.md) | [Exercise list](shell_exercise_index.md) |
+| [Solutions](shell_exercise6_wakeup_sol.md) | [Exercise list](shell_exercise_index.md) |
 
 # Exercise 6: Wake up
 
