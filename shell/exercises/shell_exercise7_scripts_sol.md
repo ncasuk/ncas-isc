@@ -59,7 +59,7 @@
         23 1001 
         ...
 
-The output contains the last lines from some binary files so it may not make a lot of sence! 
+The output contains the first lines from some binary files so it may not make a lot of sence! 
 
 5. 
 
@@ -85,7 +85,8 @@ The output contains the last lines from some binary files so it may not make a l
         do
         head -1 $i
         done
-        sam.pepler@RSMLSP1 macehead % ./my.sh
+
+        $ ./my.sh
           File "./my.sh", line 3
             for i in *
                     ^

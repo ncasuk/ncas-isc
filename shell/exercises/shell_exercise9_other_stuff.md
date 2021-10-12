@@ -1,43 +1,48 @@
-| [Solutions](shell_exercise9_other_stuff_sol.md) | [Exercise list](shell_exercise_index.md) |
+| [Exercise list](shell_exercise_index.md) |
 
  
-# Other stuff
+# Other stuff to try out.
 
 ## Aim
 Find out about some other useful stuff.
 
 ### Xargs
 
-1. Use `find` piped to `xargs` to do something (`wc`, `ls –l` , `head -1`, etc)
+1. Use `find` piped to `xargs` to do something (`wc`, `ls –l` , `head -1`, etc). For example try this:
 
-### Wget
+        $ find acsoe  -type f  -name "ab*" | xargs ls -l
+        
+### Wget and curl
 
-2. Look at `ftp://sparc-ftp1.ceda.ac.uk/sparc/hres/1_second/text/2011/03020/` in a web browser.
-3. Use `wget` to download `ftp://sparc-ftp1.ceda.ac.uk/sparc/hres/1_second/text/2011/03020/03020_2011010112.tgz`
+1. Have a look here: https://dap.ceda.ac.uk/badc/cira/data/ 
+2. Grab the `nht.lsn` file using curl. `curl https://dap.ceda.ac.uk/badc/cira/data//nht.lsn`
+3. Try this wget command: `wget -e robots=off --mirror --no-parent -r https://dap.ceda.ac.uk/badc/cira/data/`. Look for the dap.ceda.ac.uk directory for the results.
 
 ### Copying data
 
-4. Copy the data in the `acsoe` directory to an `acsoe2` directory with `rsync`. Use the `–v` verbose option so you can see what is happening.
-5. Run the command again and note what is copied.
-6. Add a new file to the `acsoe` directory, modify another file and delete a third. Run the command a third time. 
-7. Try `rsync` to the remote machine used in the `scp` exercise. 
+1. Copy the data in the `acsoe` directory to an `acsoe2` directory with `rsync`. Use the `–v` verbose option so you can see what is happening.
+2. Run the command again and note what is copied.
+3. Add a new file to the `acsoe` directory, modify another file and delete a third. Run the command a third time. 
+4. Try `rsync` to the remote machine used in the `scp` exercise. 
 
 ### Globbing
 
-8. Use glob matching in `acsoe/freetex-98/Jungfrau` to match files for dates from `980323` to `980327`
-9. Make a for loop that word counts only files from that date range. 
+1. Use glob matching in `acsoe/freetex-98/Jungfrau` to match files for dates from `980323` to `980327`
+2. Make a for loop that word counts only files from that date range. 
 
 ### Getting out of text editors
 
-Some editors use the terminal window. The default editor used by some commands means you need to know how to get out of them sometimes. If you are not used to them you can get stuck.
+We have been using `nano`. There are a couple of other common editors that use the terminal window. 
+The default editor used by some commands means you need to know how to get out of them sometimes and 
+it's not obvious how.  If you are not used to them you can get stuck.
 
-10. `emacs` – get out with with ^X followed by ^C
+1. `emacs` – get out with with ^X followed by ^C 
 
         $ emacs test.txt
     
     Then try to exit.
 
-11. `vi` – get out with : followed by q. 
+2. `vi` – get out with : followed by q. 
 
         $ vi test.txt
 
@@ -45,7 +50,7 @@ Some editors use the terminal window. The default editor used by some commands m
 
 ### `/dev/null`
 
-12. Give this a go 
+12. Try this:
 
         $ head -1 `find acsoe/freetex-98 -type f` 
 
@@ -76,7 +81,7 @@ Some editors use the terminal window. The default editor used by some commands m
 
         $ gzip macehead.tar 
 
-    Move the file to `/tmp
+    Move the file to `/tmp`
     Uncompress it with `gunzip`
 
 
