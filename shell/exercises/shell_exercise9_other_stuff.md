@@ -50,38 +50,58 @@ it's not obvious how.  If you are not used to them you can get stuck.
 
 ### `/dev/null`
 
-12. Try this:
+1. Try this:
 
         $ head -1 `find acsoe/freetex-98 -type f` 
 
-    Find the errors printed to the screen if you can. There will be too much output to notice the errors. Then try this:
+    Find the errors printed to the screen if you can. There will be too much output to notice the errors. 
+
+2. Try this instead to dump the output and just make the errors visible:
 
         $ head -1 `find acsoe/freetex-98 -type f` > /dev/null
 
 ### Sourcing files
 
-13. Make a script file that sets a variable
+1. Make a script file that sets a variable
 
+        $ nano myscript.sh
+        $ cat myscript.sh
         Z=Dino 
 
-    Run the file and then use `echo` to look at the `Z` variable. Try again but this time do this
+2. Run the script and then use `echo` to look at the `Z` variable. 
+
+        $ chmod u+x m.sh 
+        $ ./m.sh 
+        $ echo $X
+
+        $
+
+    Does not set X in the current shell.
+
+3. Try again but this time use the `source` command
 
         $ source ./myscript
 
-    This is called sourcing a file is runs it in the current shell instead of starting a new one. Use `echo` to see 
-    the set variable. 
+    This is called sourcing a file.  It runs the commands in the files as if you had typed them in at the command line. 
+    This means the commands are executed in the current shell instead of starting a new one. 
+    
+4. Use `echo` to see the set variable. 
+
+        $ echo $X
+        Dino
 
 ### Tar and Gzip
 
-14. Make a tar file
+1. Make a tar file
 
         $ tar cvf macehead.tar acsoe/lterm/macehead
 
-    Compress is with `gzip`
+2. Compress is with `gzip`
 
         $ gzip macehead.tar 
 
-    Move the file to `/tmp`
-    Uncompress it with `gunzip`
+3. Move the file to `/tmp`
+
+4. Uncompress it with `gunzip`
 
 
