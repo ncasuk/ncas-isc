@@ -18,7 +18,7 @@ Find out about some other useful stuff.
 2. Grab the `nht.lsn` file using curl. `curl https://dap.ceda.ac.uk/badc/cira/data//nht.lsn`
 3. Try this wget command: `wget -e robots=off --mirror --no-parent -r https://dap.ceda.ac.uk/badc/cira/data/`. Look for the dap.ceda.ac.uk directory for the results.
 
-# Copying data
+### Copying data
 
 1. Copy the data in the `acsoe` directory to an `acsoe2` directory with `rsync`. Use the `–v` verbose option so you can see what is happening.
 2. Run the command again and note what is copied.
