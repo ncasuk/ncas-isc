@@ -31,13 +31,13 @@ Find out about some other useful stuff.
 
 Some editors use the terminal window. The default editor used by some commands means you need to know how to get out of them sometimes. If you are not used to them you can get stuck.
 
-10. Emacs – get out with with ^X followed by ^C
+10. `emacs` – get out with with ^X followed by ^C
 
         $ emacs test.txt
     
     Then try to exit.
 
-11. Vi – get out with : followed by q. 
+11. `vi` – get out with : followed by q. 
 
         $ vi test.txt
 

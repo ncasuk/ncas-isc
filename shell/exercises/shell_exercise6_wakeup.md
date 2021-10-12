@@ -9,15 +9,12 @@ Try to remember What we did yesterday.
 Stuff from yesterday.
 
 ## Instructions
+1. Find the number of Macehead Ozone files in the `acsoe` directory. These files have a `.o31` extension.
+2. Find the number of these files that have an `E-MAIL-CONTACT` line set. 
+    > (Hint use `cat $(...your find command from 1...)` to start your pipe the use a `grep` filter it.)
+3. See how many different email contacts there are for these files by sorting your output.  
+4. How many different email contacts in all the files under the `acsoe` directory. Are they really different?
 
-1.	Make a pipe and filter command to find the third biggest file (by number of lines) in the `acsoe` directory. (use `find`, `sort`,  `tail` and `head`) 
-2.	Use `$()` to store the result in a variable. 
-
-        $ X = $(my long command with |pipes and | filters)
-
-3.	Use `echo` to show the result is stored in the variable.
-
-        $ echo $X
 
 
 
