@@ -1,0 +1,6 @@
+$ python main1.py 
+2018-11-23T11:25:41.135225 temperature = 23.3 degrees
+2018-11-23T11:25:51.087159 temperature = 23.1 degrees
+2018-11-23T11:26:01.039236 temperature = 27.4 degrees
+2018-11-23T11:26:10.991217 temperature = 27.3 degrees
+2018-11-23T11:26:20.943257 temperature = 26.4 degrees
