@@ -4,7 +4,7 @@ This repository holds teaching materials for the NCAS Introduction to Scientific
 ## Overview  
 The course covers:  
 - Introduction to the Linux shell  
-- Introduction to basic Python (3.7)  
+- Introduction to basic Python (3.8)  
 - Data manipulation and visualisation in Python  
 
 ### Presentations  
@@ -13,10 +13,10 @@ The course covers:
 
 ### Exercises and solutions  
 -  [Linux shell](https://github.com/ncasuk/ncas-isc/tree/master/shell/exercises)  
--  [Python](https://github.com/ncasuk/ncas-isc/tree/master/python/exercises)  
+-  [Python](https://github.com/ncasuk/ncas-isc/tree/master/python/notebooks)  
 
-[Example code directory used in Python sessions](https://github.com/ncasuk/ncas-isc/tree/master/python/exercises/example_code)  
-[Example data directory used in Pyton sessions](https://github.com/ncasuk/ncas-isc/tree/master/python/exercises/example_data)  
+[Example code directory used in Python sessions](https://github.com/ncasuk/ncas-isc/tree/master/python/notebooks/example_code)  
+[Example data directory used in Pyton sessions](https://github.com/ncasuk/ncas-isc/tree/master/python/notebooks/example_data)  
 [Repository of completed Python exercises](https://github.com/ncasuk/isc-exercises)  
 
 ## Index  
@@ -44,37 +44,36 @@ The course covers:
 [Exercises and solutions](https://github.com/ncasuk/ncas-isc/blob/master/shell/exercises/shell_exercises_and_solutions.pdf)  
 ### Learning Python
 1. [Introduction](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/01_ceda-intro.pdf)  
-2. [Basics](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/02_basics.pdf)  
-3. [Boolean types](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/03_ceda-bool.pdf)  
-4. [Scripts](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/04_save-as-script.pdf)  
-5. [Control flow](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/05_flow.pdf)  
-6. [`and`, `or` and `not`](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/06_ceda-and-or-not.pdf)  
-7. [Lists](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/07_lists.pdf)  
-8. [Slicing](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/08_slice.pdf)  
-9. [List comprehensions](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/09_list_comprehensions.pdf)  
-10. [Tuples](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/10_ceda-tuples.pdf)  
-11. [Input and Output](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/11_io.pdf)  
-12. [Strings](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/12_strings.pdf)  
-13. [Aliasing](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/13_ceda-alias.pdf)  
-14. [Functions](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/14_func.pdf)  
-15. [More on functions](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/15_ceda-funcobj.pdf)  
-16. [Libraries](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/16_lib.pdf)  
-17. [Combining scripts and modules](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/17_ceda-scripts.pdf)  
-18. [Sets](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/18_ceda-sets.pdf)  
-19. [Dictionaries](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/19_ceda-dict.pdf)  
-20. [Errors and Exceptions](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/20_ceda-error.pdf)  
-21. [Logging and Debugging](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/21_ceda-log-pdb.pdf)  
-22. [Object Oriented Programming](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/22_ceda-oop.pdf)  
-23. [Classes and Objects](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/23_oop-intro.pdf)  
-24. [Summary & where next?](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/24_ceda-py-summary.pdf)  
-[Exercises and solutions](https://github.com/ncasuk/ncas-isc/blob/master/python/exercises/python_exercises_solutions.pdf)  
+2. [Basics](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/02_basics_bool_scripts.pdf)  
+3. [Boolean types](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/02_basics_bool_scripts.pdf)  
+4. [Scripts](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/02_basics_bool_scripts.pdf)  
+5. [Control flow](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/03_flow__and_not.pdf)  
+6. [`and`, `or` and `not`](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/03_flow__and_not.pdf)  
+7. [Lists](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/04_lists__slice__list_comp.pdf)  
+8. [Slicing](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/04_lists__slice__list_comp.pdf)  
+9. [List comprehensions](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/04_lists__slice__list_comp.pdf)  
+10. [Tuples](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/05_ceda-tuples.pdf)  
+11. [Input and Output](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/06_io.pdf)  
+12. [Strings](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/07_strings.pdf)  
+13. [Aliasing](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/08_ceda-alias.pdf)  
+14. [Functions](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/09_func__func_objects.pdf)  
+15. [More on functions](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/09_func__func_objects.pdf)  
+16. [Libraries](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/10_lib__scripts.pdf)  
+17. [Combining scripts and modules](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/10_lib__scripts.pdf)  
+18. [Sets](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/11_ceda-sets__dicts)  
+19. [Dictionaries](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/11_ceda-sets__dicts)  
+20. [Errors and Exceptions](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/12_ceda-error.pdf)  
+21. [Logging and Debugging](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/13_ceda-log-pdb.pdf)  
+22. [Object Oriented Programming](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/14_ceda-oop.pdf)  
+23. [Summary & where next?](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/15_ceda-py-summary.pdf)  
+[Exercises and solutions](https://github.com/ncasuk/ncas-isc/blob/master/python/notebooks)  
 ### Handling arrays  
 * [Numpy](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/handling_arrays/numpy.pdf)  
-[Exercises and solutions](https://github.com/ncasuk/ncas-isc/blob/master/python/exercises/numpy_exercises_solutions.pdf)  
+[Exercises and solutions](https://github.com/ncasuk/ncas-isc/blob/master/python/notebooks)  
 
 ### Visualisation  
 * [Matplotlib and basemap](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/visualisation/matplotlib_and_basemap.pdf)  
-[Exercises and solutions](https://github.com/ncasuk/ncas-isc/blob/master/python/exercises/matplotlib_exercises_solutions.pdf)  
+[Exercises and solutions](https://github.com/ncasuk/ncas-isc/blob/master/python/notebooks)  
 
 ### Read and Write data  
 1. [Data formats and metadata- why?](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/read_write_data/01_data_formats.pdf)  
@@ -92,7 +91,7 @@ The course covers:
 13. [Viewing NetCDF: `Ncview` and `ncBrowse`](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/read_write_data/13_ncview_ncbrowse.pdf)  
 	* [Exercises and solutions](https://github.com/ncasuk/ncas-isc/blob/master/python/exercises/ncview_ncbrowse_exercises_solutions.pdf)  
 
-[Exercises and solutions](https://github.com/ncasuk/ncas-isc/blob/master/python/exercises/python_read_data_exercises_solutions.pdf)  
+[Exercises and solutions](https://github.com/ncasuk/ncas-isc/blob/master/python/notebooks)  
 
 ### Data tools  
 1. [Iris](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/data_tools/01_iris.pdf)  
