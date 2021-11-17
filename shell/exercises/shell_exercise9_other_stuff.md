@@ -104,4 +104,6 @@ it's not obvious how.  If you are not used to them you can get stuck.
 
 4. Uncompress it with `gunzip`
 
+5. Untar it with 
+
 
