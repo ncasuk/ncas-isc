@@ -38,7 +38,7 @@ The course covers:
 8. [Shell scripting](https://github.com/ncasuk/ncas-isc/blob/master/shell/presentations/08_shellscripts.pdf)  
 9. [The secure shell](https://github.com/ncasuk/ncas-isc/blob/master/shell/presentations/09_ssh.pdf)  
 10. [More tricks](https://github.com/ncasuk/ncas-isc/blob/master/shell/presentations/10_moretricks.pdf)  
-[Exercises and solutions](shell/exercises/shell_exercises_index.md)  
+[Exercises and solutions](shell/exercises/shell_exercise_index.md) 
 ### Learning Python
 1. [Introduction](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/01_ceda-intro.pdf)  
 2. [Basics](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/02_basics_bool_scripts.pdf)  
