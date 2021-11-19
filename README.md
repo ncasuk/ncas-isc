@@ -73,7 +73,7 @@ The course covers:
 [Exercises and solutions](https://github.com/ncasuk/ncas-isc/blob/master/python/notebooks)  
 
 ### Read and Write data  
-1. [Data formats and metadata- why?](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/read_write_data/01_data_formats.pdf)  
+1. [Data formats and metadata - why?](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/read_write_data/01_data_formats.pdf)  
 2. [Text formats](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/read_write_data/02_python_text_formats.pdf)  
 3. [Some more common text formats (at CEDA)](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/read_write_data/03_text_formats_ceda.pdf)  
 4. [Binary formats](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/read_write_data/04_binary_formats.pdf)  
