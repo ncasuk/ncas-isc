@@ -55,10 +55,10 @@
 
 [4](#ex4)
 
-Make a file called "myfile" in "/tmp" with gedit.
+Make a file called "myfile" in "/tmp" with `nedit`.
 
     $ cd /tmp
-    $ gedit myfile
+    $ nedit myfile
     $ ls
     myfile
     test.txt
