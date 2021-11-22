@@ -38,7 +38,7 @@ Commands: `pwd`, `ls`, `nano`, `cd`, `cp`, `mv`, `mkdir`, `rm`, `rmdir`, `man`. 
 
     Use the `man ls` command to find other listing options. Experiment… have a look in `/`, and `/etc`.
 
-5. How not to do it:
+5. How **_not_** to do it:
 
     - Use `cd` with no arguments to jump back to your home directory.
     - Go into the `ncas-isc/shell/pain` directory
