@@ -22,7 +22,7 @@ Commands: `pwd`, `ls`, `nano`, `cd`, `cp`, `mv`, `mkdir`, `rm`, `rmdir`, `man`. 
         ls ..
         ls ncas-isc/shell      
 
-3. Let’s have a look somewhere else. Change directory to `acsoe`. 
+3. Let’s have a look somewhere else. Change directory to `acsoe`. (We are going to use this directory for a lot of the exercises)
 
         cd ncas-isc/shell/acsoe
 
