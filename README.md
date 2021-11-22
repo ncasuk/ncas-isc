@@ -2,22 +2,16 @@
 This repository holds teaching materials for the NCAS Introduction to Scientific Computing course.  
 
 ## Overview  
+
 The course covers:  
-- Introduction to the Linux shell  
-- Introduction to basic Python (3.8)  
-- Data manipulation and visualisation in Python  
-
-### Presentations  
--  [Linux shell](https://github.com/ncasuk/ncas-isc/tree/master/shell/presentations)  
--  [Python](https://github.com/ncasuk/ncas-isc/tree/master/python/presentations)  
-
-### Exercises and solutions  
--  [Linux shell](https://github.com/ncasuk/ncas-isc/tree/master/shell/exercises)  
--  [Python](https://github.com/ncasuk/ncas-isc/tree/master/python/notebooks)  
-
-[Example code directory used in Python sessions](https://github.com/ncasuk/ncas-isc/tree/master/python/notebooks/example_code)  
-[Example data directory used in Python sessions](https://github.com/ncasuk/ncas-isc/tree/master/python/notebooks/example_data)  
-[Repository of solutions to Python exercises](https://github.com/ncasuk/ncas-isc/tree/master/python/notebooks/solutions)  
+- Introduction to the Linux shell
+  - [Presentations](https://github.com/ncasuk/ncas-isc/tree/master/shell/presentations)  
+  - [Exercises](https://github.com/ncasuk/ncas-isc/tree/master/shell/exercises)
+- Introduction to Python / Data manipulation and visualisation in Python
+  - [Presentations](https://github.com/ncasuk/ncas-isc/tree/master/python/presentations) 
+  - [Exercises - Jupyter Notebooks](https://github.com/ncasuk/ncas-isc/tree/master/python/notebooks) | [Solutions](https://github.com/ncasuk/ncas-isc/tree/master/python/notebooks/solutions)
+  - [Example code](https://github.com/ncasuk/ncas-isc/tree/master/python/notebooks/example_code)
+  - [Example data](https://github.com/ncasuk/ncas-isc/tree/master/python/notebooks/example_data)  
 
 ## Index  
 ### Overview Presentations  
