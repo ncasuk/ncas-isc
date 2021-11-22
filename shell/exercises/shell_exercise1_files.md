@@ -40,7 +40,7 @@ Commands: `pwd`, `ls`, `nano`, `cd`, `cp`, `mv`, `mkdir`, `rm`, `rmdir`, `man`. 
 
 5. How not to do it:
     Use `cd` with no arguments to jump back to your home directory.
-    Go into the `pain` directory
+    Go into the `ncas-isc/shell/pain` directory
     Use `ls` to see what files are here
     Move them to more sensible names (if you can).
 
