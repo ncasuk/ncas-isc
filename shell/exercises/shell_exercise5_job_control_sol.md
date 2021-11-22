@@ -18,7 +18,7 @@
 
 3.
 
-        $ gedit snooze.sh
+        $ nedit snooze.sh
         $ cat snooze.sh 
         echo Feeling sleepy...
         sleep $X 
