@@ -10,7 +10,7 @@ Commands: `chmod`, `ls -l`, `more`, `less`, `chgrp`
 
 ## Instructions
 1.  Let's have a look at some of examples of permissions.
-    1. Change directory to `acsoe/freetex-98/Jungfrau`. 
+    1. Change directory to `acsoe/freetex-98/jungfrau`. 
     2. Use `ls –l` to look at the files and their permissions.
     3. Run the script `./set_chmod.sh`.  This script will change the permissions on some of the files in this directory.
 
