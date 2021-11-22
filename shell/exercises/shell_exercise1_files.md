@@ -31,9 +31,9 @@ Commands: `pwd`, `ls`, `nano`, `cd`, `cp`, `mv`, `mkdir`, `rm`, `rmdir`, `man`. 
 4. Manipulating some files and directories.
 
     - Make a file called `myfile_<username>` (e.g `myfile_train005`) in `/tmp` with `nano`.
-    - Make a subdirectory in `/tmp` called `mydir`
+    - Make a subdirectory in `/tmp` called `mydir_<username>` (e.g. `mydir_train005`)
     - Rename the file `myfile_<username>.txt` and the subdirectory `X_<username>`
-    - Copy `myfile_<username>.txt` into the `X` subdirectory
+    - Copy `myfile_<username>.txt` into the `X_<username>` subdirectory
     - Tidy up - delete the file and subdirectory
 
     Use the `man ls` command to find other listing options. Experiment… have a look in `/`, and `/etc`.
