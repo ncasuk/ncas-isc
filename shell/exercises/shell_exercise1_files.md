@@ -11,8 +11,7 @@ Commands: `pwd`, `ls`, `nano`, `cd`, `cp`, `mv`, `mkdir`, `rm`, `rmdir`, `man`. 
 ## Instructions
 
 1. Let's get started by logging in. 
-   - Login to the laptop (you should have a username and password).
-   - Start a terminal window.
+   - Login to sci1.jasmin.ac.uk (or sci2, sci3, sci4, ...).
 
 2. Have a look around your home directory.  Try the following commands.
 
@@ -21,7 +20,7 @@ Commands: `pwd`, `ls`, `nano`, `cd`, `cp`, `mv`, `mkdir`, `rm`, `rmdir`, `man`. 
         ls -l
         ls -a
         ls ..
-        ls shell      
+        ls ncas-isc/shell      
 
 3. Let’s have a look somewhere else. Change directory to `acsoe`. 
 
