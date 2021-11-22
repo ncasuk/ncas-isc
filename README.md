@@ -16,8 +16,8 @@ The course covers:
 -  [Python](https://github.com/ncasuk/ncas-isc/tree/master/python/notebooks)  
 
 [Example code directory used in Python sessions](https://github.com/ncasuk/ncas-isc/tree/master/python/notebooks/example_code)  
-[Example data directory used in Pyton sessions](https://github.com/ncasuk/ncas-isc/tree/master/python/notebooks/example_data)  
-[Repository of completed Python exercises](https://github.com/ncasuk/isc-exercises)  
+[Example data directory used in Python sessions](https://github.com/ncasuk/ncas-isc/tree/master/python/notebooks/example_data)  
+[Repository of solutions to Python exercises](https://github.com/ncasuk/ncas-isc/tree/master/python/notebooks/solutions)  
 
 ## Index  
 ### Overview Presentations  
@@ -57,8 +57,8 @@ The course covers:
 15. [More on functions](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/09_func__func_objects.pdf)  
 16. [Libraries](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/10_lib__scripts.pdf)  
 17. [Combining scripts and modules](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/10_lib__scripts.pdf)  
-18. [Sets](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/11_ceda-sets__dicts)  
-19. [Dictionaries](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/11_ceda-sets__dicts)  
+18. [Sets](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/11_ceda-sets__dicts.pdf)  
+19. [Dictionaries](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/11_ceda-sets__dicts.pdf)  
 20. [Errors and Exceptions](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/12_ceda-error.pdf)  
 21. [Logging and Debugging](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/13_ceda-log-pdb.pdf)  
 22. [Object Oriented Programming](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/14_ceda-oop.pdf)  
@@ -69,11 +69,11 @@ The course covers:
 [Exercises and solutions](https://github.com/ncasuk/ncas-isc/blob/master/python/notebooks)  
 
 ### Visualisation  
-* [Matplotlib and basemap](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/visualisation/matplotlib_and_basemap.pdf)  
+* [Matplotlib and cartopy](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/visualisation/matplotlib_and_cartopy.pdf)  
 [Exercises and solutions](https://github.com/ncasuk/ncas-isc/blob/master/python/notebooks)  
 
 ### Read and Write data  
-1. [Data formats and metadata- why?](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/read_write_data/01_data_formats.pdf)  
+1. [Data formats and metadata - why?](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/read_write_data/01_data_formats.pdf)  
 2. [Text formats](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/read_write_data/02_python_text_formats.pdf)  
 3. [Some more common text formats (at CEDA)](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/read_write_data/03_text_formats_ceda.pdf)  
 4. [Binary formats](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/read_write_data/04_binary_formats.pdf)  
