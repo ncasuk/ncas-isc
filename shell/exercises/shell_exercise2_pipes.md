@@ -11,7 +11,9 @@ Using shell command completion and history.
 
 ## Instructions
 
-1. In the directory `ncas-isc/shell/acsoe/eae-97/macehead` construct a pipe and filter command to print the file with the most lines. (Hint: use `head`, `tail`, `wc`, `sort` and `cut`)
+Note: use `cd` to change to `ncas-isc/shell/` before starting this exercise.
+
+1. In the directory `acsoe/eae-97/macehead` construct a pipe and filter command to print the file with the most lines. (Hint: use `head`, `tail`, `wc`, `sort` and `cut`)
 2. Use the up arrow to edit the last command. Change the command to look for the longest file in characters.  
 3. Use `*` to look for the longest file in all the subdirectories of `acsoe/eae-97`.
 4. Have a play with the arrow keys and the tab key - what do they do? Try the `history` command. 
