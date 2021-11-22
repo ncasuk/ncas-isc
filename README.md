@@ -32,7 +32,9 @@ The course covers:
 8. [Shell scripting](https://github.com/ncasuk/ncas-isc/blob/master/shell/presentations/08_shellscripts.pdf)  
 9. [The secure shell](https://github.com/ncasuk/ncas-isc/blob/master/shell/presentations/09_ssh.pdf)  
 10. [More tricks](https://github.com/ncasuk/ncas-isc/blob/master/shell/presentations/10_moretricks.pdf)  
-[Exercises and solutions](shell/exercises/shell_exercise_index.md) 
+
+- [Exercises and solutions](shell/exercises/shell_exercise_index.md) 
+
 ### Learning Python
 1. [Introduction](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/01_ceda-intro.pdf)  
 2. [Basics](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/02_basics_bool_scripts.pdf)  
@@ -56,15 +58,17 @@ The course covers:
 20. [Errors and Exceptions](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/12_ceda-error.pdf)  
 21. [Logging and Debugging](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/13_ceda-log-pdb.pdf)  
 22. [Object Oriented Programming](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/14_ceda-oop.pdf)  
-23. [Summary & where next?](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/15_ceda-py-summary.pdf)  
-[Exercises and solutions](https://github.com/ncasuk/ncas-isc/blob/master/python/notebooks)  
+23. [Summary & where next?](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/learning_python/15_ceda-py-summary.pdf)
+
+* [Exercises and solutions](https://github.com/ncasuk/ncas-isc/blob/master/python/notebooks)
+
 ### Handling arrays  
 * [Numpy](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/handling_arrays/numpy.pdf)  
-[Exercises and solutions](https://github.com/ncasuk/ncas-isc/blob/master/python/notebooks)  
+* [Exercises and solutions](https://github.com/ncasuk/ncas-isc/blob/master/python/notebooks)  
 
 ### Visualisation  
 * [Matplotlib and cartopy](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/visualisation/matplotlib_and_cartopy.pdf)  
-[Exercises and solutions](https://github.com/ncasuk/ncas-isc/blob/master/python/notebooks)  
+* [Exercises and solutions](https://github.com/ncasuk/ncas-isc/blob/master/python/notebooks)  
 
 ### Read and Write data  
 1. [Data formats and metadata - why?](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/read_write_data/01_data_formats.pdf)  
@@ -82,16 +86,11 @@ The course covers:
 13. [Viewing NetCDF: `Ncview` and `ncBrowse`](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/read_write_data/13_ncview_ncbrowse.pdf)  
 	* [Exercises and solutions](https://github.com/ncasuk/ncas-isc/blob/master/python/exercises/ncview_ncbrowse_exercises_solutions.pdf)  
 
-[Exercises and solutions](https://github.com/ncasuk/ncas-isc/blob/master/python/notebooks)  
+* [Exercises and solutions](https://github.com/ncasuk/ncas-isc/blob/master/python/notebooks)  
 
-### Data tools  
-1. [Iris](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/data_tools/01_iris.pdf)  
-2. [`cf-python` and `cf-plot`](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/data_tools/02_cfpython_cfplot.pdf)  
+## Useful materials and resources
 
-### Logging data 
-* [Logging data from serial ports](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/logging-data-from-serial-ports/Logging_Data_From_Serial_Ports.pdf)  
-* [Slides](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/logging-data-from-serial-ports/LDFSP_Slides.pdf)  
-[Exercises and solutions ](https://github.com/ncasuk/ncas-isc/blob/master/python/presentations/logging-data-from-serial-ports/LDFSP_Exercises.pdf)  
+See the [Resources page](resources.md) for links to useful related sites and materials.
 
 ## Information  
 ### Want to re-use these materials?  
