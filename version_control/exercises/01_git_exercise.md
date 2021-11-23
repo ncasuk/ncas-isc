@@ -88,7 +88,7 @@ There are other stores (you can look these up another time):
 
 1. Open the terminal
 2. make sure you are in your home directory `cd`
-3. `git clone <you-clone-link>`
+3. `git clone <your-github-repo-url>`
     
 It will then prompt for username and password (it won't ask again if you have your credentials cached)
 **NOTE: Password == Access token**
