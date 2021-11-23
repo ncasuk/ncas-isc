@@ -134,5 +134,26 @@ git push origin main
 
 ## 7. Refresh the page on github. You will now see empty file `x`.
 
+## 8. Copy the python notebooks directory into your new repository
+
+```
+# Go to the local copy of your repository
+cd ~/my-isc-work
+
+# Make a local "python" directory
+mkdir python
+
+# Copy the entire "notebooks" directory from the "ncas-isc" repo to your local repo
+cp -r ~/ncas-isc/python/notebooks python/
+```
+
+## 9. Add the new files to git and push to github
+
+```
+git add python
+git commit -m "Added notebooks"
+git push
+```
+
 
 
