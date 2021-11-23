@@ -5,10 +5,19 @@
 ## Aim
 Have a go at using ssh.
 
+- Create a file on your local machine.
+- Go to a remote machine and see that your file is not there
+- Exit that remote machine
+- use `scp` to copy the file to the remote `/tmp` directory
+- Login to the remote machine and see that your file is now there
+
+
 ## Issues covered
 `ssh`, `scp`, `df`, `touch`
 
 ## Instructions
+
+**NOTE: Make sure you are on your local machine. i.e. not on JASMIN. Use `Ctrl + D` to exit if you are on JASMIN.**
 
 1. cd to `/tmp` and make a file `touch <username>.txt`
 > `touch` just changes a files modified time to now. It is also useful for creating an empty file quickly which is what we are doing here.
