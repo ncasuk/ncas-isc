@@ -22,7 +22,12 @@ Writing commands in a file to make a shell script.
         $ ./snooze.sh
 
 3. Edit the `snooze.sh` script to use a variable `X` to control the length of sleep.
-4. Set `X` to 40 then run it again in the background using `&`. Use `ps` to see the process at work. Remember to `export X`.
+
+        echo feeling sleepy...
+        sleep $X
+        echo wake up!
+
+4. Set `X` to 40 using `export X=40` then run it again in the background using `&`. Use `ps` to see the process at work.
 5. Run 3 instances of the process at once. 
     - Start 3 snooze jobs in the background.
     - Use the jobs command to see the processes. 
