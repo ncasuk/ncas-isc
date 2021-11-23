@@ -97,8 +97,7 @@ You have now cloned the repo. Now we are going to make a change and push it.
 
 ## 6. Make a change
 
-```
-bash
+```bash
 cd my-isc-work
 touch x
 ```
