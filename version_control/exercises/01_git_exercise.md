@@ -61,7 +61,7 @@ It is annoying to have to react to the prompt every time. Thankfully,
 you can cache your credentials.
     
 ```
-git config --global credential.helper cache
+git config --global credential.helper store
 ```
     
 This saves your username/access token in memory so you don't need it everytime.
@@ -72,8 +72,8 @@ If you need to clear it:
 git config --global --unset credential.helper
 ```
     
-There are other stores (you can look these up another time):
-- `credential.helper store` - stores credentials on disk
+There are other stores (you can [look these up](https://git-scm.com/docs/gitcredentials) another time):
+- `credential.helper cache` - stores credentials on disk
 - `credential.helper osxkeychain` - can be used with MacOS to store credentials in MacOSs keychain
 
 ## 3. Make a repo for your Introduction to Scientific Computing work
@@ -88,7 +88,7 @@ There are other stores (you can look these up another time):
 
 1. Open the terminal
 2. make sure you are in your home directory `cd`
-3. `git clone <you-clone-link>`
+3. `git clone <your-github-repo-url>`
     
 It will then prompt for username and password (it won't ask again if you have your credentials cached)
 **NOTE: Password == Access token**
@@ -97,8 +97,7 @@ You have now cloned the repo. Now we are going to make a change and push it.
 
 ## 6. Make a change
 
-```
-bash
+```bash
 cd my-isc-work
 touch x
 ```
@@ -133,6 +132,27 @@ git push origin main
 ```
 
 ## 7. Refresh the page on github. You will now see empty file `x`.
+
+## 8. Copy the python notebooks directory into your new repository
+
+```
+# Go to the local copy of your repository
+cd ~/my-isc-work
+
+# Make a local "python" directory
+mkdir python
+
+# Copy the entire "notebooks" directory from the "ncas-isc" repo to your local repo
+cp -r ~/ncas-isc/python/notebooks python/
+```
+
+## 9. Add the new files to git and push to github
+
+```
+git add python
+git commit -m "Added notebooks"
+git push
+```
 
 
 
