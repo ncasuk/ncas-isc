@@ -61,7 +61,7 @@ It is annoying to have to react to the prompt every time. Thankfully,
 you can cache your credentials.
     
 ```
-git config --global credential.helper cache
+git config --global credential.helper store
 ```
     
 This saves your username/access token in memory so you don't need it everytime.
@@ -72,8 +72,8 @@ If you need to clear it:
 git config --global --unset credential.helper
 ```
     
-There are other stores (you can look these up another time):
-- `credential.helper store` - stores credentials on disk
+There are other stores (you can [look these up](https://git-scm.com/docs/gitcredentials) another time):
+- `credential.helper cache` - stores credentials on disk
 - `credential.helper osxkeychain` - can be used with MacOS to store credentials in MacOSs keychain
 
 ## 3. Make a repo for your Introduction to Scientific Computing work
