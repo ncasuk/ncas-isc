@@ -1,3 +1,5 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ncasuk/ncas-isc/HEAD)
+
 # Introduction to Scientific Computing course  
 This repository holds teaching materials for the NCAS Introduction to Scientific Computing course.  
 
