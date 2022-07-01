@@ -18,11 +18,14 @@ This page contains a number of materials related to the various topics covered i
 
 | **Resource** | **Description** | **Link** | **Last reviewed** |
 | ------------ | --------------- | -------- | ----------------- |
+| Linux Journey website | Simple intros and quiz questions to check understanding of basic linux | https://linuxjourney.com/lesson/the-shell | 01/07/2022 |
+
 
 ## Jupyter Notebooks
 
 | **Resource** | **Description** | **Link** | **Last reviewed** |
 | ------------ | --------------- | -------- | ----------------- |
+| Blog post about "Mercury" | Describes how to use Mercury to quickly build a web app from a Jupyter Notebook | https://mljar.com/mercury/ | 01/07/2022 |
 
 ## Version Control with Git and GitHub
 
