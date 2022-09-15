@@ -41,3 +41,4 @@ This page contains a number of materials related to the various topics covered i
 | Python tutorial | The official Python tutorial | https://docs.python.org/3/tutorial/ | 22/11/2021 |
 | Free Code Camp Python course | Online Scientific Computing with Python course (free) | https://www.freecodecamp.org/learn/scientific-computing-with-python/ | 22/11/2021 | 
 | Code Academy Python course | Online Learning Python course from Code Academy | https://www.codecademy.com/learn/learn-python | 22/11/2021 |
+| Python glossary | An official glossary of Python-related terms | https://docs.python.org/3/glossary.html | 15/09/2022 |
