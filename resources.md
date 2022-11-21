@@ -32,6 +32,7 @@ This page contains a number of materials related to the various topics covered i
 | **Resource** | **Description** | **Link** | **Last reviewed** |
 | ------------ | --------------- | -------- | ----------------- |
 | Git Cheat Sheet | Cheat Sheet for basic Git commands and workflows | https://education.github.com/git-cheat-sheet-education.pdf | 22/11/2021 |
+| Git workflow diagram | Nice diagram of the interactions between the local repo, staging and remote | https://pbs.twimg.com/media/Fh6bl4DWIAAZxse?format=jpg&name=4096x4096 | 21/11/2022 |
 
 ## Python
 
