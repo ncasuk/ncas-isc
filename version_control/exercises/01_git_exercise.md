@@ -31,10 +31,10 @@ To generate a token:
 1. Login to **GitHub**
 2. Click on your name/avatar in the top right corner and select **Settings**
 3. On the left, click **Developer Settings**
-4. Select **Personal access tokens** and click **Generate new token**
-5. Give the token a description/name and select **repo** scope (you can read more about scopes using the **Read more about OAuth scopes**)
+4. Select **Personal access tokens**, then **Tokens (classic)** and click **Generate new token (classic)**
+5. Give the token a description/name (such as `repo-access`) in the box labelled **Note** and tick the box for **repo** scope (you can read more about scopes using the **Read more about OAuth scopes** link)
 6. Click **Generate Token**
-7. Copy the token - this is your new password (you might want to put this in a password manager)
+7. Copy the token - this can be used like a password when authenticating via `Git` (you might want to put this in a password manager)
     
 ![access_token](images/access_token.png)
     
