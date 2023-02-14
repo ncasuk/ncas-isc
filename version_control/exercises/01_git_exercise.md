@@ -31,16 +31,16 @@ To generate a token:
 1. Login to **GitHub**
 2. Click on your name/avatar in the top right corner and select **Settings**
 3. On the left, click **Developer Settings**
-4. Select **Personal access tokens** and click **Generate new token**
-5. Give the token a description/name and select **repo** scope (you can read more about scopes using the **Read more about OAuth scopes**)
+4. Select **Personal access tokens**, then **Tokens (classic)** and click **Generate new token (classic)**
+5. Give the token a description/name (such as `repo-access`) in the box labelled **Note** and tick the box for **repo** scope (you can read more about scopes using the **Read more about OAuth scopes** link)
 6. Click **Generate Token**
-7. Copy the token - this is your new password (you might want to put this in a password manager)
+7. Copy the token - this can be used like a password when authenticating via `Git` (you might want to put this in a password manager)
     
 ![access_token](images/access_token.png)
     
-Configure local git:
+**Configure your git client (in the terminal)**
     
-This tells the Git client running on your machine who you are.
+This tells the Git client running in the terminal who you are.
     
 On linux, the commands look like: 
 
@@ -50,15 +50,18 @@ git config --global user.email "<your-email>"
 git config -l
 ```
 
-The `git config -l` will show you all the values stored in the config
+The `git config -l` will show you all the values stored in the config 
+(this may show an error if viewed in the Notebook Service terminal - you can ignore that).
     
 When you clone a repo, it will ask for your username/password.
-Enter your username and access token as the password.
+Enter your **username**, and **access token** as the password.
     
 **Credential Caching**
 
-It is annoying to have to react to the prompt every time. Thankfully, 
-you can cache your credentials.
+It is annoying to have to enter your credentials every time you connect to the
+remote GitHub service (i.e. pushing or pulling content). 
+
+Thankfully, you can _cache_ your credentials.
     
 ```
 git config --global credential.helper store
@@ -78,31 +81,41 @@ There are other stores (you can [look these up](https://git-scm.com/docs/gitcred
 
 ## 3. Make a repo for your Introduction to Scientific Computing work
 
+Go to GitHub in your browser, make sure you are logged in, and create
+a new repository.
+
+**NOTE: Remember to tick: Initialize this repository with a README**
+
 ![new repo](images/new_repo.png)
 
 ## 4. Copy the clone link
+
+Copy the link to the repository so that you can clone it in your terminal:
 
 ![new repo](images/clone.png)
 
 ## 5. Clone the repo
 
+In your terminal window, clone the repository you have just created:
+
 1. Open the terminal
-2. make sure you are in your home directory `cd`
-3. `git clone <your-github-repo-url>`
+2. Make sure you are in your home directory (you can get there with the command: `cd`)
+3. Clone the repository with: `git clone <your-github-repo-url>`
     
-It will then prompt for username and password (it won't ask again if you have your credentials cached)
-**NOTE: Password == Access token**
+It will then prompt for username and password (it won't ask again if you have your credentials cached).
+**REMEMBER: In this case, you should give it your Access token (generated above)**
     
 You have now cloned the repo. Now we are going to make a change and push it.
 
 ## 6. Make a change
 
 ```bash
-cd my-isc-work
-touch x
+cd my-isc-work/
+# The `touch` command will create a new file
+touch mydata.txt
 ```
     
-If you now run `ls` you will see two files. `README.md` and `x`.
+If you now run `ls` you will see two files. `README.md` and `mydata.txt`.
     
 See what has changed.
     
@@ -115,7 +128,7 @@ git status
 Add the changed file to git
     
 ```
-git add x
+git add mydata.txt
 ``` 
 (can use `git add .` to add all files)
 
@@ -125,15 +138,21 @@ Write a message to say what you have done and make a **commit**.
 git commit -m "Adding an empty file as part of tutorial"
 ```
 
-Push the change to github
+Push the change to GitHub
 
 ```
-git push origin main
+git push 
+# or you can do: git push origin main # where origin==GitHub and main==remote branch name
 ```
 
-## 7. Refresh the page on github. You will now see empty file `x`.
+## 7. Refresh the GitHub page in your browser
 
-## 8. Copy the python notebooks directory into your new repository
+You will now see empty file `mydata.txt` exists on the GitHub version of 
+the repository.
+
+## 8. Copy the python notebooks directory into your new repository (for ISC)
+
+If working on ISC exercises...
 
 ```
 # Go to the local copy of your repository
@@ -148,11 +167,10 @@ cp -r ~/ncas-isc/python/notebooks python/
 
 ## 9. Add the new files to git and push to github
 
+If working on ISC exercises...
+
 ```
 git add python
 git commit -m "Added notebooks"
 git push
 ```
-
-
-
