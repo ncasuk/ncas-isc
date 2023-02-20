@@ -7,11 +7,18 @@ The course covers:
 - Introduction to the Linux shell
   - [Presentations](https://github.com/ncasuk/ncas-isc/tree/main/shell/presentations)  
   - [Exercises](https://github.com/ncasuk/ncas-isc/tree/main/shell/exercises)
-- Introduction to Python / Data manipulation and visualisation in Python
-  - [Presentations](https://github.com/ncasuk/ncas-isc/tree/main/python-intro/slides) 
-  - [Exercises - Jupyter Notebooks](https://github.com/ncasuk/ncas-isc/tree/main/python-intro/notebooks) | [Solutions](https://github.com/ncasuk/ncas-isc/tree/main/python-intro/notebooks/solutions)
-  - [Example code](https://github.com/ncasuk/ncas-isc/tree/main/python-intro/example_code)
-  - [Example data](https://github.com/ncasuk/ncas-isc/tree/main/python-intro/example_data)  
+- Git and GitHub
+  - [Presentation](https://github.com/ncasuk/ncas-isc/tree/main/version_control)  
+  - [Exercise](https://github.com/ncasuk/ncas-isc/tree/main/version_control)
+- Introduction to Python
+  - [Python Introduction Slides](https://github.com/ncasuk/ncas-isc/tree/main/python-intro/slides) 
+  - [Exercises - Jupyter Notebooks](https://github.com/ncasuk/ncas-isc/tree/main/python-intro/notebooks) | [Solutions](https://github.com/ncasuk/ncas-isc/tree/main/python-intro/notebooks/solutions) 
+- Data manipulation and visualisation in Python (Working with Data)
+  - [Python working with data Slides](https://github.com/ncasuk/ncas-isc/tree/main/python-data/slides) 
+  - [Exercises - Jupyter Notebooks](https://github.com/ncasuk/ncas-isc/tree/main/python-data/notebooks) | [Solutions](https://github.com/ncasuk/ncas-isc/tree/main/python-data/notebooks/solutions)
+- Example code for all python modules
+  - [Example code](https://github.com/ncasuk/ncas-isc/tree/main/example_code)
+  - [Example data](https://github.com/ncasuk/ncas-isc/tree/main/example_data)  
 
 ## Index  
 ### Overview Presentations  
