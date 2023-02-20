@@ -45,9 +45,9 @@ This tells the Git client running in the terminal who you are.
 On linux, the commands look like: 
 
 ```
-git config --global user.name "<your-username>"
-git config --global user.email "<your-email>"
-git config -l
+git config --global user.name "YOUR_GITHUB_USERNAME"
+git config --global user.email "YOUR_EMAIL"
+git config -l 
 ```
 
 The `git config -l` will show you all the values stored in the config 
@@ -64,10 +64,10 @@ remote GitHub service (i.e. pushing or pulling content).
 Thankfully, you can _cache_ your credentials.
     
 ```
-git config --global credential.helper store
+git config --global credential.helper cache
 ```
     
-This saves your username/access token in memory so you don't need it everytime.
+This saves your username/access token in memory (for up to 15 minutes) so you don't need it everytime.
     
 If you need to clear it:
     
@@ -76,8 +76,9 @@ git config --global --unset credential.helper
 ```
     
 There are other stores (you can [look these up](https://git-scm.com/docs/gitcredentials) another time):
-- `credential.helper cache` - stores credentials on disk
+- `credential.helper store` - stores credentials on disk
 - `credential.helper osxkeychain` - can be used with MacOS to store credentials in MacOSs keychain
+- `credential.helper "cache --timeout 3600"` - memory cache for up to an hour
 
 ## 3. Make a repo for your Introduction to Scientific Computing work
 
@@ -100,7 +101,7 @@ In your terminal window, clone the repository you have just created:
 
 1. Open the terminal
 2. Make sure you are in your home directory (you can get there with the command: `cd`)
-3. Clone the repository with: `git clone <your-github-repo-url>`
+3. Clone the repository with: `git clone YOUR_GITHUB_REPO_URL`
     
 It will then prompt for username and password (it won't ask again if you have your credentials cached).
 **REMEMBER: In this case, you should give it your Access token (generated above)**
@@ -158,11 +159,11 @@ If working on ISC exercises...
 # Go to the local copy of your repository
 cd ~/my-isc-work
 
-# Make a local "python" directory
-mkdir python
+# Make a local "python-intro" directory
+mkdir python-intro
 
 # Copy the entire "notebooks" directory from the "ncas-isc" repo to your local repo
-cp -r ~/ncas-isc/python-intro/notebooks python/
+cp -r ~/ncas-isc/python-intro/notebooks python-intro/
 ```
 
 ## 9. Add the new files to git and push to github
