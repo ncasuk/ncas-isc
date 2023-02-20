@@ -21,7 +21,8 @@ The course covers:
 * [NCAS, CMS, CEDA and JASMIN overview](https://github.com/ncasuk/ncas-isc/blob/main/working_practices/NCAS_CMS_CEDA_JASMIN_overview.pdf)  
 * [Parallel processing of large datasets](https://github.com/ncasuk/ncas-isc/blob/main/working_practices/Parallel_Processing_Large_Data.pdf)  
 * [Why good data curation is essential to doing good science](https://github.com/ncasuk/ncas-isc/blob/main/working_practices/Why_good_data_management_is_essential_for_good_science.pdf)  
-### The Linux Shell  
+
+## The Linux Shell  
 1. [Text editors and terminals](https://github.com/ncasuk/ncas-isc/blob/main/shell/presentations/01_editors.pdf)  
 2. [Introduction](https://github.com/ncasuk/ncas-isc/blob/main/shell/presentations/02_intro.pdf)  
 3. [Pipes and Filters](https://github.com/ncasuk/ncas-isc/blob/main/shell/presentations/03_pipefilter.pdf)  
@@ -32,10 +33,13 @@ The course covers:
 8. [Shell scripting](https://github.com/ncasuk/ncas-isc/blob/main/shell/presentations/08_shellscripts.pdf)  
 9. [The secure shell](https://github.com/ncasuk/ncas-isc/blob/main/shell/presentations/09_ssh.pdf)  
 10. [More tricks](https://github.com/ncasuk/ncas-isc/blob/main/shell/presentations/10_moretricks.pdf)  
+* [Exercises and solutions](https://github.com/ncasuk/ncas-isc/blob/main/shell/exercises/shell_exercise_index.md) 
 
-- [Exercises and solutions](shell/exercises/shell_exercise_index.md) 
+## Git and GitHub
+1. [Introduction to Git](https://github.com/ncasuk/ncas-isc/blob/main/version_control/01_git_intro.pdf)
+* [Exercise and solutions](https://github.com/ncasuk/ncas-isc/blob/main/version_control/01_git_exercise.md) 
 
-### Learning Python
+## Introduction to Python
 1. [Introduction](https://github.com/ncasuk/ncas-isc/blob/main/python-intro/slides/01_ceda-intro.pdf)  
 2. [Basics](https://github.com/ncasuk/ncas-isc/blob/main/python-intro/slides/02_basics_bool_scripts.pdf)  
 3. [Boolean types](https://github.com/ncasuk/ncas-isc/blob/main/python-intro/slides/02_basics_bool_scripts.pdf)  
@@ -62,13 +66,15 @@ The course covers:
 
 * [Exercises](https://github.com/ncasuk/ncas-isc/blob/main/python-intro/notebooks) and [Solutions](https://github.com/ncasuk/ncas-isc/blob/main/python-intro/solutions)
 
+## Python - Working with Data
+
 ### Handling arrays  
 * [Numpy](https://github.com/ncasuk/ncas-isc/blob/main/python-data/slides/numpy.pdf)  
-* [Exercises and solutions](https://github.com/ncasuk/ncas-isc/blob/main/python-data/notebooks)  
+* [Exercises](https://github.com/ncasuk/ncas-isc/blob/main/python-data/notebooks/ex01_numpy_arrays.ipynb) and [Solutions](https://github.com/ncasuk/ncas-isc/blob/main/python-data/solutions/ex01_numpy_arrays_solutions.ipynb)
 
 ### Visualisation  
 * [Matplotlib and cartopy](https://github.com/ncasuk/ncas-isc/blob/main/python-data/slides/matplotlib_and_cartopy.pdf)  
-* [Exercises and solutions](https://github.com/ncasuk/ncas-isc/blob/main/python-data/notebooks)  
+* [Exercises](https://github.com/ncasuk/ncas-isc/blob/main/python-data/notebooks/ex02_matplotlib.ipynb) and [Solutions](https://github.com/ncasuk/ncas-isc/blob/main/python-data/solutions/ex02_matplotlib_solutions.ipynb)
 
 ### Read and Write data  
 1. [Data formats and metadata - why?](https://github.com/ncasuk/ncas-isc/blob/main/python-data/slides/01_data_formats.pdf)  
@@ -84,9 +90,8 @@ The course covers:
 11. [Creating NetCDF files with Python](https://github.com/ncasuk/ncas-isc/blob/main/python-data/slides/11_create_netcdf_python.pdf)  
 12. [Reading and writing other formats](https://github.com/ncasuk/ncas-isc/blob/main/python-data/slides/12_python_and_other_formats.pdf)  
 13. [Viewing NetCDF: `Ncview` and `ncBrowse`](https://github.com/ncasuk/ncas-isc/blob/main/python-data/slides/13_ncview_ncbrowse.pdf)  
-	* [Exercises and solutions](https://github.com/ncasuk/ncas-isc/blob/main/python-data/solutions/ex03_netcdf_solutions.ipynb)  
-
-* [Exercises](https://github.com/ncasuk/ncas-isc/blob/main/python-data/notebooks) and [Solutions](https://github.com/ncasuk/ncas-isc/blob/main/python-data/solutions)
+* [Exercises](https://github.com/ncasuk/ncas-isc/blob/main/python-data/notebooks/ex03_netcdf.ipynb) and [Solutions](https://github.com/ncasuk/ncas-isc/blob/main/python-data/solutions/ex03_netcdf_solutions.ipynb)
+* [Weather API Exercise](https://github.com/ncasuk/ncas-isc/blob/main/python-data/notebooks/ex04_weather_api.ipynb) and [Solution](https://github.com/ncasuk/ncas-isc/blob/main/python-data/solutions/ex04_weather_api_solutions.ipynb)
 
 ## Useful materials and resources
 
