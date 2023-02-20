@@ -45,9 +45,9 @@ This tells the Git client running in the terminal who you are.
 On linux, the commands look like: 
 
 ```
-git config --global user.name "<your-username>"
-git config --global user.email "<your-email>"
-git config -l
+git config --global user.name "YOUR_GITHUB_USERNAME"
+git config --global user.email "YOUR_EMAIL"
+git config -l 
 ```
 
 The `git config -l` will show you all the values stored in the config 
@@ -101,7 +101,7 @@ In your terminal window, clone the repository you have just created:
 
 1. Open the terminal
 2. Make sure you are in your home directory (you can get there with the command: `cd`)
-3. Clone the repository with: `git clone <your-github-repo-url>`
+3. Clone the repository with: `git clone YOUR_GITHUB_REPO_URL`
     
 It will then prompt for username and password (it won't ask again if you have your credentials cached).
 **REMEMBER: In this case, you should give it your Access token (generated above)**
@@ -159,11 +159,11 @@ If working on ISC exercises...
 # Go to the local copy of your repository
 cd ~/my-isc-work
 
-# Make a local "python" directory
-mkdir python
+# Make a local "python-intro" directory
+mkdir python-intro
 
 # Copy the entire "notebooks" directory from the "ncas-isc" repo to your local repo
-cp -r ~/ncas-isc/python/notebooks python/
+cp -r ~/ncas-isc/python-intro/notebooks python-intro/
 ```
 
 ## 9. Add the new files to git and push to github
