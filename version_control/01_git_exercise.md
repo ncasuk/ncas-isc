@@ -171,7 +171,7 @@ cp -r ~/ncas-isc/python-intro/notebooks python-intro/
 If working on ISC exercises...
 
 ```
-git add python
+git add python-intro
 git commit -m "Added notebooks"
 git push
 ```
