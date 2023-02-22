@@ -10,7 +10,7 @@ from netCDF4 import Dataset
 import numpy as np
 
 # Open netCDF dataset and extract data
-dataset = Dataset("example_data/tas.nc")
+dataset = Dataset("../example_data/tas.nc")
 tas = dataset.variables['tas'][0,:].squeeze()
 lons = dataset.variables['lon'][:]
 lats = dataset.variables['lat'][:]
