@@ -47,7 +47,7 @@ def main():
         help="Should the solutions be written back after they are run?",
     )
     parser.add_argument(
-        "--rewrite-exercies",
+        "--rewrite-exercises",
         action="store_true",
         help="Should the exercieses be removed and regenerated from the answer sheets?",
     )
@@ -86,9 +86,10 @@ def main():
 
     # Execute all the notebooks in the answers folder.
     for nb_path in all_answer_notebooks:
+        full_nb_path = nb_path.resolve()
         # Change to notebook location so that relative file loads work.
         os.chdir(nb_path.parent)
-        with open(nb_path, "r+", encoding="utf-8") as f:
+        with open(full_nb_path, "r+", encoding="utf-8") as f:
             try:
                 nb = nbformat.read(f, as_version=nbformat.current_nbformat)
             except nbformat.reader.NotJSONError:
@@ -118,8 +119,8 @@ def main():
                     f.truncate()
                     nbformat.write(nb, f)
                 del executor
-    # Go back to previous workdir.
-    os.chdir(workdir)
+        # Go back to previous workdir.
+        os.chdir(workdir)
 
     # Create "worksheet" notebooks by
     # removing cells tagged as answer from the answers.
