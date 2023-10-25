@@ -30,5 +30,7 @@ jobs:
           python-version: ${{ matrix.py }}
       - name: Install notebook processor.
         run: python -m pip install .scripts/notebook-processor[kernel]
+      - name: Install course dependencies
+        run: python -m pip install -r .scripts/requirements/python-basics-requirements.txt
       - name: Run the processor.
         run: python -m notebook_processor python-intro --kernel-name=python3
