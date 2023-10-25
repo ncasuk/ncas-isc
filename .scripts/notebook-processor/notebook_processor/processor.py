@@ -58,16 +58,6 @@ def main():
     )
     args = parser.parse_args()
 
-    # setup nbconvert
-    config = traitlets.config.Config()
-    config.TagRemovePreprocessor.remove_cell_tags = "remove_answer_cell"
-    config.TagRemovePreprocessor.enabled = True
-    config.TagClearPreprocessor.clear_cell_tags = "clear_answer_cell"
-    config.TagClearPreprocessor.enabled = True
-
-    tag_remover = nbconvert.preprocessors.TagRemovePreprocessor(config=config)
-    tag_clearer = TagClearPreprocessor(config=config)
-
     # setup paths
     root_folder = pathlib.Path(args.base_folder)
     answers_folder = root_folder / "solutions"
@@ -125,6 +115,16 @@ def main():
     # Create "worksheet" notebooks by
     # removing cells tagged as answer from the answers.
     if args.rewrite_exercises:
+        # setup nbconvert
+        config = traitlets.config.Config()
+        config.TagRemovePreprocessor.remove_cell_tags = ["remove_answer_cell"]
+        config.TagRemovePreprocessor.enabled = True
+        config.TagClearPreprocessor.clear_cell_tags = ["clear_answer_cell"]
+        config.TagClearPreprocessor.enabled = True
+
+        tag_remover = nbconvert.preprocessors.TagRemovePreprocessor(config=config)
+        tag_clearer = TagClearPreprocessor(config=config)
+
         # Clean up the worksheets folder.
         shutil.rmtree(questions_folder)
         questions_folder.mkdir()
