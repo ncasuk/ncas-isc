@@ -6,7 +6,7 @@ authors = ["Alex Manning <alexander.manning@stfc.ac.uk>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.10"
 nbconvert = "^7.9.2"
 nbformat = "^5.9.2"
 traitlets = "^5.12.0"
