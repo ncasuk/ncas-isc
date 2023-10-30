@@ -1,0 +1,16 @@
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - basemap
+  - cf_units
+  - iris
+  - matplotlib
+  - netcdf4
+  - numpy
+  - numpy-base
+  - pip
+  - pyshp
+  - pip:
+    - msgpack
+    - scitools-iris
