@@ -1,0 +1,17 @@
+Presentation material is used directly from Software Carpentry's "Plotting and Programming in Python" Course.
+
+1. [Running and Quitting](http://swcarpentry.github.io/python-novice-gapminder/01-run-quit.html)
+2. [Variables and Assignment](http://swcarpentry.github.io/python-novice-gapminder/02-variables.html)
+3. [Data Types and Type Conversion](http://swcarpentry.github.io/python-novice-gapminder/03-types-conversion.html)
+4. [Build-in Functions and Help](http://swcarpentry.github.io/python-novice-gapminder/04-built-in.html)
+6. [Libraries](http://swcarpentry.github.io/python-novice-gapminder/06-libraries.html)
+7. [Reading Tabular Data into DataFrames](http://swcarpentry.github.io/python-novice-gapminder/07-reading-tabular.html)
+8. [Pandas DataFrames](http://swcarpentry.github.io/python-novice-gapminder/08-data-frames.html)
+9. [Plotting](http://swcarpentry.github.io/python-novice-gapminder/09-plotting.html)
+11. [Lists](http://swcarpentry.github.io/python-novice-gapminder/11-lists.html)
+12. [For Loops](http://swcarpentry.github.io/python-novice-gapminder/12-for-loops.html)
+13. [Conditionals](http://swcarpentry.github.io/python-novice-gapminder/13-conditionals.html)
+14. [Looping Over Data Sets](http://swcarpentry.github.io/python-novice-gapminder/14-looping-data-sets.html)
+16. [Writing Functions](http://swcarpentry.github.io/python-novice-gapminder/16-writing-functions.html)
+17. [Variable Scope](http://swcarpentry.github.io/python-novice-gapminder/17-scope.html)
+18. [Programming Style](http://swcarpentry.github.io/python-novice-gapminder/18-style.html)

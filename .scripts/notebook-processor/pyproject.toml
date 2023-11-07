@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "notebook-processor"
+version = "0.1.0"
+description = ""
+authors = ["Alex Manning <alexander.manning@stfc.ac.uk>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+nbconvert = "^7.9.2"
+nbformat = "^5.9.2"
+traitlets = "^5.12.0"
+ipykernel = {version = "^6.26.0", optional = true}
+
+[tool.poetry.extras]
+kernel = ["ipykernel"]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
