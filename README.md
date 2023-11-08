@@ -5,14 +5,13 @@ This repository holds teaching materials for the NCAS Introduction to Scientific
 
 The course covers:  
 - Introduction to the Linux shell
-  - [Presentations](https://github.com/ncasuk/ncas-isc/tree/main/shell/presentations)  
-  - [Exercises](https://github.com/ncasuk/ncas-isc/tree/main/shell/exercises)
+  - [Presentations and Exercises](https://ncasuk.github.io/ncas-isc-shell/)  
 - Git and GitHub
   - [Presentation](https://github.com/ncasuk/ncas-isc/tree/main/version_control)  
   - [Exercise](https://github.com/ncasuk/ncas-isc/tree/main/version_control)
 - Introduction to Python
-  - [Python Introduction Slides](https://github.com/ncasuk/ncas-isc/tree/main/python-intro/slides) 
-  - [Exercises - Jupyter Notebooks](https://github.com/ncasuk/ncas-isc/tree/main/python-intro/notebooks) | [Solutions](https://github.com/ncasuk/ncas-isc/tree/main/python-intro/notebooks/solutions) 
+  - [Python Introduction Slides](https://github.com/ncasuk/ncas-isc/blob/main/python-intro/presentations.md) 
+  - [Exercises - Jupyter Notebooks](https://github.com/ncasuk/ncas-isc/tree/main/python-intro/exercises) | [Solutions](https://github.com/ncasuk/ncas-isc/tree/main/python-intro/solutions) 
 - Data manipulation and visualisation in Python (Working with Data)
   - [Python working with data Slides](https://github.com/ncasuk/ncas-isc/tree/main/python-data/slides) 
   - [Exercises - Jupyter Notebooks](https://github.com/ncasuk/ncas-isc/tree/main/python-data/notebooks) | [Solutions](https://github.com/ncasuk/ncas-isc/tree/main/python-data/notebooks/solutions)
@@ -24,23 +23,11 @@ The course covers:
 ### Overview Presentations  
 * [Algorithmic thinking](https://github.com/ncasuk/ncas-isc/blob/main/working_practices/Algorithmic_thinking.pdf)  
     * [Exercise](https://github.com/ncasuk/ncas-isc/blob/main/working_practices/Algorithmic_thinking_exercise_1.pdf)  
-    * [Worksheet](https://github.com/ncasuk/ncas-isc/blob/main/working_practices/Algorithmic_thinking_exercise_1_worksheet.pdf)  
-* [NCAS, CMS, CEDA and JASMIN overview](https://github.com/ncasuk/ncas-isc/blob/main/working_practices/NCAS_CMS_CEDA_JASMIN_overview.pdf)  
-* [Parallel processing of large datasets](https://github.com/ncasuk/ncas-isc/blob/main/working_practices/Parallel_Processing_Large_Data.pdf)  
+    * [Worksheet](https://github.com/ncasuk/ncas-isc/blob/main/working_practices/Algorithmic_thinking_exercise_1_worksheet.pdf)    
 * [Why good data curation is essential to doing good science](https://github.com/ncasuk/ncas-isc/blob/main/working_practices/Why_good_data_management_is_essential_for_good_science.pdf)  
 
 ## The Linux Shell  
-1. [Text editors and terminals](https://github.com/ncasuk/ncas-isc/blob/main/shell/presentations/01_editors.pdf)  
-2. [Introduction](https://github.com/ncasuk/ncas-isc/blob/main/shell/presentations/02_intro.pdf)  
-3. [Pipes and Filters](https://github.com/ncasuk/ncas-isc/blob/main/shell/presentations/03_pipefilter.pdf)  
-4. [Permissions](https://github.com/ncasuk/ncas-isc/blob/main/shell/presentations/04_perm.pdf)  
-5. [Finding things](https://github.com/ncasuk/ncas-isc/blob/main/shell/presentations/05_find.pdf)  
-6. [Job control](https://github.com/ncasuk/ncas-isc/blob/main/shell/presentations/06_jobvars.pdf)  
-7. [Summary so far](https://github.com/ncasuk/ncas-isc/blob/main/shell/presentations/07_wake_up.pdf)  
-8. [Shell scripting](https://github.com/ncasuk/ncas-isc/blob/main/shell/presentations/08_shellscripts.pdf)  
-9. [The secure shell](https://github.com/ncasuk/ncas-isc/blob/main/shell/presentations/09_ssh.pdf)  
-10. [More tricks](https://github.com/ncasuk/ncas-isc/blob/main/shell/presentations/10_moretricks.pdf)  
-* [Exercises and solutions](https://github.com/ncasuk/ncas-isc/blob/main/shell/exercises/shell_exercise_index.md) 
+[Presentations and Exercises](https://ncasuk.github.io/ncas-isc-shell/) 
 
 ## Git and GitHub
 1. [Introduction to Git](https://github.com/ncasuk/ncas-isc/blob/main/version_control/01_git_intro.pdf)
