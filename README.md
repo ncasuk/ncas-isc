@@ -17,7 +17,9 @@ The course covers:
   - [Exercises - Jupyter Notebooks](https://github.com/ncasuk/ncas-isc/tree/main/python-data/notebooks) | [Solutions](https://github.com/ncasuk/ncas-isc/tree/main/python-data/solutions)
 - Example code for all python modules
   - [Example code](https://github.com/ncasuk/ncas-isc/tree/main/example_code)
-  - [Example data](https://github.com/ncasuk/ncas-isc/tree/main/example_data)  
+  - [Example data](https://github.com/ncasuk/ncas-isc/tree/main/example_data)
+  - [Example code for Python (Working with Data)](https://github.com/ncasuk/ncas-isc/tree/main/python-data/example_code)
+  - [Example data for Python (Working with Data)](https://github.com/ncasuk/ncas-isc/tree/main/python-data/example_data)
 
 ## Index  
 ### Overview Presentations  
