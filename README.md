@@ -14,7 +14,7 @@ The course covers:
   - [Exercises - Jupyter Notebooks](https://github.com/ncasuk/ncas-isc/tree/main/python-intro/exercises) | [Solutions](https://github.com/ncasuk/ncas-isc/tree/main/python-intro/solutions) 
 - Data manipulation and visualisation in Python (Working with Data)
   - [Python working with data Slides](https://github.com/ncasuk/ncas-isc/tree/main/python-data/slides) 
-  - [Exercises - Jupyter Notebooks](https://github.com/ncasuk/ncas-isc/tree/main/python-data/notebooks) | [Solutions](https://github.com/ncasuk/ncas-isc/tree/main/python-data/notebooks/solutions)
+  - [Exercises - Jupyter Notebooks](https://github.com/ncasuk/ncas-isc/tree/main/python-data/notebooks) | [Solutions](https://github.com/ncasuk/ncas-isc/tree/main/python-data/solutions)
 - Example code for all python modules
   - [Example code](https://github.com/ncasuk/ncas-isc/tree/main/example_code)
   - [Example data](https://github.com/ncasuk/ncas-isc/tree/main/example_data)  
