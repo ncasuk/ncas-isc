@@ -7,7 +7,7 @@ The course covers:
 - Introduction to the Linux shell
   - [Presentations and Exercises](https://ncasuk.github.io/ncas-isc-shell/)
 - Python Setup
-  - [Logging in to JASMIN Notebook Service ](https://github.com/ncasuk/ncas-isc/blob/main/setup/Logging_in_to_the_JASMIN_Notebook_Service.pdf)
+  - [Logging in to the JASMIN Notebook Service ](https://github.com/ncasuk/ncas-isc/blob/main/setup/Logging_in_to_the_JASMIN_Notebook_Service.pdf)
 - Git and GitHub
   - [Presentation](https://github.com/ncasuk/ncas-isc/tree/main/version_control)  
   - [Exercise](https://github.com/ncasuk/ncas-isc/tree/main/version_control)
