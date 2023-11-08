@@ -5,7 +5,9 @@ This repository holds teaching materials for the NCAS Introduction to Scientific
 
 The course covers:  
 - Introduction to the Linux shell
-  - [Presentations and Exercises](https://ncasuk.github.io/ncas-isc-shell/)  
+  - [Presentations and Exercises](https://ncasuk.github.io/ncas-isc-shell/)
+- Python Setup
+  - [Logging in to JASMIN Notebook Service ](https://github.com/ncasuk/ncas-isc/blob/main/setup/Logging_in_to_the_JASMIN_Notebook_Service.pdf)
 - Git and GitHub
   - [Presentation](https://github.com/ncasuk/ncas-isc/tree/main/version_control)  
   - [Exercise](https://github.com/ncasuk/ncas-isc/tree/main/version_control)
@@ -23,7 +25,8 @@ The course covers:
 ### Overview Presentations  
 * [Algorithmic thinking](https://github.com/ncasuk/ncas-isc/blob/main/working_practices/Algorithmic_thinking.pdf)  
     * [Exercise](https://github.com/ncasuk/ncas-isc/blob/main/working_practices/Algorithmic_thinking_exercise_1.pdf)  
-    * [Worksheet](https://github.com/ncasuk/ncas-isc/blob/main/working_practices/Algorithmic_thinking_exercise_1_worksheet.pdf)    
+    * [Worksheet](https://github.com/ncasuk/ncas-isc/blob/main/working_practices/Algorithmic_thinking_exercise_1_worksheet.pdf)
+* [Introduction to Net Zero DRI](https://github.com/ncasuk/ncas-isc/blob/main/working_practices/Introduction_to_Net_Zero.pdf)
 * [Why good data curation is essential to doing good science](https://github.com/ncasuk/ncas-isc/blob/main/working_practices/Why_good_data_management_is_essential_for_good_science.pdf)  
 
 ## The Linux Shell  
