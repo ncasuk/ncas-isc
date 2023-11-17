@@ -11,3 +11,5 @@ We also need to install some additional python packages which unfortunately aren
 `pip install --user pystac_client rioxarray shapely pyproj`
 
 Which will install these python packages into your local python path, so we can use them with your account alongside all the packages in Jaspy. __NOTE: this command may take some time__ 
+
+[Link to the software carpentry course](https://carpentries-incubator.github.io/geospatial-python)
