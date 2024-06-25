@@ -53,7 +53,7 @@ The course covers:
 14. [Variable Scope](http://swcarpentry.github.io/python-novice-gapminder/17-scope.html)
 15. [Programming Style](http://swcarpentry.github.io/python-novice-gapminder/18-style.html)
 
-* [Exercises](https://github.com/ncasuk/ncas-isc/blob/main/python-intro/notebooks) and [Solutions](https://github.com/ncasuk/ncas-isc/blob/main/python-intro/solutions)
+* [Exercises](https://github.com/ncasuk/ncas-isc/blob/main/python-intro/exercises) and [Solutions](https://github.com/ncasuk/ncas-isc/blob/main/python-intro/solutions)
 
 ## Python - Working with Data
 
