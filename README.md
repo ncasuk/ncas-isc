@@ -91,4 +91,4 @@ See the [Resources page](resources.md) for links to useful related sites and mat
 Feel free to fork this repository on GitHub and re-use these materials however you like.  
 
 ### Acknowledgements  
-The foundations of our course are based on the superb materials provided by [Software Carpentry](https://software-carpentry.org/) who we are eternally grateful to.  
+The foundations of our course are based on the superb materials provided by [Software Carpentry](https://software-carpentry.org/) who we are eternally grateful to. 
