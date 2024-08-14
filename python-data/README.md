@@ -14,7 +14,7 @@ Presentation material is used from the links listed below:
 3. xarray: [Groupby processing](https://geohackweek.github.io/nDarrays/07-groupby-processing/) and [masking](https://geohackweek.github.io/nDarrays/09-masking/)
 4. [cf-python]()
 5. [matplotlib](https://matplotlib.org/stable/users/explain/quick_start.html)
-6. [numpy](https://numpy.org/devdocs/user/quickstart.html)
+6. [numpy](https://numpy.org/doc/stable/user/quickstart.html)
 7. [NetCDF4](https://unidata.github.io/netcdf4-python/#tutorial)
 
 Each of these has an equivalent notebook in the [exercises](/python-data/exercises) folder with the solutions in the [solutions](python-data/solutions) folder. 
