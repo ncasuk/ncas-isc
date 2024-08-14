@@ -1,4 +1,4 @@
-# Introduction to Scientific Computing course  
+# Introduction to Scientific Computing course
 This repository holds teaching materials for the NCAS Introduction to Scientific Computing course.  
 
 ## Overview  
@@ -12,14 +12,11 @@ The course covers:
   - [Presentation](https://github.com/ncasuk/ncas-isc/tree/main/version_control)  
   - [Exercise](https://github.com/ncasuk/ncas-isc/tree/main/version_control)
 - Introduction to Python
-  - [Python Introduction Slides](https://github.com/ncasuk/ncas-isc/blob/main/python-intro/presentations.md) 
+  - [Python Introduction Slides](https://github.com/ncasuk/ncas-isc/blob/main/python-intro/README.md) 
   - [Exercises - Jupyter Notebooks](https://github.com/ncasuk/ncas-isc/tree/main/python-intro/exercises) | [Solutions](https://github.com/ncasuk/ncas-isc/tree/main/python-intro/solutions) 
 - Data manipulation and visualisation in Python (Working with Data)
-  - [Python working with data Slides](https://github.com/ncasuk/ncas-isc/tree/main/python-data/slides) 
-  - [Exercises - Jupyter Notebooks](https://github.com/ncasuk/ncas-isc/tree/main/python-data/notebooks) | [Solutions](https://github.com/ncasuk/ncas-isc/tree/main/python-data/solutions)
-- Example code for all python modules
-  - [Example code for Python (Working with Data)](https://github.com/ncasuk/ncas-isc/tree/main/python-data/example_code)
-  - [Example data for Python (Working with Data)](https://github.com/ncasuk/ncas-isc/tree/main/python-data/example_data)
+  - [Python working with data Slides](https://github.com/ncasuk/ncas-isc/tree/main/python-data/README.md) 
+  - [Exercises - Jupyter Notebooks](https://github.com/ncasuk/ncas-isc/tree/main/python-data/exercises) | [Solutions](https://github.com/ncasuk/ncas-isc/tree/main/python-data/solutions)
 
 ## Index  
 ### Overview Presentations  
@@ -57,9 +54,11 @@ The course covers:
 
 ## Python - Working with Data
 
-### Handling arrays  
-* [Numpy](https://github.com/ncasuk/ncas-isc/blob/main/python-data/slides/numpy.pdf)  
-* [Exercises](https://github.com/ncasuk/ncas-isc/blob/main/python-data/notebooks/ex01_numpy_arrays.ipynb) and [Solutions](https://github.com/ncasuk/ncas-isc/blob/main/python-data/solutions/ex01_numpy_arrays_solutions.ipynb)
+### xarray
+| Lesson | Exercise | Solution |
+| ------ | -------- | -------- |
+| [Intro to multidimensional arrays](https://geohackweek.github.io/nDarrays/01-introduction/), [xarray](https://geohackweek.github.io/nDarrays/02-xarray-architecture/) and [indexing](https://geohackweek.github.io/nDarrays/03-label-based-indexing/) | [Exercise 01]() | [Solution 01]() |
+
 
 ### Visualisation  
 * [Matplotlib and cartopy](https://github.com/ncasuk/ncas-isc/blob/main/python-data/slides/matplotlib_and_cartopy.pdf)  
