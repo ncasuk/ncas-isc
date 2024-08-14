@@ -26,4 +26,4 @@ Presentation material is used directly from Software Carpentry's "Plotting and P
 17. [Variable Scope](https://swcarpentry.github.io/python-novice-gapminder/17-scope.html)
 18. [Programming Style](https://swcarpentry.github.io/python-novice-gapminder/18-style.html)
 
-Each of these lessons has an equivalent notebook in the exercises folder with the solutions in the solutions folder.
+Each of these lessons has an equivalent notebook in the [exercises](/python-intro/exercises) folder with the solutions in the [solutions](/python-intro/solutions) folder.

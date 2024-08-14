@@ -17,4 +17,4 @@ Presentation material is used from the links listed below:
 6. [numpy]()
 7. [NetCDF4]()
 
-Each of these has an equivalent notebook in the [exercises](/exercises) folder with the solutions in the [solutions](/solutions) folder. 
+Each of these has an equivalent notebook in the [exercises](/python-data/exercises) folder with the solutions in the [solutions](python-data/solutions) folder. 
