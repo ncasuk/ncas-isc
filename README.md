@@ -60,11 +60,12 @@ The course covers:
 | __xarray:__ Introduction to [multidimensional arrays](https://geohackweek.github.io/nDarrays/01-introduction/), [xarray](https://geohackweek.github.io/nDarrays/02-xarray-architecture/) and [indexing](https://geohackweek.github.io/nDarrays/03-label-based-indexing/) | [Exercise 01]() | [Solution 01]() |
 | __xarray:__ [Plotting]() and [Indexing]() | [Exercise 02]() | [Solution 02]() |
 | [GroupBy processing]() and [masking]() | [Exercise 03]() | [Solution 03]() |
-| __cf-python:__ -      |  -       | -        |
+| [cf-python]() | [Exercise 04]() | [Solution 04]() |
 | [matplotlib]() | [Exercise 05]() | [Solution 05]() |
 | [numpy]() | [Exercise 06]() | [Solution 06]() |
 | [netCDF4]() | [Exercise 07]() | [Solution 07]() | 
-
+| [Weather Exercise]() | [Exercise 08]() | [Solution 08]() |
+| [Sentinel Data Exercise]() | [Exercise 09]() | [Solution 09]() |
 
 
 ## Useful materials and resources
