@@ -59,7 +59,7 @@ The course covers:
 | ------ | -------- | -------- |
 | __xarray:__ Introduction to [multidimensional arrays](https://geohackweek.github.io/nDarrays/01-introduction/), [xarray](https://geohackweek.github.io/nDarrays/02-xarray-architecture/) and [indexing](https://geohackweek.github.io/nDarrays/03-label-based-indexing/) | [Exercise 01]() | [Solution 01]() |
 | __xarray:__ [Plotting]() and [Indexing]() | [Exercise 02]() | [Solution 02]() |
-| [GroupBy processing]() and [masking]() | [Exercise 03]() | [Solution 03]() |
+| __xarray:__ [GroupBy processing]() and [masking]() | [Exercise 03]() | [Solution 03]() |
 | [cf-python]() | [Exercise 04]() | [Solution 04]() |
 | [matplotlib]() | [Exercise 05]() | [Solution 05]() |
 | [numpy]() | [Exercise 06]() | [Solution 06]() |
