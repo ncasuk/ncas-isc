@@ -1,3 +1,3 @@
 # These should match the versions in the version of jaspy which will be used for the course.
-matplotlib==3.5.3
-pandas==2.0.3
+matplotlib==3.8.4
+pandas==2.2.2
