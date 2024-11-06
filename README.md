@@ -48,8 +48,8 @@ This repository holds teaching materials for the NCAS Introduction to Scientific
 | [matplotlib](https://matplotlib.org/stable/users/explain/quick_start.html) | [Exercise 05](/python-data/exercises/ex05_matplotlib.ipynb) | [Solution 05](/python-data/solutions/ex05_matplotlib.ipynb) |
 | [numpy](https://numpy.org/doc/stable/user/quickstart.html) | [Exercise 06](/python-data/exercises/ex06_numpy.ipynb) | [Solution 06](/python-data/solutions/ex06_numpy.ipynb) |
 | [netCDF4](https://unidata.github.io/netcdf4-python/#tutorial) | [Exercise 07a](/python-data/exercises/ex07a_netcdf4_basics.ipynb) [Exercise 07b](/python-data/exercises/ex07b_netcdf4_advanced.ipynb)| [Solution 07a](/python-data/exercises/ex07a_netcdf4_basics.ipynb) [Exercise 07b](/python-data/exercises/ex07b_netcdf4_advanced.ipynb)| 
-| [Weather Exercise] | [Exercise 08](/python-data/exercises/ex08a_weather_api.ipynb) | [Solution 08](/python-data/solutions/ex08a_weather_api.ipynb) |
-| [Sentinel Data Exercise] | [Exercise 09](/python-data/exercises/ex08b_satellite_data.ipynb) | [Solution 09](ex08b_satellite_data.ipynb) |
+| Weather Exercise | [Exercise 08](/python-data/exercises/ex08a_weather_api.ipynb) | [Solution 08](/python-data/solutions/ex08a_weather_api.ipynb) |
+| Sentinel Data Exercise | [Exercise 09](/python-data/exercises/ex08b_satellite_data.ipynb) | [Solution 09](ex08b_satellite_data.ipynb) |
 
 
 ## Useful materials and resources
