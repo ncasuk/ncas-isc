@@ -16,5 +16,6 @@ Presentation material is used from the links listed below:
 5. [matplotlib](https://matplotlib.org/stable/users/explain/quick_start.html)
 6. [numpy](https://numpy.org/doc/stable/user/quickstart.html)
 7. [NetCDF4](https://unidata.github.io/netcdf4-python/#tutorial)
+8. [Weather Exercise](./exercises/ex08a_weather_api.ipynb) and [Satellite Exercise](./exercises/ex08b_satellite_data.ipynb)
 
 Each of these has an equivalent notebook in the [exercises](./exercises) folder with the solutions in the [solutions](./solutions) folder. 
