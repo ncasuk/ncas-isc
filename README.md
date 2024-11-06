@@ -35,6 +35,7 @@ This repository holds teaching materials for the NCAS Introduction to Scientific
 | [Writing functions](https://swcarpentry.github.io/python-novice-gapminder/16-writing-functions.html) | [Exercise 13](https://github.com/ncasuk/ncas-isc/blob/main/python-intro/exercises/ex16_writing_functions.ipynb) | [Solution 13](https://github.com/ncasuk/ncas-isc/blob/main/python-intro/exercises/ex16_writing_functions.ipynb) |
 | [Variable scope](https://swcarpentry.github.io/python-novice-gapminder/17-scope.html) | [Exercise 14](https://github.com/ncasuk/ncas-isc/blob/main/python-intro/exercises/ex17_variable_scope.ipynb) | [Solution 14](https://github.com/ncasuk/ncas-isc/blob/main/python-intro/exercises/ex17_variable_scope.ipynb) |
 | [Programming style](https://swcarpentry.github.io/python-novice-gapminder/18-style.html) | [Exercise 15](https://github.com/ncasuk/ncas-isc/blob/main/python-intro/exercises/ex18_programming_style.ipynb) | [Solution 15](https://github.com/ncasuk/ncas-isc/blob/main/python-intro/exercises/ex18_programming_style.ipynb) |
+| [Wrap Up / Summary](/python-intro/exercises/ex16_wrap_up.ipynb) |
 
 ## Python - Working with Data
 
