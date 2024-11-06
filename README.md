@@ -50,7 +50,7 @@ This repository holds teaching materials for the NCAS Introduction to Scientific
 | [netCDF4 basics](https://unidata.github.io/netcdf4-python/#tutorial) | [Exercise 07](/python-data/exercises/ex07_netcdf4_basics.ipynb) | [Solution 07](/python-data/solutions/ex07_netcdf4_basics.ipynb) | 
 | [netCDF advanced](https://unidata.github.io/netcdf4-python/#tutorial) | [Exercise 08](/python-data/exercises/ex08_netcdf4_advanced.ipynb) | [Exercise 08](/python-data/solutions/ex08_netcdf4_advanced.ipynb) |
 | Weather Exercise | [Exercise 09a](/python-data/exercises/ex09a_weather_api.ipynb) | [Solution 09b](/python-data/solutions/ex09a_weather_api.ipynb) |
-| Sentinel Data Exercise | [Exercise 09b](/python-data/exercises/ex09b_satellite_data.ipynb) | [Solution 09b](/python-data/ex09b_satellite_data.ipynb) |
+| Sentinel Data Exercise | [Exercise 09b](/python-data/exercises/ex09b_satellite_data.ipynb) | [Solution 09b](/python-data/solutions/ex09b_satellite_data.ipynb) |
 
 
 ## Useful materials and resources
