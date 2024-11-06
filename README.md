@@ -47,10 +47,10 @@ This repository holds teaching materials for the NCAS Introduction to Scientific
 | [cf-python]() | [Exercise 04](/python-data/exercises/ex04_cf_python.ipynb) | [Solution 04](/python-data/solutions/ex04_cf_python.ipynb) |
 | [matplotlib](https://matplotlib.org/stable/users/explain/quick_start.html) | [Exercise 05](/python-data/exercises/ex05_matplotlib.ipynb) | [Solution 05](/python-data/solutions/ex05_matplotlib.ipynb) |
 | [numpy](https://numpy.org/doc/stable/user/quickstart.html) | [Exercise 06](/python-data/exercises/ex06_numpy.ipynb) | [Solution 06](/python-data/solutions/ex06_numpy.ipynb) |
-| [netCDF4 basics](https://unidata.github.io/netcdf4-python/#tutorial) | [Exercise 07a](/python-data/exercises/ex07a_netcdf4_basics.ipynb) | [Solution 07a](/python-data/exercises/ex07a_netcdf4_basics.ipynb) | 
-| [netCDF advanced](https://unidata.github.io/netcdf4-python/#tutorial) | [Exercise 07b](/python-data/exercises/ex07b_netcdf4_advanced.ipynb) | [Exercise 07b](/python-data/exercises/ex07b_netcdf4_advanced.ipynb) |
-| Weather Exercise | [Exercise 08a](/python-data/exercises/ex08a_weather_api.ipynb) | [Solution 08b](/python-data/solutions/ex08a_weather_api.ipynb) |
-| Sentinel Data Exercise | [Exercise 08b](/python-data/exercises/ex08b_satellite_data.ipynb) | [Solution 08b](/python-data/ex08b_satellite_data.ipynb) |
+| [netCDF4 basics](https://unidata.github.io/netcdf4-python/#tutorial) | [Exercise 07](/python-data/exercises/ex07_netcdf4_basics.ipynb) | [Solution 07](/python-data/exercises/ex07_netcdf4_basics.ipynb) | 
+| [netCDF advanced](https://unidata.github.io/netcdf4-python/#tutorial) | [Exercise 08](/python-data/exercises/ex08_netcdf4_advanced.ipynb) | [Exercise 08](/python-data/exercises/ex08_netcdf4_advanced.ipynb) |
+| Weather Exercise | [Exercise 09a](/python-data/exercises/ex09a_weather_api.ipynb) | [Solution 09b](/python-data/solutions/ex09a_weather_api.ipynb) |
+| Sentinel Data Exercise | [Exercise 09b](/python-data/exercises/ex09b_satellite_data.ipynb) | [Solution 09b](/python-data/ex09b_satellite_data.ipynb) |
 
 
 ## Useful materials and resources
