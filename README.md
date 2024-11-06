@@ -20,10 +20,10 @@ This repository holds teaching materials for the NCAS Introduction to Scientific
 
 | Lesson | Exercise | Solution |
 | ------ | -------- | -------- |
-| [Running and quitting](https://swcarpentry.github.io/python-novice-gapminder/01-run-quit.html) | [Exercise 01](/python-intro/exercises/ex01_running_notebooks.ipynb) | [Solution 01](/python-intro/exercises/ex01_running_notebooks.ipynb) |
-| [Variables and assignment](https://swcarpentry.github.io/python-novice-gapminder/02-variables.html) | [Exercise 02](/python-intro/exercises/ex02_variables_assignment.ipynb) | [Solution 02](/python-intro/exercises/ex02_variables_assignment.ipynb) |
-| [Data types and type conversion](https://swcarpentry.github.io/python-novice-gapminder/03-types-conversion.html) | [Exercise 03](/python-intro/exercises/ex03_data_types.ipynb) | [Solution 03](/python-intro/exercises/ex03_data_types.ipynb) |
-| [Built-in functions and Help](https://swcarpentry.github.io/python-novice-gapminder/04-built-in.html) | [Exercise 04](/python-intro/exercises/ex04_built_in_functions.ipynb) | [Solution 04](/python-intro/exercises/ex04_built_in_functions.ipynb) |
+| [Running and quitting](https://swcarpentry.github.io/python-novice-gapminder/01-run-quit.html) | [Exercise 01](/python-intro/exercises/ex01_running_notebooks.ipynb) | [Solution 01](/python-intro/solutions/ex01_running_notebooks.ipynb) |
+| [Variables and assignment](https://swcarpentry.github.io/python-novice-gapminder/02-variables.html) | [Exercise 02](/python-intro/exercises/ex02_variables_assignment.ipynb) | [Solution 02](/python-intro/solutions/ex02_variables_assignment.ipynb) |
+| [Data types and type conversion](https://swcarpentry.github.io/python-novice-gapminder/03-types-conversion.html) | [Exercise 03](/python-intro/exercises/ex03_data_types.ipynb) | [Solution 03](/python-intro/solutions/ex03_data_types.ipynb) |
+| [Built-in functions and Help](https://swcarpentry.github.io/python-novice-gapminder/04-built-in.html) | [Exercise 04](/python-intro/exercises/ex04_built_in_functions.ipynb) | [Solution 04](/python-intro/solutions/ex04_built_in_functions.ipynb) |
 | [Libraries](https://swcarpentry.github.io/python-novice-gapminder/06-libraries.html) | [Exercise 05](/python-intro/exercises/ex05_libraries.ipynb) | [Solution 05](/python-intro/solutions/ex05_libraries.ipynb) |
 | [Reading tabular data into data frames](https://swcarpentry.github.io/python-novice-gapminder/07-reading-tabular.html) | [Exercise 06](/python-intro/exercises/ex06_dataframes.ipynb) | [Solution 06](/python-intro/solutions/ex06_dataframes.ipynb) |
 | [Pandas data frames](https://swcarpentry.github.io/python-novice-gapminder/08-data-frames.html) | [Exercise 07](/python-intro/exercises/ex07_pandas_dataframes.ipynb) | [Solution 07](/python-intro/solutions/ex07_pandas_dataframes.ipynb) |
