@@ -41,15 +41,15 @@ This repository holds teaching materials for the NCAS Introduction to Scientific
 
 | Lesson | Exercise | Solution |
 | ------ | -------- | -------- |
-| __xarray:__ Introduction to [multidimensional arrays](https://geohackweek.github.io/nDarrays/01-introduction/), [xarray](https://geohackweek.github.io/nDarrays/02-xarray-architecture/) and [indexing](https://geohackweek.github.io/nDarrays/03-label-based-indexing/) | [Exercise 01]() | [Solution 01]() |
-| __xarray:__ [Plotting]() and [Indexing]() | [Exercise 02]() | [Solution 02]() |
-| __xarray:__ [GroupBy processing]() and [masking]() | [Exercise 03]() | [Solution 03]() |
-| [cf-python]() | [Exercise 04]() | [Solution 04]() |
-| [matplotlib]() | [Exercise 05]() | [Solution 05]() |
-| [numpy]() | [Exercise 06]() | [Solution 06]() |
-| [netCDF4]() | [Exercise 07]() | [Solution 07]() | 
-| [Weather Exercise]() | [Exercise 08]() | [Solution 08]() |
-| [Sentinel Data Exercise]() | [Exercise 09]() | [Solution 09]() |
+| __xarray:__ Introduction to [multidimensional arrays](https://geohackweek.github.io/nDarrays/01-introduction/), [xarray](https://geohackweek.github.io/nDarrays/02-xarray-architecture/) and [indexing](https://geohackweek.github.io/nDarrays/03-label-based-indexing/) | [Exercise 01](/python-data/exercises/ex01_xarray_intro.ipynb) | [Solution 01](/python-data/solutions/ex01_xarray_intro.ipynb) |
+| __xarray:__ [Plotting](https://geohackweek.github.io/nDarrays/04-plotting/) and [Aggregation](https://geohackweek.github.io/nDarrays/05-aggregation/) | [Exercise 02](/python-data/exercises/ex02_plotting_and_aggregation.ipynb) | [Solution 02](/python-data/solutions/ex02_plotting_and_aggregation.ipynb) |
+| __xarray:__ [GroupBy processing](https://geohackweek.github.io/nDarrays/07-groupby-processing/) and [masking](https://geohackweek.github.io/nDarrays/09-masking/) | [Exercise 03](/python-data/exercises/ex03_groupby_processing_and_masking.ipynb) | [Solution 03](/python-data/solutions/ex03_groupby_processing_and_masking.ipynb) |
+| [cf-python]() | [Exercise 04](/python-data/exercises/ex04_cf_python.ipynb) | [Solution 04](/python-data/solutions/ex04_cf_python.ipynb) |
+| [matplotlib](https://matplotlib.org/stable/users/explain/quick_start.html) | [Exercise 05](/python-data/exercises/ex05_matplotlib.ipynb) | [Solution 05](/python-data/solutions/ex05_matplotlib.ipynb) |
+| [numpy](https://numpy.org/doc/stable/user/quickstart.html) | [Exercise 06](/python-data/exercises/ex06_numpy.ipynb) | [Solution 06](/python-data/solutions/ex06_numpy.ipynb) |
+| [netCDF4](https://unidata.github.io/netcdf4-python/#tutorial) | [Exercise 07a](/python-data/exercises/ex07a_netcdf4_basics.ipynb) [Exercise 07b](/python-data/exercises/ex07b_netcdf4_advanced.ipynb)| [Solution 07a](/python-data/exercises/ex07a_netcdf4_basics.ipynb) [Exercise 07b](/python-data/exercises/ex07b_netcdf4_advanced.ipynb)| 
+| [Weather Exercise] | [Exercise 08](/python-data/exercises/ex08a_weather_api.ipynb) | [Solution 08](/python-data/solutions/ex08a_weather_api.ipynb) |
+| [Sentinel Data Exercise] | [Exercise 09](/python-data/exercises/ex08b_satellite_data.ipynb) | [Solution 09](ex08b_satellite_data.ipynb) |
 
 
 ## Useful materials and resources
