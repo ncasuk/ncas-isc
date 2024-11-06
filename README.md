@@ -1,23 +1,6 @@
 # Introduction to Scientific Computing course
 This repository holds teaching materials for the NCAS Introduction to Scientific Computing course.  
 
-## Overview  
-
-The course covers:  
-- Introduction to the Linux shell
-  - [Presentations and Exercises](https://ncasuk.github.io/ncas-isc-shell/)
-- Python Setup
-  - [Logging in to the JASMIN Notebook Service ](https://github.com/ncasuk/ncas-isc/blob/main/setup/Logging_in_to_the_JASMIN_Notebook_Service.pdf)
-- Git and GitHub
-  - [Presentation](https://github.com/ncasuk/ncas-isc/tree/main/version_control)  
-  - [Exercise](https://github.com/ncasuk/ncas-isc/tree/main/version_control)
-- Introduction to Python
-  - [Python Introduction Slides](https://github.com/ncasuk/ncas-isc/blob/main/python-intro/README.md) 
-  - [Exercises - Jupyter Notebooks](https://github.com/ncasuk/ncas-isc/tree/main/python-intro/exercises) | [Solutions](https://github.com/ncasuk/ncas-isc/tree/main/python-intro/solutions) 
-- Data manipulation and visualisation in Python (Working with Data)
-  - [Python working with data Slides](https://github.com/ncasuk/ncas-isc/tree/main/python-data/README.md) 
-  - [Exercises - Jupyter Notebooks](https://github.com/ncasuk/ncas-isc/tree/main/python-data/exercises) | [Solutions](https://github.com/ncasuk/ncas-isc/tree/main/python-data/solutions)
-
 ## Index  
 ### Overview Presentations  
 * [Algorithmic thinking](https://github.com/ncasuk/ncas-isc/blob/main/working_practices/Algorithmic_thinking.pdf)  
