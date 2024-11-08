@@ -9,7 +9,7 @@ In this folder you will find all the material used to run the course.
 
 Presentation material is used from the links listed below:
 
-1. xarray: [Introduction to multidimensional arrays](https://tutorial.xarray.dev/fundamentals/01_data_structures.html), [intro to xarray](https://tutorial.xarray.dev/fundamentals/01_datastructures.html) and [label-based indexing](https://tutorial.xarray.dev/fundamentals/02.1_indexing_Basic.html).
+1. xarray: [Introduction to multidimensional arrays](https://tutorial.xarray.dev/fundamentals/01_data_structures.html), and [intro to xarray data structures](https://tutorial.xarray.dev/fundamentals/01_datastructures.html) and[label-based indexing](https://tutorial.xarray.dev/fundamentals/02.1_indexing_Basic.html).
 2. xarray: [Plotting](https://tutorial.xarray.dev/fundamentals/04.1_basic_plotting.html) and [aggregation](https://tutorial.xarray.dev/fundamentals/03.1_computation_with_xarray.html)
 3. xarray: [Groupby processing](https://tutorial.xarray.dev/fundamentals/03.2_groupby_with_xarray.html) and [masking](https://tutorial.xarray.dev/intermediate/indexing/boolean-masking-indexing.html)
 4. [cf-python]()
