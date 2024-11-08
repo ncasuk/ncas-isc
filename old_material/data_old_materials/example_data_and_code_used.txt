@@ -1,0 +1,22 @@
+Example data/code for course
+============================
+
+Python numpy:
+
+Python matplotlib:
+ * Plotting gridded data on a map: ../example_data/tas.nc
+ * Plotting gridded data on a map: ../example_code/map_data.py
+ 
+Python read/write:
+ * Reading ASCII data files with Python: ../example_data/weather_meta.csv
+ * Reading NetCDF files with Python: ../example_data/ggas2014121200_00-18.nc
+ * Basic NetCDF command-line tools: ../example_data/tas_rcp45_2055_ann_avg_change.nc
+ * Basic NetCDF command-line tools: ../example_data/ggas2014121200_00-18.nc
+ * Basic NetCDF command-line tools: ../example_data/weather.csv
+ 
+Python packages:
+ N/A
+
+Other tools:
+ * ncview and ncBrowse: ../example_data/tas_rcp45_2055_mon_avg_change.nc
+ * ncview and ncBrowse: ../example_data/example_data/n2o_emissions.nc

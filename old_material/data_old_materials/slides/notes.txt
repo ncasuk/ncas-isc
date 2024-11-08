@@ -1,0 +1,34 @@
+Important instructions on using MatPlotLib interactively
+========================================================
+
+*Source:* http://stackoverflow.com/questions/28269157/plotting-in-a-non-blocking-way-with-matplotlib
+
+On the CentOS linux laptops used in the ISC course we found that it is possible to work with the 
+MatPlotLib "pyplot" interface interactively if you use:
+
+`plt.pause(0.1)`
+
+instead of:
+
+`plt.show()`
+
+What does this do? Well, here are the docs for the `pyplot.pause` function:
+
+```
+Help on function pause in module matplotlib.pyplot:
+
+pause(interval)
+    Pause for *interval* seconds.
+    
+    If there is an active figure it will be updated and displayed,
+    and the GUI event loop will run during the pause.
+    
+    If there is no active figure, or if a non-interactive backend
+    is in use, this executes time.sleep(interval).
+    
+    This can be used for crude animation. For more complex
+    animation, see :mod:`matplotlib.animation`.
+    
+    This function is experimental; its behavior may be changed
+    or extended in a future release.
+```

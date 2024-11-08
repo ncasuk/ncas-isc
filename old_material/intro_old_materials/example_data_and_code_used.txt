@@ -1,0 +1,10 @@
+Example data/code for course
+============================
+
+Python intro:
+ * Input and Output: ../example_data/weather.csv
+ * Scripts and Libraries: ../example_code/dance.py
+ * OOP: ../example_code/band.py
+  
+ Changed: OOP, ceda-oop, flow, some of them.
+ 
