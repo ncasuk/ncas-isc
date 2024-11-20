@@ -12,7 +12,7 @@ Presentation material is used from the links listed below:
 1. xarray: [Introduction to multidimensional arrays](https://tutorial.xarray.dev/fundamentals/01_data_structures.html), and [intro to xarray data structures](https://tutorial.xarray.dev/fundamentals/01_datastructures.html) and[label-based indexing](https://tutorial.xarray.dev/fundamentals/02.1_indexing_Basic.html).
 2. xarray: [Plotting](https://tutorial.xarray.dev/fundamentals/04.1_basic_plotting.html) and [aggregation](https://tutorial.xarray.dev/fundamentals/03.1_computation_with_xarray.html)
 3. xarray: [Groupby processing](https://tutorial.xarray.dev/fundamentals/03.2_groupby_with_xarray.html) and [masking](https://tutorial.xarray.dev/intermediate/indexing/boolean-masking-indexing.html)
-4. [cf-python]()
+4. [cf-python](./notebooks/intro_to_ncas_cf_data_tools.ipynb)
 5. [matplotlib](https://matplotlib.org/stable/users/explain/quick_start.html)
 6. [numpy](https://numpy.org/doc/stable/user/quickstart.html)
 7. [NetCDF4 basics](https://unidata.github.io/netcdf4-python/#tutorial)
