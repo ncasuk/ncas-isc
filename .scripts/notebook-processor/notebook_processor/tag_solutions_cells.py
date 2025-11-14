@@ -14,7 +14,7 @@ from glob import glob
 import os
 
 
-base_dir = "./solutions"  # directory of Notebooks to tag
+base_dir = "../../../python-data/solutions"  # directory of Notebooks to tag
 filename_pattern = "ex04*_cf_tools_*.ipynb" # pattern of Notebook filenames to filter
 tag_to_add = "clear_answer_cell" # tag to add to each code-only cell
 
