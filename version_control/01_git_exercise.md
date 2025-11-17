@@ -163,7 +163,7 @@ cd ~/my-isc-work
 mkdir python-intro
 
 # Copy the entire "notebooks" directory from the "ncas-isc" repo to your local repo
-cp -r ~/ncas-isc/python-intro/notebooks python-intro/
+cp -r ~/ncas-isc/python-intro/exercises python-intro/
 ```
 
 ## 9. Add the new files to git and push to github
